@@ -5,6 +5,4 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Counting, Combinations, and Permutations
-# Basic Probability
-
+# Introduction
