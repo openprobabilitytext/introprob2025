@@ -7,13 +7,15 @@ output:
   bookdown::gitbook
 documentclass: krantzNoCorner
 classoption: krantz
+colorlinks: yes
+fontsize: 12pt
+github-repo: https://github.com/openprobabilitytext/introprob2025
 ---
 
 # Preface {-}
-Introduction to Probability is a freely available textbook for MATH350 students.
-
-  -  This version contains variety of examples to learn the probability concepts in your own phase.
-  -  The book can be downloaded as a pdf.
+"Introduction to Probability is a freely available textbook designed for MATH350 students.
+- This edition includes a variety of examples to help you learn probability concepts at your own pace.
+-The book is available for download as a PDF."
 
 
 
