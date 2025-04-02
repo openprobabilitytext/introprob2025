@@ -1,8 +1,47 @@
+bookdown::pdf_document2:
+  includes:
+    in_header: preamble.tex
+    #before_body: coverpage.tex
+  toc: TRUE
+  toc_depth: '3'
+  citation_package: natbib
+  keep_tex: yes
+  dev: "cairo_pdf"
+  latex_engine: pdflatex  
+#  latex_engine: xelatex
+  biblio-style: econPeriod
+  template: null
+  pandoc_args: --top-level-division=chapter
+  toc_unnumbered: no
+  toc_appendix: yes
+  quote_footer: ["\\VA{", "}{}"]
+  highlight_bw: yes 
+bookdown::epub_book: default
 bookdown::gitbook:
-  css: style.css
+  css: 
+    -  style.css
+    -  webex.css
+  includes:
+    in_header: 
+      -  ShowHide2024GSTag.js
+      -  webex.js
+  split_bib: FALSE  
   config:
     toc:
+      collapse: subsection
       before: |
-        <li><a href="./">Probability</a></li>
+        <li><a href="./">Probability </a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/openprobabilitytext/introprob2025/" target="blank">Introduction to Probability on GitHub</a></li>
+  toc_depth: 3                 
+  edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+  download: null
+  sharing:
+    facebook: no
+    twitter: no
+    google: yes
+    linkedin: no
+    weibo: no
+    instapper: no
+    vk: no
+    all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']

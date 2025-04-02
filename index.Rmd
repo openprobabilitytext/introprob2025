@@ -1,8 +1,92 @@
 --- 
-title: "Introduction Probability"
-author: "Rajinda "
+title: "Introduction to Probability"
+author: "Madhuka and Rajinda"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Introduction
+# Preface {-}
+Introduction to Probability is a freely available textbook for MATH350 students.
+
+  -  This version contains variety of examples to learn the probability concepts in your own phase.
+  -  The book can be downloaded as a pdf.
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(tidy = T, echo = TRUE, comment=NA, message = FALSE, warning = FALSE, fig.align = "center")
+HtmlEval <- knitr:::is_html_output()
+PdfEval  <- knitr:::is_latex_output()
+
+```
+
+
+```{r echo = FALSE}
+#  Some Switches
+QUIZ              <- TRUE
+ANIMATION         <- TRUE
+SHOW_PDF          <- TRUE
+SHOW_EXAMPLE_SOLN <- TRUE
+SHOW_EXER_SOLN    <- TRUE
+ANIMATIONHOOK     <- 'gifski'
+GLOSSARY          <- FALSE
+DIST_TABLES_LATEX <- FALSE
+
+if (PdfEval){
+QUIZ              <- FALSE
+ANIMATION         <- FALSE
+SHOW_PDF          <- FALSE
+SHOW_EXER_SOLN    <- FALSE
+ANIMATIONHOOK     <- NULL
+GLOSSARY          <- TRUE
+DIST_TABLES_LATEX <- TRUE
+numAnimation = 1
+}
+# Switches that control the number of animations in Chapter 6
+# Use these for pdf output - maybe later
+#numAnimation = 1
+#numAnimation2 = 2
+#numAnimation3 = 2
+
+roundCom  <- function(number, digits) {
+  rounded_number <- round(number, digits)
+  formatted_number <- format(rounded_number, big.mark = ",", nsmall = digits)
+  return(formatted_number)
+}
+
+CodeFontSmall <- function(A){ '\\scalefont{0.75}'    }
+CodeFontLarge <- function(A){ '\\scalefont{1.33333}' }
+
+SolnBegin <- function(A){ if (HtmlEval) {                    knitr::asis_output(paste("*Example Solution.*")) } 
+  else { '\\begin{graybox}\\scalefont{0.90}
+    \\textbf{Example Solution.}' }  }
+SolnEnd <- function(A){ 
+   if (PdfEval) { '\\end{graybox}' } }
+
+LObjBegin <- function(A){ if (PdfEval){ '\\begin{graybox}\\scalefont{0.90}' } else
+  {knitr::asis_output(paste("***")) } }
+LObjEnd <- function(A){  if (PdfEval) { '\\end{graybox}' } else
+  {knitr::asis_output(paste("***")) } }
+
+Refer <- function(A){
+if (PdfEval) { 'hello' } } #Inside: You can learn more about the R code for this example at the online version of this book.
+
+#Only return argument for glossary function
+Gloss <- function(term, section){
+  return(term)
+}
+
+HideExample <- function(arg1,arg2){
+  return("")
+}
+
+HideRCode <- function(arg1,arg2){
+  return("")
+}
+
+HideProofTheory <- function(arg1,arg2){
+  return("")
+}
+
+
+```

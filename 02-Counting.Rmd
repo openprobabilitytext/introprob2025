@@ -1,1 +1,29 @@
-# Counting, Combinations, and Permutations
+# Fundamentals of Probability and its Axioms
+
+## Combinations and Permutations
+Counting plays a very important role in probability. In probability, we often deal with sets, and counting methods such as combinations and permutations help us find the number of elements in a set. Specifically, in probability, we deal with a set called the **sample space** which is the set of all possible outcomes of some random experiment and **events**, which are subsets of the sample space. Typically, the sample space is denoted by $S$ or $\Omega.$ Consider the following example:
+
+**Example 1.1.**
+Suppose a fair coin is flipped twice.What is the probability of flipping at least one head?
+
+**Solution:**
+The sample space of this experiment can expressed as $S=\{HH,HT,TH,TT\}$. Now, consider the event:
+$$A=\{\text{At least one outcome is a head}\}$$
+Notice that $A\subset S$ ($A$ is a subset of $S$). Since $A=\{HH,HT,TH\},$ we can find the probability as follows:
+$$P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.$$
+
+The above method of computing the probability of an event, while very useful, is not always suitable for the following reasons:
+
+  1. Each outcome has to be equally likely.
+  2. The sets must be countable. 
+  
+From the previous example, it is clear that counting the number of elements of sets is very important when dealing with discrete sets. We will do this more efficiently by utilizing tools from combinations and permutations.
+
+### Permutations
+
+We will begin by stating the following crucial theorem.
+
+**Theorem 1.1: The Fundamental Principle of Counting**
+
+Consider $k$ experiments. Let $n_i$ denote the number of possible outcomes of the $i$th experiment where $i=1,2,\dots,k.$ Then the total of number of possible outcomes is
+$$n_1\times n_2\times\cdots\times n_k$$

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Counting, Combinations, and Permutations | Introduction to Probability</title>
-  <meta name="description" content="Chapter 1 Counting, Combinations, and Permutations | Introduction to Probability" />
+  <title>Chapter 1 Fundamentals of Probability and its Axioms | Introduction to Probability</title>
+  <meta name="description" content="Chapter 1 Fundamentals of Probability and its Axioms | Introduction to Probability" />
   <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Counting, Combinations, and Permutations | Introduction to Probability" />
+  <meta property="og:title" content="Chapter 1 Fundamentals of Probability and its Axioms | Introduction to Probability" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Counting, Combinations, and Permutations | Introduction to Probability" />
+  <meta name="twitter:title" content="Chapter 1 Fundamentals of Probability and its Axioms | Introduction to Probability" />
   
   
   
@@ -513,7 +513,13 @@ window.onload = function() {
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="counting-combinations-and-permutations.html"><a href="counting-combinations-and-permutations.html"><i class="fa fa-check"></i><b>1</b> Counting, Combinations, and Permutations</a></li>
+<li class="chapter" data-level="1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html"><i class="fa fa-check"></i><b>1</b> Fundamentals of Probability and its Axioms</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#combinations-and-permutations"><i class="fa fa-check"></i><b>1.1</b> Combinations and Permutations</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#permutations"><i class="fa fa-check"></i><b>1.1.1</b> Permutations</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="basic-probability.html"><a href="basic-probability.html"><i class="fa fa-check"></i><b>2</b> Basic Probability</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/openprobabilitytext/introprob2025/" target="blank">Introduction to Probability on GitHub</a></li>
@@ -535,9 +541,33 @@ window.onload = function() {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="counting-combinations-and-permutations" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Counting, Combinations, and Permutations<a href="counting-combinations-and-permutations.html#counting-combinations-and-permutations" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="fundamentals-of-probability-and-its-axioms" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Fundamentals of Probability and its Axioms<a href="fundamentals-of-probability-and-its-axioms.html#fundamentals-of-probability-and-its-axioms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="combinations-and-permutations" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Combinations and Permutations<a href="fundamentals-of-probability-and-its-axioms.html#combinations-and-permutations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Counting plays a very important role in probability. In probability, we often deal with sets, and counting methods such as combinations and permutations help us find the number of elements in a set. Specifically, in probability, we deal with a set called the <strong>sample space</strong> which is the set of all possible outcomes of some random experiment and <strong>events</strong>, which are subsets of the sample space. Typically, the sample space is denoted by <span class="math inline">\(S\)</span> or <span class="math inline">\(\Omega.\)</span> Consider the following example:</p>
+<p><strong>Example 1.1.</strong>
+Suppose a fair coin is flipped twice.What is the probability of flipping at least one head?</p>
+<p><strong>Solution:</strong>
+The sample space of this experiment can expressed as <span class="math inline">\(S=\{HH,HT,TH,TT\}\)</span>. Now, consider the event:
+<span class="math display">\[A=\{\text{At least one outcome is a head}\}\]</span>
+Notice that <span class="math inline">\(A\subset S\)</span> (<span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(S\)</span>). Since <span class="math inline">\(A=\{HH,HT,TH\},\)</span> we can find the probability as follows:
+<span class="math display">\[P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.\]</span></p>
+<p>The above method of computing the probability of an event, while very useful, is not always suitable for the following reasons:</p>
+<ol style="list-style-type: decimal">
+<li>Each outcome has to be equally likely.</li>
+<li>The sets must be countable.</li>
+</ol>
+<p>From the previous example, it is clear that counting the number of elements of sets is very important when dealing with discrete sets. We will do this more efficiently by utilizing tools from combinations and permutations.</p>
+<div id="permutations" class="section level3 hasAnchor" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Permutations<a href="fundamentals-of-probability-and-its-axioms.html#permutations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We will begin by stating the following crucial theorem.</p>
+<p><strong>Theorem 1.1: The Fundamental Principle of Counting</strong></p>
+<p>Consider <span class="math inline">\(k\)</span> experiments. Let <span class="math inline">\(n_i\)</span> denote the number of possible outcomes of the <span class="math inline">\(i\)</span>th experiment where <span class="math inline">\(i=1,2,\dots,k.\)</span> Then the total of number of possible outcomes is
+<span class="math display">\[n_1\times n_2\times\cdots\times n_k\]</span></p>
 
+</div>
+</div>
 </div>
             </section>
 
@@ -576,7 +606,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/openprobabilitytext/openprobabilitytext/edit/main/02-Counting.Rmd",
+    "link": "https://github.com/openprobabilitytext/introprob2025/edit/main/02-Counting.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -584,7 +614,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/openprobabilitytext/openprobabilitytext/blob/main/02-Counting.Rmd",
+    "link": "https://github.com/openprobabilitytext/introprob2025/blob/main/02-Counting.Rmd",
     "text": null
   },
   "download": ["bookdownproj.pdf", "bookdownproj.epub"],
@@ -599,6 +629,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
