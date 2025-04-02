@@ -13,6 +13,7 @@ Notice that $A\subset S$ ($A$ is a subset of $S$). Since $A=\{HH,HT,TH\},$ we ca
 $$P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.$$
 
 The above method of computing the probability of an event, while very useful, is not always suitable for the following reasons:
+
   1. Each outcome has to be equally likely.
   2. The sets must be countable. 
   
