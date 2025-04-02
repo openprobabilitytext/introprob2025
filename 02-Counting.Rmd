@@ -13,7 +13,6 @@ Notice that $A\subset S$ ($A$ is a subset of $S$). Since $A=\{HH,HT,TH\},$ we ca
 $$P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.$$
 
 The above method of computing the probability of an event, while very useful, is not always suitable for the following reasons:
-
   1. Each outcome has to be equally likely.
   2. The sets must be countable. 
   
@@ -26,7 +25,7 @@ We will begin by stating the following crucial theorem.
 **Theorem 1.1: The Fundamental Principle of Counting**
 
 Consider $k$ experiments. Let $n_i$ denote the number of possible outcomes of the $i$th experiment where $i=1,2,\dots,k.$ Then the total of number of possible outcomes is
-$$n_1\times n_2\times\cdots\times n_k$$
+$$n_1\times n_2\times\cdots\times n_k.$$
 
 **Example 1.2.** 
 Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords contain at least one letter? 
