@@ -3,6 +3,10 @@ title: "Introduction to Probability"
 author: "Madhuka and Rajinda"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+output:
+  bookdown::gitbook
+documentclass: krantzNoCorner
+classoption: krantz
 ---
 
 # Preface {-}
