@@ -23,7 +23,7 @@
 <meta name="author" content="Madhuka and Rajinda" />
 
 
-<meta name="date" content="2025-04-05" />
+<meta name="date" content="2025-04-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -518,6 +518,7 @@ window.onload = function() {
 <li class="chapter" data-level="1.1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#combinations-and-permutations"><i class="fa fa-check"></i><b>1.1</b> Combinations and Permutations</a>
 <ul>
 <li class="chapter" data-level="1.1.1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#permutations"><i class="fa fa-check"></i><b>1.1.1</b> Permutations</a></li>
+<li class="chapter" data-level="1.1.2" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#combinations"><i class="fa fa-check"></i><b>1.1.2</b> Combinations</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="basic-probability.html"><a href="basic-probability.html"><i class="fa fa-check"></i><b>2</b> Basic Probability</a></li>
@@ -573,9 +574,9 @@ First roll has 6 outcomes and the second roll has 6 outcomes. Therefore, there a
 <p><strong>Example 1.3.</strong>
 Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords can be created,</p>
 <ol style="list-style-type: decimal">
-<li>if the password is not case-sensitive.</li>
-<li>if the first two symbols must be numbers.</li>
-<li>if the first two symbols must be numbers and the rest should be letters.</li>
+<li>if the password is not case-sensitive?</li>
+<li>if the first two symbols must be numbers?</li>
+<li>if the first two symbols must be numbers and the rest should be letters?</li>
 </ol>
 <p><strong>Solution:</strong></p>
 <ol style="list-style-type: decimal">
@@ -587,10 +588,82 @@ Suppose a password must contain exactly 4 symbols, where each symbol is either a
 Repeat the above example assuming the password is case-sensitive.</p>
 <p><strong>Example 1.4:</strong>
 Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords contain at least one letter?</p>
-<p><strong>Solution</strong>
+<p><strong>Solution:</strong>
 Total number of passwords = <span class="math inline">\(36^4\)</span>.
 Total number of passwords not containing a letter = <span class="math inline">\(10^4\)</span>.
-herefore, the number of passwords containing at least one letter is <span class="math display">\[36^4-10^4.\]</span></p>
+Therefore, the number of passwords containing at least one letter is <span class="math display">\[36^4-10^4.\]</span></p>
+<p>Imagine three objects labeled <span class="math inline">\(A,B,\)</span> and <span class="math inline">\(C.\)</span> The number of ways we can arrange these objects is called a <em>permutation.</em> These objects can be arranged in six different ways:
+<span class="math display">\[ABC, ACB, BAC, BCA, CAB, CBA.\]</span>
+The formula to find the number of permutations of <span class="math inline">\(n\)</span> <em>distinct</em> objects is <span class="math display">\[n!=n\times (n-1)\times\cdots\times 2\times 1.\]</span>
+For three distinct objects, the number of permutations is <span class="math inline">\(3!=6.\)</span></p>
+<p><strong>Example 1.5.</strong>
+In a class, there are 4 sophomores, 7 juniors, and 3 seniors.</p>
+<ol style="list-style-type: decimal">
+<li>How many ways are these students be arranged in a row?</li>
+<li>How many ways can these students be arranged if all the seniors should remain together?</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(12!\)</span></li>
+<li>Since the seniors must stand together, we think of the seniors as one ``block”. Therefore, together with this block, 4 sophomores, and 7 juniors, there are 12 objects to be arranged. We can also arrange the three seniors within the block in <span class="math inline">\(3!\)</span> ways. Therefore, the total number of permutations is:</li>
+</ol>
+<p><img src="class_example_permutations.png" width="80%" height="50%" style="display: block; margin: auto;" /></p>
+<p><strong>Exercise 1.2.</strong>
+How many ways can the students be arranged if students from the same year should remain together?</p>
+<p><strong>Exercise 1.3.</strong>
+How many ways can the students be arranged if two particular students do not wish to stand together?</p>
+<p><strong>Exercise 1.4.</strong>
+How many ways can the students be arranged if at most two seniors should be together?</p>
+<p>Now let’s learn how to find the permutations of objects that are non-distinct (some are identical). Consider the permutations of AAB. Since we have two identical objects, the number of permutations has to be less than <span class="math inline">\(3!\)</span> (since permuting the two ``A”s gives us the same arrangement).</p>
+<p><strong>Theorem 1.1: Permutations of non-identical objects</strong>
+Consider a set of <span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span> objects are alike, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of permutations of these <span class="math inline">\(n\)</span> objects is given by
+<span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
+<p><strong>Example 1.6.</strong>
+Find the number of ways the following words can be permuted:</p>
+<ol style="list-style-type: decimal">
+<li>MATH</li>
+<li>BEEP</li>
+<li>COCO</li>
+<li>SUCCESS</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li>4 different letters. Therefore, number of permutations: <span class="math display">\[4!.\]</span></li>
+<li>4 letters word, 2 letters are alike. Therefore, number of permutations: <span class="math display">\[\frac{4!}{2!}.\]</span></li>
+<li>4 letters word, 2 letters are alike and another 2 letters are alike. Therefore, number of permutations: <span class="math display">\[\frac{4!}{2!2!}.\]</span></li>
+<li>7 letters word, 3 letters are alike and another 2 letters are alike. Therefore, number of permutations: <span class="math display">\[\frac{7!}{3!2!}.\]</span></li>
+</ol>
+<p>In each of the above questions, we make an adjustment for over-counting by diving by the permutations of identical objects.</p>
+</div>
+<div id="combinations" class="section level3 hasAnchor" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Combinations<a href="fundamentals-of-probability-and-its-axioms.html#combinations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Combinations are the number of ways a subset can be chosen from a larger set where the order of the selection does not matter. Consider a set of <span class="math inline">\(n\)</span> distinct objects. The number of ways a subset of <span class="math inline">\(r\leq n\)</span> objects can be chosen can be computed using the formula <span class="math display">\[{n\choose r} = \frac{n!}{r!(n-r)!}.\]</span>
+The key point here is that, unlike in permutations, the order of the <span class="math inline">\(r\)</span> objects selected is irrelevant.</p>
+<p><strong>Example 1.7.</strong>
+Suppose a shelf contains 10 distinct books out of which 4 are math books and the rest are physics books.</p>
+<ol style="list-style-type: decimal">
+<li><p>How many ways can 3 books be chosen where the order does not matter?</p></li>
+<li><p>How many ways can 4 books be chosen so that exactly two are math books?</p></li>
+</ol>
+<p><strong>Solution:</strong>
+1. <span class="math display">\[10\choose 3\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>The number of ways two math books can be chosen = <span class="math inline">\(4\choose 2\)</span>\
+The number of ways two other books (non-math) can be chosen = <span class="math inline">\(6\choose 2\)</span>\</li>
+</ol>
+<p>Therefore, the total number of ways exactly two math books can be chosen is
+<span class="math display">\[{4\choose 2}{6\choose 2}.\]</span></p>
+<p><strong>Exercise 1.5.</strong>
+How many ways can at least one math book be chosen?</p>
+<p><strong>Exercise 1.6.</strong>
+How many ways can at most one math book be chosen?</p>
+<p>Some questions in this course involves questions based on a deck of cards. This is the composition of a deck of cards:</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ExCardDeck"></span>
+<img src="deckofcards.png" alt="Illustration of a standard deck of cards." width="80%" height="50%" />
+<p class="caption">
+Figure 1.1: Illustration of a standard deck of cards.
+</p>
+</div>
 
 </div>
 </div>

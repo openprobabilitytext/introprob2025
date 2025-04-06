@@ -1,4 +1,6 @@
+fig:ExCardDeck
 fundamentals-of-probability-and-its-axioms
 combinations-and-permutations
 permutations
+combinations
 basic-probability

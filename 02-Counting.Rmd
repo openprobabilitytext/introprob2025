@@ -7,7 +7,7 @@ Counting plays a very important role in probability. In probability, we often de
 Suppose a fair coin is flipped twice.What is the probability of flipping at least one head?
 
 **Solution:**
-The sample space of this experiment can expressed as $S=\{HH,HT,TH,TT\}$. Now, consider the event:
+The sample space of this experiment can expressed as             $S=\{HH,HT,TH,TT\}$. Now, consider the event:
 $$A=\{\text{At least one outcome is a head}\}$$
 Notice that $A\subset S$ ($A$ is a subset of $S$). Since $A=\{HH,HT,TH\},$ we can find the probability as follows:
 $$P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.$$
@@ -38,9 +38,9 @@ In general, if a 6-die is rolled $n$ times, then there are $6^n$ possible outcom
 **Example 1.3.** 
 Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords can be created,
 
-1. if the password is not case-sensitive. 
-2. if the first two symbols must be numbers. 
-3. if the first two symbols must be numbers and the rest should be letters.
+1. if the password is not case-sensitive?
+2. if the first two symbols must be numbers? 
+3. if the first two symbols must be numbers and the rest should be letters?
 
 **Solution:**
 
@@ -59,4 +59,89 @@ Total number of passwords = $36^4$.
 Total number of passwords not containing a letter = $10^4$. 
 Therefore, the number of passwords containing at least one letter is $$36^4-10^4.$$
 
+Imagine three objects labeled $A,B,$ and $C.$ The number of ways we can arrange these objects is called a *permutation.* These objects can be arranged in six different ways:
+$$ABC, ACB, BAC, BCA, CAB, CBA.$$
+The formula to find the number of permutations of $n$ *distinct* objects is $$n!=n\times (n-1)\times\cdots\times 2\times 1.$$
+For three distinct objects, the number of permutations is $3!=6.$
+
+**Example 1.5.**
+In a class, there are 4 sophomores, 7 juniors, and 3 seniors. 
+
+  1. How many ways are these students be arranged in a row? 
+  2. How many ways can these students be arranged if all the seniors should remain together? 
+  
+**Solution:** 
+
+1. $12!$
+2. Since the seniors must stand together, we think of the seniors as one ``block". Therefore, together with this block, 4 sophomores, and 7 juniors, there are 12 objects to be arranged. We can also arrange the three seniors within the block in $3!$ ways. Therefore, the total number of permutations is:
+
+```{r ExPemut, echo = FALSE, out.width='80%', out.height='50%'}
+knitr::include_graphics("class_example_permutations.png")
+```
+
+**Exercise 1.2.**
+    How many ways can the students be arranged if students from the same year should remain together? 
+
+**Exercise 1.3.**
+    How many ways can the students be arranged if two particular students do not wish to stand together? 
+    
+**Exercise 1.4.**
+    How many ways can the students be arranged if at most two seniors should be together? 
+
+Now let's learn how to find the permutations of objects that are non-distinct (some are identical). Consider the permutations of AAB. Since we have two identical objects, the number of permutations has to be less than $3!$ (since permuting the two ``A"s gives us the same arrangement). 
+
+**Theorem 1.1: Permutations of non-identical objects**
+Consider a set of $n$ objects of which $n_1$ objects are alike, $n_2$ objects are alike, $\dots$, $n_k$ objects are alike. Then, the number of permutations of these $n$ objects is given by
+    $$\frac{n!}{n_1!n_2!\cdots n_k!}$$
+
+**Example 1.6.**
+Find the number of ways the following words can be permuted:
+
+1. MATH
+2. BEEP
+3. COCO
+4. SUCCESS
+
+**Solution:** 
+
+1. 4 different letters. Therefore, number of permutations: $$4!.$$
+2. 4 letters word, 2 letters are alike. Therefore, number of permutations:  $$\frac{4!}{2!}.$$
+3. 4 letters word, 2 letters are alike and another 2 letters are alike. Therefore, number of permutations:  $$\frac{4!}{2!2!}.$$
+4. 7 letters word, 3 letters are alike and another 2 letters are alike. Therefore, number of permutations:  $$\frac{7!}{3!2!}.$$
  
+In each of the above questions, we make an adjustment for over-counting by diving by the permutations of identical objects.
+
+### Combinations
+Combinations are the number of ways a subset can be chosen from a larger set where the order of the selection does not matter. Consider a set of $n$ distinct objects. The number of ways a subset of $r\leq n$ objects can be chosen can be computed using the formula $${n\choose r} = \frac{n!}{r!(n-r)!}.$$
+The key point here is that, unlike in permutations, the order of the $r$ objects selected is irrelevant. 
+
+**Example 1.7.**
+ Suppose a shelf contains 10 distinct books out of which 4 are math books and the rest are physics books. 
+ 
+1. How many ways can 3 books be chosen where the order does not matter? 
+   
+2. How many ways can 4 books be chosen so that exactly two are math books? 
+
+**Solution:**
+1. $$10\choose 3$$
+
+2. The number of ways two math books can be chosen = $4\choose 2$\\
+  The number of ways two other books (non-math) can be chosen = $6\choose 2$\\
+
+Therefore, the total number of ways exactly two math books can be chosen is
+        $${4\choose 2}{6\choose 2}.$$
+
+**Exercise 1.5.**
+How many ways can at least one math book be chosen?
+
+**Exercise 1.6.**
+How many ways can at most one math book be chosen?
+
+
+Some questions in this course involves questions based on a deck of cards. This is the composition of a deck of cards:
+
+```{r ExCardDeck, echo = FALSE, out.width='80%', out.height='50%',fig.cap="Illustration of a standard deck of cards."}
+knitr::include_graphics("deckofcards.png")
+``` 
+
+
