@@ -23,7 +23,7 @@
 <meta name="author" content="Madhuka and Rajinda" />
 
 
-<meta name="date" content="2025-04-06" />
+<meta name="date" content="2025-04-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -649,10 +649,8 @@ non-distinct (some are identical). Consider the permutations of AAB.
 Since we have two identical objects, the number of permutations has to
 be less than <span class="math inline">\(3!\)</span> (since permuting the two ``A”s gives us the same
 arrangement).</p>
-<p><strong>Theorem 1.1: Permutations of non-identical objects</strong> Consider a set of
-<span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span> objects are alike,
-<span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of permutations of
-these <span class="math inline">\(n\)</span> objects is given by <span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
+<p><strong>Theorem 1.1: Permutations of non-identical objects</strong></p>
+<p>Consider a set of <span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span> objects are alike, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of permutations of these <span class="math inline">\(n\)</span> objects is given by <span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
 <p><strong>Example 1.6.</strong> Find the number of ways the following words can be
 permuted:</p>
 <ol style="list-style-type: decimal">
@@ -752,49 +750,61 @@ QQAAA,22299,etc.).</p>
 <div id="worked-examples" class="section level3 hasAnchor" number="1.1.3">
 <h3><span class="header-section-number">1.1.3</span> Worked Examples<a href="fundamentals-of-probability-and-its-axioms.html#worked-examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li>How many different ways can 5 cards be chosen from a deck of 52 if
+<li><p>How many different ways can 5 cards be chosen from a deck of 52 if
 exactly two of the cards are of the same value and the other three
-cards are of different values? (Example: AA5JQ, 66KQ2, etc.)</li>
-</ol>
-<p><strong>Solution:</strong> A standard deck of cards has 13 different valueS. We need
-to first choose a value and then pick two cards from that value. Since
-each value has 4 cards, we can do this in <span class="math inline">\(\binom{13}{1}\binom{4}{2}\)</span>
-ways. Thereafter, the other three cards must be picked from three other
-values. Since we have already picked 2 cards from one of the values,
-there are 12 values left to choose from. We first pick 3 values and then
-choose a card from each value. This can be done on
-<span class="math inline">\(\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}\)</span> ways. Therefore,
-the final answer is
-<span class="math display">\[\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.\]</span></p>
-<ol start="2" style="list-style-type: decimal">
-<li>How many ways can 5 cards be chosen from a standard 52-card deck if
-all 5 cards must have different values? (Ex: A2JQ3, 7J2Q4, etc.)</li>
-</ol>
-<p><strong>Solution:</strong> This is a little bit similar to the previous problem, but
-here we have to choose 5 distinct values. We first choose 5 values and
-then from each value, we pick a card. Therefore, the final answer is
-<span class="math display">\[\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.\]</span></p>
-<ol start="3" style="list-style-type: decimal">
-<li>A class consists of 40 seniors and 60 juniors. The teacher wants to
-form a committee consisting of 4 seniors and 6 juniors.</li>
-</ol>
+cards are of different values? (Example: AA5JQ, 66KQ2, etc.)</p></li>
+<li><p>How many ways can 5 cards be chosen from a standard 52-card deck if
+all 5 cards must have different values? (Ex: A2JQ3, 7J2Q4, etc.)</p></li>
+<li><p>A class consists of 40 seniors and 60 juniors. The teacher wants to
+form a committee consisting of 4 seniors and 6 juniors.</p>
 <ol style="list-style-type: lower-alpha">
 <li>How many ways can the committee be formed?</li>
-<li>How many ways can the committee be formed if two specific seniors do
-not wish to serve on the committee together?</li>
+<li>How many ways can the committee be formed if two specific
+seniors do not wish to serve on the committee together?</li>
 <li>Greg is one of the seniors in the class. How many different
 committees can be formed that include Greg as a member?</li>
+</ol></li>
+<li><p>Ten identical pieces of candy are to be distributed between four
+students - A,B,C,and D.</p>
+<ol style="list-style-type: lower-alpha">
+<li>How many ways can the candy be distributed?</li>
+<li>How many ways can the candy be distributed if <span class="math inline">\(A\)</span> must receive
+exactly two pieces?</li>
+<li>How many ways can the candy be distributed if A must receive at
+least two pieces?</li>
+</ol></li>
+<li><p>All the cards of deck of 52-cards are arranged in a line.</p>
+<ol style="list-style-type: lower-alpha">
+<li>How many ways can the cards be arranged such that the colors
+(red and black) alternate?</li>
+<li>How many ways can the cards be arranged if not all four Queens
+are together?</li>
+</ol></li>
 </ol>
 <p><strong>Solution:</strong></p>
-<ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(\binom{40}{4}\binom{60}{6}\)</span></p></li>
-<li><p>We will find the answer to this using an indirect method. Let’s
+<ol style="list-style-type: decimal">
+<li><p>A standard deck of cards has 13 different valueS. We need to first
+choose a value and then pick two cards from that value. Since each
+value has 4 cards, we can do this in <span class="math inline">\(\binom{13}{1}\binom{4}{2}\)</span>
+ways. Thereafter, the other three cards must be picked from three
+other values. Since we have already picked 2 cards from one of the
+values, there are 12 values left to choose from. We first pick 3
+values and then choose a card from each value. This can be done on
+<span class="math inline">\(\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}\)</span> ways. Therefore,
+the final answer is
+<span class="math display">\[\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.\]</span></p></li>
+<li><p>This is a little bit similar to the previous problem, but here we
+have to choose 5 distinct values. We first choose 5 values and then
+from each value, we pick a card. Therefore, the final answer is
+<span class="math display">\[\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.\]</span></p></li>
+<li><p>a. <span class="math inline">\(\binom{40}{4}\binom{60}{6}\)</span></p>
+<p>b. We will find the answer to this using an indirect method. Let’s
 first find the number of committees where the two specific students
 together. The set of seniors consists of these 2
 specific students and 38 other seniors. The number of ways we can
 choose 4 seniors where two specific students are always included in
-the committee is <span class="math inline">\(\binom{2}{2}\binom{38}{2}=\binom{38}{2}\)</span>.</p></li>
-<li><p>Since there are no restrictions for the juniors, the total number of
+the committee is <span class="math inline">\(\binom{2}{2}\binom{38}{2}=\binom{38}{2}.\)</span> Since
+there are no restrictions for the juniors, the total number of
 committees where these two specific students are in the committee is
 <span class="math inline">\(\binom{38}{2}\binom{60}{6}.\)</span> Since the total number of committees
 is <span class="math inline">\(\binom{40}{4}\binom{60}{6}\)</span> (this is what we found in part (a)),
@@ -804,30 +814,19 @@ of committees (this gives us the number of committees where only one
 of them are together or none of them are in the committee):
 <span class="math display">\[\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}.\]</span></p></li>
 </ol>
-<p><span class="math display">\[\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}.\]</span></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Ten identical pieces of candy are to be distributed between four
-students - A,B,C,and D.</li>
-</ol>
-<ol style="list-style-type: lower-alpha">
-<li><p>How many ways can the candy be distributed?</p></li>
-<li><p>How many ways can the candy be distributed if <span class="math inline">\(A\)</span> must receive
-exactly two pieces?</p></li>
-<li><p>How many ways can the candy be distributed if A must receive at
-least two pieces?</p></li>
-</ol>
-<p><strong>Solution:</strong></p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Let’s use <span class="math inline">\(X\)</span> to represent a piece of candy. We can use three lines
-(dividers) to divide the candy between the three students. For
-example <span class="math display">\[X|XX|XXX|XXXX\]</span> means A gets 1, B gets 2, C gets 3, and D
-gets 4. Similarly, <span class="math display">\[X||XX|XXXXXXX\]</span> means A receives 1, B receives
-none, C receives 2, and D receives 7. Therefore, we can find the
-total number of distributions by finding the total number of
-arrangements of the Xs and the lines. Since there are 10 Xs and
-three lines, but the 10 Xs are identical and the 3 lines are
-identical (total 13 objects), the total number of ways the candy can
-be distributed is <span class="math display">\[\frac{13!}{3!10!}=\binom{13}{3}.\]</span></p></li>
+<p>c.
+<span class="math display">\[\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}.\]</span>
+4. a. Let’s use <span class="math inline">\(X\)</span> to represent a piece of candy. We can use three
+lines (dividers) to divide the candy between the three students. For
+example <span class="math display">\[X|XX|XXX|XXXX\]</span> means A gets 1, B gets 2, C gets 3, and D gets
+4. Similarly, <span class="math display">\[X||XX|XXXXXXX\]</span> means A receives 1, B receives none, C
+receives 2, and D receives 7. Therefore, we can find the total number of
+distributions by finding the total number of arrangements of the Xs and
+the lines. Since there are 10 Xs and three lines, but the 10 Xs are
+identical and the 3 lines are identical (total 13 objects), the total
+number of ways the candy can be distributed is
+<span class="math display">\[\frac{13!}{3!10!}=\binom{13}{3}.\]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
 <li><p><span class="math display">\[\underbrace{XX}_{A\text{ receives 2
 }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between B,C,D}}.\]</span>
 This problems simplifies to 8 pieces of candy and three students -
@@ -840,27 +839,14 @@ candy, we distribute between all the 4 students. This way, A gets at
 least 2. <span class="math display">\[\underbrace{XX}_{A\text{ receives 2
 }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}.\]</span>
 Therefore, we have 8 Xs and 3 lines (total 11). The answer is
-<span class="math display">\[\frac{11!}{3!8!}=\binom{11}{3}.\]</span></p></li>
-</ol>
-<ol start="5" style="list-style-type: decimal">
-<li>All the cards of deck of 52-cards are arranged in a line.</li>
-</ol>
-<ol style="list-style-type: lower-alpha">
-<li>How many ways can the cards be arranged such that the colors (red
-and black) alternate?</li>
-<li>How many ways can the cards be arranged if not all four Queens are
-together?</li>
-</ol>
-<p><strong>Solution:</strong></p>
-<ol style="list-style-type: lower-alpha">
-<li>We can arrange the cards starting with a red card (RBRB…) or with
-a black card (BRBR…). Since there are 26 red cards and 26 black
-cards, the answer is <span class="math display">\[ 26!26!\cdot2.\]</span></li>
-<li>The total number of arrangements without any restrictions is 4!. The
-number of ways we arrange the cards keeping the queens
-together is <span class="math inline">\(4!49!\)</span> (48 other cards + one block of 4 queens = 49
-objects). Therefore, the number of arrangements where at least one
-queen is separated is <span class="math display">\[52!-49!4!.\]</span></li>
+<span class="math display">\[\frac{11!}{3!8!}=\binom{11}{3}.\]</span> 5.a. We can arrange the cards
+starting with a red card (RBRB…) or with a black card (BRBR…).
+Since there are 26 red cards and 26 black cards, the answer is
+<span class="math display">\[ 26!26!\cdot2.\]</span> b. The total number of arrangements without any
+restrictions is 4!. The number of ways we arrange the cards keeping
+the queens together is <span class="math inline">\(4!49!\)</span> (48 other cards + one
+block of 4 queens = 49 objects). Therefore, the number of
+arrangements where at least one queen is separated is <span class="math display">\[52!-49!4!.\]</span></p></li>
 </ol>
 
 </div>

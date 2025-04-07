@@ -133,10 +133,9 @@ Since we have two identical objects, the number of permutations has to
 be less than $3!$ (since permuting the two \`\`A"s gives us the same
 arrangement).
 
-**Theorem 1.1: Permutations of non-identical objects** Consider a set of
-$n$ objects of which $n_1$ objects are alike, $n_2$ objects are alike,
-$\dots$, $n_k$ objects are alike. Then, the number of permutations of
-these $n$ objects is given by $$\frac{n!}{n_1!n_2!\cdots n_k!}$$
+**Theorem 1.1: Permutations of non-identical objects** 
+
+Consider a set of $n$ objects of which $n_1$ objects are alike, $n_2$ objects are alike, $\dots$, $n_k$ objects are alike. Then, the number of permutations of these $n$ objects is given by $$\frac{n!}{n_1!n_2!\cdots n_k!}$$
 
 **Example 1.6.** Find the number of ways the following words can be
 permuted:
@@ -250,47 +249,61 @@ QQAAA,22299,etc.).
     exactly two of the cards are of the same value and the other three
     cards are of different values? (Example: AA5JQ, 66KQ2, etc.)
 
-**Solution:** A standard deck of cards has 13 different valueS. We need
-to first choose a value and then pick two cards from that value. Since
-each value has 4 cards, we can do this in $\binom{13}{1}\binom{4}{2}$
-ways. Thereafter, the other three cards must be picked from three other
-values. Since we have already picked 2 cards from one of the values,
-there are 12 values left to choose from. We first pick 3 values and then
-choose a card from each value. This can be done on
-$\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}$ ways. Therefore,
-the final answer is
-$$\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.$$
-
 2.  How many ways can 5 cards be chosen from a standard 52-card deck if
     all 5 cards must have different values? (Ex: A2JQ3, 7J2Q4, etc.)
-
-**Solution:** This is a little bit similar to the previous problem, but
-here we have to choose 5 distinct values. We first choose 5 values and
-then from each value, we pick a card. Therefore, the final answer is
-$$\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.$$
 
 3.  A class consists of 40 seniors and 60 juniors. The teacher wants to
     form a committee consisting of 4 seniors and 6 juniors.
 
+    a.  How many ways can the committee be formed?
+    b.  How many ways can the committee be formed if two specific
+        seniors do not wish to serve on the committee together?
+    c.  Greg is one of the seniors in the class. How many different
+        committees can be formed that include Greg as a member?
 
-a.  How many ways can the committee be formed?
-b.  How many ways can the committee be formed if two specific seniors do
-    not wish to serve on the committee together?
-c.  Greg is one of the seniors in the class. How many different
-    committees can be formed that include Greg as a member?
+4.  Ten identical pieces of candy are to be distributed between four
+    students - A,B,C,and D.
+
+    a.  How many ways can the candy be distributed?
+    b.  How many ways can the candy be distributed if $A$ must receive
+        exactly two pieces?
+    c.  How many ways can the candy be distributed if A must receive at
+        least two pieces?
+
+5.  All the cards of deck of 52-cards are arranged in a line.
+
+    a.  How many ways can the cards be arranged such that the colors
+        (red and black) alternate?
+    b.  How many ways can the cards be arranged if not all four Queens
+        are together?
 
 **Solution:**
 
-a.  $\binom{40}{4}\binom{60}{6}$
+1.  A standard deck of cards has 13 different valueS. We need to first
+    choose a value and then pick two cards from that value. Since each
+    value has 4 cards, we can do this in $\binom{13}{1}\binom{4}{2}$
+    ways. Thereafter, the other three cards must be picked from three
+    other values. Since we have already picked 2 cards from one of the
+    values, there are 12 values left to choose from. We first pick 3
+    values and then choose a card from each value. This can be done on
+    $\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}$ ways. Therefore,
+    the final answer is
+    $$\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.$$
 
-b.  We will find the answer to this using an indirect method. Let's
+2.  This is a little bit similar to the previous problem, but here we
+    have to choose 5 distinct values. We first choose 5 values and then
+    from each value, we pick a card. Therefore, the final answer is
+    $$\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.$$
+
+3.  a\. $\binom{40}{4}\binom{60}{6}$
+
+    b\. We will find the answer to this using an indirect method. Let's
     first find the number of committees where the two specific students
     \textit{are} together. The set of seniors consists of these 2
     specific students and 38 other seniors. The number of ways we can
     choose 4 seniors where two specific students are always included in
-    the committee is $\binom{2}{2}\binom{38}{2}=\binom{38}{2}$.
-
-c.  Since there are no restrictions for the juniors, the total number of
+    the committee is $\binom{2}{2}\binom{38}{2}=\binom{38}{2}.$ Since
+    there are no restrictions for the juniors, the total number of
     committees where these two specific students are in the committee is
     $\binom{38}{2}\binom{60}{6}.$ Since the total number of committees
     is $\binom{40}{4}\binom{60}{6}$ (this is what we found in part (a)),
@@ -300,31 +313,18 @@ c.  Since there are no restrictions for the juniors, the total number of
     of them are together or none of them are in the committee):
     $$\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}.$$
 
+c\.
 $$\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}.$$
-
-4.  Ten identical pieces of candy are to be distributed between four
-    students - A,B,C,and D.
-
-a.  How many ways can the candy be distributed?
-
-b.  How many ways can the candy be distributed if $A$ must receive
-    exactly two pieces?
-
-c.  How many ways can the candy be distributed if A must receive at
-    least two pieces?
-
-**Solution:**
-
-a.  Let's use $X$ to represent a piece of candy. We can use three lines
-    (dividers) to divide the candy between the three students. For
-    example $$X|XX|XXX|XXXX$$ means A gets 1, B gets 2, C gets 3, and D
-    gets 4. Similarly, $$X||XX|XXXXXXX$$ means A receives 1, B receives
-    none, C receives 2, and D receives 7. Therefore, we can find the
-    total number of distributions by finding the total number of
-    arrangements of the Xs and the lines. Since there are 10 Xs and
-    three lines, but the 10 Xs are identical and the 3 lines are
-    identical (total 13 objects), the total number of ways the candy can
-    be distributed is $$\frac{13!}{3!10!}=\binom{13}{3}.$$
+4. a. Let's use $X$ to represent a piece of candy. We can use three
+lines (dividers) to divide the candy between the three students. For
+example $$X|XX|XXX|XXXX$$ means A gets 1, B gets 2, C gets 3, and D gets
+4. Similarly, $$X||XX|XXXXXXX$$ means A receives 1, B receives none, C
+receives 2, and D receives 7. Therefore, we can find the total number of
+distributions by finding the total number of arrangements of the Xs and
+the lines. Since there are 10 Xs and three lines, but the 10 Xs are
+identical and the 3 lines are identical (total 13 objects), the total
+number of ways the candy can be distributed is
+$$\frac{13!}{3!10!}=\binom{13}{3}.$$
 
 b.  $$\underbrace{XX}_{A\text{ receives 2 
      }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between B,C,D}}.$$
@@ -339,24 +339,11 @@ c.  This is similar to the previous part. Initially, we give A two
     least 2. $$\underbrace{XX}_{A\text{ receives 2 
      }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}.$$
     Therefore, we have 8 Xs and 3 lines (total 11). The answer is
-    $$\frac{11!}{3!8!}=\binom{11}{3}.$$
-
-
-5.  All the cards of deck of 52-cards are arranged in a line.
-
-
-a.  How many ways can the cards be arranged such that the colors (red
-    and black) alternate?
-b.  How many ways can the cards be arranged if not all four Queens are
-    together?
-
-**Solution:**
-
-a.  We can arrange the cards starting with a red card (RBRB...) or with
-    a black card (BRBR...). Since there are 26 red cards and 26 black
-    cards, the answer is $$ 26!26!\cdot2.$$
-b.  The total number of arrangements without any restrictions is 4!. The
-    number of ways we arrange the cards keeping \textit{all} the queens
-    together is $4!49!$ (48 other cards + one block of 4 queens = 49
-    objects). Therefore, the number of arrangements where at least one
-    queen is separated is $$52!-49!4!.$$
+    $$\frac{11!}{3!8!}=\binom{11}{3}.$$ 5.a. We can arrange the cards
+    starting with a red card (RBRB...) or with a black card (BRBR...).
+    Since there are 26 red cards and 26 black cards, the answer is
+    $$ 26!26!\cdot2.$$ b. The total number of arrangements without any
+    restrictions is 4!. The number of ways we arrange the cards keeping
+    \textit{all} the queens together is $4!49!$ (48 other cards + one
+    block of 4 queens = 49 objects). Therefore, the number of
+    arrangements where at least one queen is separated is $$52!-49!4!.$$
