@@ -1,9 +1,11 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-]{book}
+  12pt,
+  krantz]{krantzNoCorner}
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
 \ifPDFTeX
@@ -132,20 +134,6 @@
 \usepackage{makeidx}
 \makeindex
 
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -157,17 +145,22 @@
 \hypersetup{
   pdftitle={Introduction to Probability},
   pdfauthor={Madhuka and Rajinda},
-  hidelinks,
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
 \title{Introduction to Probability}
 \author{Madhuka and Rajinda}
-\date{2025-04-01}
+\date{2025-04-06}
 
 \begin{document}
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
@@ -175,63 +168,32 @@
 \chapter*{Preface}\label{preface}}
 
 
-Introduction to Probability is a freely available textbook for MATH350 students.
+Introduction to Probability is a freely available textbook designed for MATH350 students.
 
 \begin{itemize}
 \tightlist
 \item
-  This version contains variety of examples to learn the probability concepts in your own phase.
+  This edition includes a variety of examples to help you learn probability concepts at your own pace.
 \item
-  The book can be downloaded as a pdf.
+  The book is available for download as a PDF.
 \end{itemize}
 
 \hypertarget{fundamentals-of-probability-and-its-axioms}{%
 \chapter{Fundamentals of Probability and its Axioms}\label{fundamentals-of-probability-and-its-axioms}}
 
+Placeholder
+
 \hypertarget{combinations-and-permutations}{%
 \section{Combinations and Permutations}\label{combinations-and-permutations}}
-
-Counting plays a very important role in probability. In probability, we often deal with sets, and counting methods such as combinations and permutations help us find the number of elements in a set. Specifically, in probability, we deal with a set called the \textbf{sample space} which is the set of all possible outcomes of some random experiment and \textbf{events}, which are subsets of the sample space. Typically, the sample space is denoted by \(S\) or \(\Omega.\) Consider the following example:
-
-\textbf{Example 1.1.}
-Suppose a fair coin is flipped twice.What is the probability of flipping at least one head?
-
-\textbf{Solution:}
-The sample space of this experiment can expressed as \(S=\{HH,HT,TH,TT\}\). Now, consider the event:
-\[A=\{\text{At least one outcome is a head}\}\]
-Notice that \(A\subset S\) (\(A\) is a subset of \(S\)). Since \(A=\{HH,HT,TH\},\) we can find the probability as follows:
-\[P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.\]
-
-The above method of computing the probability of an event, while very useful, is not always suitable for the following reasons:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Each outcome has to be equally likely.
-\item
-  The sets must be countable.
-\end{enumerate}
-
-From the previous example, it is clear that counting the number of elements of sets is very important when dealing with discrete sets. We will do this more efficiently by utilizing tools from combinations and permutations.
 
 \hypertarget{permutations}{%
 \subsection{Permutations}\label{permutations}}
 
-We will begin by stating the following crucial theorem.
+\hypertarget{combinations}{%
+\subsection{Combinations}\label{combinations}}
 
-\textbf{Theorem 1.1: The Fundamental Principle of Counting}
-
-Consider \(k\) experiments. Let \(n_i\) denote the number of possible outcomes of the \(i\)th experiment where \(i=1,2,\dots,k.\) Then the total of number of possible outcomes is
-\[n_1\times n_2\times\cdots\times n_k.\]
-
-\textbf{Example 1.2.}
-Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords contain at least one letter?
-
-\textbf{Solution:}
-Total number of passwords = \(36^4\)
-Total number of passwords not containing a letter = \(10^4\)
-Therefore, the number of passwords containing at least one letter is \[36^4-10^4.\]
+\hypertarget{worked-examples}{%
+\subsection{Worked Examples}\label{worked-examples}}
 
 \hypertarget{basic-probability}{%
 \chapter{Basic Probability}\label{basic-probability}}
