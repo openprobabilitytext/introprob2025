@@ -519,6 +519,7 @@ window.onload = function() {
 <ul>
 <li class="chapter" data-level="1.1.1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#permutations"><i class="fa fa-check"></i><b>1.1.1</b> Permutations</a></li>
 <li class="chapter" data-level="1.1.2" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#combinations"><i class="fa fa-check"></i><b>1.1.2</b> Combinations</a></li>
+<li class="chapter" data-level="1.1.3" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#worked-examples"><i class="fa fa-check"></i><b>1.1.3</b> Worked Examples</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="basic-probability.html"><a href="basic-probability.html"><i class="fa fa-check"></i><b>2</b> Basic Probability</a></li>
@@ -546,80 +547,114 @@ window.onload = function() {
 <h1><span class="header-section-number">Chapter 1</span> Fundamentals of Probability and its Axioms<a href="fundamentals-of-probability-and-its-axioms.html#fundamentals-of-probability-and-its-axioms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="combinations-and-permutations" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Combinations and Permutations<a href="fundamentals-of-probability-and-its-axioms.html#combinations-and-permutations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Counting plays a very important role in probability. In probability, we often deal with sets, and counting methods such as combinations and permutations help us find the number of elements in a set. Specifically, in probability, we deal with a set called the <strong>sample space</strong> which is the set of all possible outcomes of some random experiment and <strong>events</strong>, which are subsets of the sample space. Typically, the sample space is denoted by <span class="math inline">\(S\)</span> or <span class="math inline">\(\Omega.\)</span> Consider the following example:</p>
-<p><strong>Example 1.1.</strong>
-Suppose a fair coin is flipped twice.What is the probability of flipping at least one head?</p>
-<p><strong>Solution:</strong>
-The sample space of this experiment can expressed as <span class="math inline">\(S=\{HH,HT,TH,TT\}\)</span>. Now, consider the event:
-<span class="math display">\[A=\{\text{At least one outcome is a head}\}\]</span>
-Notice that <span class="math inline">\(A\subset S\)</span> (<span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(S\)</span>). Since <span class="math inline">\(A=\{HH,HT,TH\},\)</span> we can find the probability as follows:
+<p>Counting plays a very important role in probability. In probability, we
+often deal with sets, and counting methods such as combinations and
+permutations help us find the number of elements in a set. Specifically,
+in probability, we deal with a set called the <strong>sample space</strong> which is
+the set of all possible outcomes of some random experiment and
+<strong>events</strong>, which are subsets of the sample space. Typically, the sample
+space is denoted by <span class="math inline">\(S\)</span> or <span class="math inline">\(\Omega.\)</span> Consider the following example:</p>
+<p><strong>Example 1.1.</strong> Suppose a fair coin is flipped twice.What is the
+probability of flipping at least one head?</p>
+<p><strong>Solution:</strong></p>
+<p>The sample space of this experiment can expressed as
+<span class="math inline">\(S=\{HH,HT,TH,TT\}\)</span>. Now, consider the event:
+<span class="math display">\[A=\{\text{At least one outcome is a head}\}\]</span> Notice that <span class="math inline">\(A\subset S\)</span>
+(<span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(S\)</span>). Since <span class="math inline">\(A=\{HH,HT,TH\},\)</span> we can find the
+probability as follows:
 <span class="math display">\[P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.\]</span></p>
-<p>The above method of computing the probability of an event, while very useful, is not always suitable for the following reasons:</p>
+<p>The above method of computing the probability of an event, while very
+useful, is not always suitable for the following reasons:</p>
 <ol style="list-style-type: decimal">
 <li>Each outcome has to be equally likely.</li>
 <li>The sets must be countable.</li>
 </ol>
-<p>From the previous example, it is clear that counting the number of elements of sets is very important when dealing with discrete sets. We will do this more efficiently by utilizing tools from combinations and permutations.</p>
+<p>From the previous example, it is clear that counting the number of
+elements of sets is very important when dealing with discrete sets. We
+will do this more efficiently by utilizing tools from combinations and
+permutations.</p>
 <div id="permutations" class="section level3 hasAnchor" number="1.1.1">
 <h3><span class="header-section-number">1.1.1</span> Permutations<a href="fundamentals-of-probability-and-its-axioms.html#permutations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We will begin by stating the following crucial theorem.</p>
 <p><strong>Theorem 1.1: The Fundamental Principle of Counting</strong></p>
-<p>Consider <span class="math inline">\(k\)</span> experiments. Let <span class="math inline">\(n_i\)</span> denote the number of possible outcomes of the <span class="math inline">\(i\)</span>th experiment where <span class="math inline">\(i=1,2,\dots,k.\)</span> Then the total of number of possible outcomes is
-<span class="math display">\[n_1\times n_2\times\cdots\times n_k.\]</span>
-<strong>Example 1.2.</strong>
-A 6-sided die is rolled twice. How many possible outcomes are there?</p>
-<p><strong>Solution:</strong>
-First roll has 6 outcomes and the second roll has 6 outcomes. Therefore, there are <span class="math inline">\(6\times 6 = 36\)</span> possible outcomes when a dice rolled twice.</p>
-<p>In general, if a 6-die is rolled <span class="math inline">\(n\)</span> times, then there are <span class="math inline">\(6^n\)</span> possible outcomes.</p>
-<p><strong>Example 1.3.</strong>
-Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords can be created,</p>
+<p>Consider <span class="math inline">\(k\)</span> experiments. Let <span class="math inline">\(n_i\)</span> denote the number of possible
+outcomes of the <span class="math inline">\(i\)</span>th experiment where <span class="math inline">\(i=1,2,\dots,k.\)</span> Then the total
+of number of possible outcomes is
+<span class="math display">\[n_1\times n_2\times\cdots\times n_k.\]</span> <strong>Example 1.2.</strong> A 6-sided die
+is rolled twice. How many possible outcomes are there?</p>
+<p><strong>Solution:</strong></p>
+<p>First roll has 6 outcomes and the second roll has 6 outcomes. Therefore,
+there are <span class="math inline">\(6\times 6 = 36\)</span> possible outcomes when a dice rolled twice.</p>
+<p>In general, if a 6-die is rolled <span class="math inline">\(n\)</span> times, then there are <span class="math inline">\(6^n\)</span>
+possible outcomes.</p>
+<p><strong>Example 1.3.</strong> Suppose a password must contain exactly 4 symbols,
+where each symbol is either a letter (a-z) or a number (0-9). How many
+passwords can be created,</p>
 <ol style="list-style-type: decimal">
 <li>if the password is not case-sensitive?</li>
 <li>if the first two symbols must be numbers?</li>
-<li>if the first two symbols must be numbers and the rest should be letters?</li>
+<li>if the first two symbols must be numbers and the rest should be
+letters?</li>
 </ol>
 <p><strong>Solution:</strong></p>
 <ol style="list-style-type: decimal">
-<li>If the password is not case-sensitive, then there are <span class="math inline">\(36\times36\times36\times36\)</span> different passwords.</li>
-<li>If the first two symbols must be numbers, then there are <span class="math inline">\(10\times10\times36\times36\)</span> different passwords.</li>
-<li>If the first two symbols must be numbers and the rest should be letters, then there are <span class="math inline">\(10\times10\times26\times26\)</span> different passwords.</li>
+<li>If the password is not case-sensitive, then there are
+<span class="math inline">\(36\times36\times36\times36\)</span> different passwords.</li>
+<li>If the first two symbols must be numbers, then there are
+<span class="math inline">\(10\times10\times36\times36\)</span> different passwords.</li>
+<li>If the first two symbols must be numbers and the rest should be
+letters, then there are <span class="math inline">\(10\times10\times26\times26\)</span> different
+passwords.</li>
 </ol>
-<p><strong>Exercise 1.1.</strong>
-Repeat the above example assuming the password is case-sensitive.</p>
-<p><strong>Example 1.4:</strong>
-Suppose a password must contain exactly 4 symbols, where each symbol is either a letter (a-z) or a number (0-9). How many passwords contain at least one letter?</p>
-<p><strong>Solution:</strong>
-Total number of passwords = <span class="math inline">\(36^4\)</span>.
-Total number of passwords not containing a letter = <span class="math inline">\(10^4\)</span>.
-Therefore, the number of passwords containing at least one letter is <span class="math display">\[36^4-10^4.\]</span></p>
-<p>Imagine three objects labeled <span class="math inline">\(A,B,\)</span> and <span class="math inline">\(C.\)</span> The number of ways we can arrange these objects is called a <em>permutation.</em> These objects can be arranged in six different ways:
-<span class="math display">\[ABC, ACB, BAC, BCA, CAB, CBA.\]</span>
-The formula to find the number of permutations of <span class="math inline">\(n\)</span> <em>distinct</em> objects is <span class="math display">\[n!=n\times (n-1)\times\cdots\times 2\times 1.\]</span>
-For three distinct objects, the number of permutations is <span class="math inline">\(3!=6.\)</span></p>
-<p><strong>Example 1.5.</strong>
-In a class, there are 4 sophomores, 7 juniors, and 3 seniors.</p>
+<p><strong>Exercise 1.1.</strong> Repeat the above example assuming the password is
+case-sensitive.</p>
+<p><strong>Example 1.4:</strong> Suppose a password must contain exactly 4 symbols,
+where each symbol is either a letter (a-z) or a number (0-9). How many
+passwords contain at least one letter?</p>
+<p><strong>Solution:</strong></p>
+<p>Total number of passwords = <span class="math inline">\(36^4\)</span>. Total number of passwords not
+containing a letter = <span class="math inline">\(10^4\)</span>. Therefore, the number of passwords
+containing at least one letter is <span class="math display">\[36^4-10^4.\]</span></p>
+<p>Imagine three objects labeled <span class="math inline">\(A,B,\)</span> and <span class="math inline">\(C.\)</span> The number of ways we can
+arrange these objects is called a <em>permutation.</em> These objects can be
+arranged in six different ways: <span class="math display">\[ABC, ACB, BAC, BCA, CAB, CBA.\]</span> The
+formula to find the number of permutations of <span class="math inline">\(n\)</span> <em>distinct</em> objects is
+<span class="math display">\[n!=n\times (n-1)\times\cdots\times 2\times 1.\]</span> For three distinct
+objects, the number of permutations is <span class="math inline">\(3!=6.\)</span></p>
+<p><strong>Example 1.5.</strong> In a class, there are 4 sophomores, 7 juniors, and 3
+seniors.</p>
 <ol style="list-style-type: decimal">
 <li>How many ways are these students be arranged in a row?</li>
-<li>How many ways can these students be arranged if all the seniors should remain together?</li>
+<li>How many ways can these students be arranged if all the seniors
+should remain together?</li>
 </ol>
 <p><strong>Solution:</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(12!\)</span></li>
-<li>Since the seniors must stand together, we think of the seniors as one ``block”. Therefore, together with this block, 4 sophomores, and 7 juniors, there are 12 objects to be arranged. We can also arrange the three seniors within the block in <span class="math inline">\(3!\)</span> ways. Therefore, the total number of permutations is:</li>
+<li>Since the seniors must stand together, we think of the seniors as
+one ``block”. Therefore, together with this block, 4 sophomores,
+and 7 juniors, there are 12 objects to be arranged. We can also
+arrange the three seniors within the block in <span class="math inline">\(3!\)</span> ways. Therefore,
+the total number of permutations is:</li>
 </ol>
 <p><img src="class_example_permutations.png" width="80%" height="50%" style="display: block; margin: auto;" /></p>
-<p><strong>Exercise 1.2.</strong>
-How many ways can the students be arranged if students from the same year should remain together?</p>
-<p><strong>Exercise 1.3.</strong>
-How many ways can the students be arranged if two particular students do not wish to stand together?</p>
-<p><strong>Exercise 1.4.</strong>
-How many ways can the students be arranged if at most two seniors should be together?</p>
-<p>Now let’s learn how to find the permutations of objects that are non-distinct (some are identical). Consider the permutations of AAB. Since we have two identical objects, the number of permutations has to be less than <span class="math inline">\(3!\)</span> (since permuting the two ``A”s gives us the same arrangement).</p>
-<p><strong>Theorem 1.1: Permutations of non-identical objects</strong>
-Consider a set of <span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span> objects are alike, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of permutations of these <span class="math inline">\(n\)</span> objects is given by
-<span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
-<p><strong>Example 1.6.</strong>
-Find the number of ways the following words can be permuted:</p>
+<p><strong>Exercise 1.2.</strong> How many ways can the students be arranged if students
+from the same year should remain together?</p>
+<p><strong>Exercise 1.3.</strong> How many ways can the students be arranged if two
+particular students do not wish to stand together?</p>
+<p><strong>Exercise 1.4.</strong> How many ways can the students be arranged if at most
+two seniors should be together?</p>
+<p>Now let’s learn how to find the permutations of objects that are
+non-distinct (some are identical). Consider the permutations of AAB.
+Since we have two identical objects, the number of permutations has to
+be less than <span class="math inline">\(3!\)</span> (since permuting the two ``A”s gives us the same
+arrangement).</p>
+<p><strong>Theorem 1.1: Permutations of non-identical objects</strong> Consider a set of
+<span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span> objects are alike,
+<span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of permutations of
+these <span class="math inline">\(n\)</span> objects is given by <span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
+<p><strong>Example 1.6.</strong> Find the number of ways the following words can be
+permuted:</p>
 <ol style="list-style-type: decimal">
 <li>MATH</li>
 <li>BEEP</li>
@@ -629,41 +664,208 @@ Find the number of ways the following words can be permuted:</p>
 <p><strong>Solution:</strong></p>
 <ol style="list-style-type: decimal">
 <li>4 different letters. Therefore, number of permutations: <span class="math display">\[4!.\]</span></li>
-<li>4 letters word, 2 letters are alike. Therefore, number of permutations: <span class="math display">\[\frac{4!}{2!}.\]</span></li>
-<li>4 letters word, 2 letters are alike and another 2 letters are alike. Therefore, number of permutations: <span class="math display">\[\frac{4!}{2!2!}.\]</span></li>
-<li>7 letters word, 3 letters are alike and another 2 letters are alike. Therefore, number of permutations: <span class="math display">\[\frac{7!}{3!2!}.\]</span></li>
+<li>4 letters word, 2 letters are alike. Therefore, number of
+permutations: <span class="math display">\[\frac{4!}{2!}.\]</span></li>
+<li>4 letters word, 2 letters are alike and another 2 letters are alike.
+Therefore, number of permutations: <span class="math display">\[\frac{4!}{2!2!}.\]</span></li>
+<li>7 letters word, 3 letters are alike and another 2 letters are alike.
+Therefore, number of permutations: <span class="math display">\[\frac{7!}{3!2!}.\]</span></li>
 </ol>
-<p>In each of the above questions, we make an adjustment for over-counting by diving by the permutations of identical objects.</p>
+<p>In each of the above questions, we make an adjustment for over-counting
+by diving by the permutations of identical objects.</p>
 </div>
 <div id="combinations" class="section level3 hasAnchor" number="1.1.2">
 <h3><span class="header-section-number">1.1.2</span> Combinations<a href="fundamentals-of-probability-and-its-axioms.html#combinations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Combinations are the number of ways a subset can be chosen from a larger set where the order of the selection does not matter. Consider a set of <span class="math inline">\(n\)</span> distinct objects. The number of ways a subset of <span class="math inline">\(r\leq n\)</span> objects can be chosen can be computed using the formula <span class="math display">\[{n\choose r} = \frac{n!}{r!(n-r)!}.\]</span>
-The key point here is that, unlike in permutations, the order of the <span class="math inline">\(r\)</span> objects selected is irrelevant.</p>
-<p><strong>Example 1.7.</strong>
-Suppose a shelf contains 10 distinct books out of which 4 are math books and the rest are physics books.</p>
+<p>Combinations are the number of ways a subset can be chosen from a larger
+set where the order of the selection does not matter. Consider a set of
+<span class="math inline">\(n\)</span> distinct objects. The number of ways a subset of <span class="math inline">\(r\leq n\)</span> objects
+can be chosen can be computed using the formula
+<span class="math display">\[{n\choose r} = \frac{n!}{r!(n-r)!}.\]</span> The key point here is that,
+unlike in permutations, the order of the <span class="math inline">\(r\)</span> objects selected is
+irrelevant.</p>
+<p><strong>Example 1.7.</strong> Suppose a shelf contains 10 distinct books out of which
+4 are math books and the rest are physics books.</p>
 <ol style="list-style-type: decimal">
 <li><p>How many ways can 3 books be chosen where the order does not matter?</p></li>
-<li><p>How many ways can 4 books be chosen so that exactly two are math books?</p></li>
+<li><p>How many ways can 4 books be chosen so that exactly two are math
+books?</p></li>
 </ol>
-<p><strong>Solution:</strong>
-1. <span class="math display">\[10\choose 3\]</span></p>
-<ol start="2" style="list-style-type: decimal">
-<li>The number of ways two math books can be chosen = <span class="math inline">\(4\choose 2\)</span>\
-The number of ways two other books (non-math) can be chosen = <span class="math inline">\(6\choose 2\)</span>\</li>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(10\choose 3\)</span></p></li>
+<li><p>The number of ways two math books can be chosen = <span class="math inline">\(4\choose 2\)</span>\ The
+number of ways two other books (non-math) can be chosen =
+<span class="math inline">\(6\choose 2\)</span>\</p></li>
 </ol>
-<p>Therefore, the total number of ways exactly two math books can be chosen is
-<span class="math display">\[{4\choose 2}{6\choose 2}.\]</span></p>
-<p><strong>Exercise 1.5.</strong>
-How many ways can at least one math book be chosen?</p>
-<p><strong>Exercise 1.6.</strong>
-How many ways can at most one math book be chosen?</p>
-<p>Some questions in this course involves questions based on a deck of cards. This is the composition of a deck of cards:</p>
+<p>Therefore, the total number of ways exactly two math books can be chosen
+is <span class="math display">\[{4\choose 2}{6\choose 2}.\]</span></p>
+<p><strong>Exercise 1.5.</strong> How many ways can at least one math book be chosen?</p>
+<p><strong>Exercise 1.6.</strong> How many ways can at most one math book be chosen?</p>
+<p>Some questions in this course involves questions based on a deck of
+cards. This is the composition of a deck of cards:</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:ExCardDeck"></span>
-<img src="deckofcards.png" alt="Illustration of a standard deck of cards." width="80%" height="50%" />
+<img src="deckofcards.png" alt="Illustration of a standard deck of cards. Source: Missouri Western State University (https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf)" width="80%" height="50%" />
 <p class="caption">
-Figure 1.1: Illustration of a standard deck of cards.
+Figure 1.1: Illustration of a standard deck of cards. Source: Missouri Western State University (<a href="https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf" class="uri">https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf</a>)
 </p>
 </div>
+<p>In the Figure <code><a href="fundamentals-of-probability-and-its-axioms.html#fig:ExCardDeck">1.1</a></code>, the columns represent the
+different <strong>values</strong> or <strong>denominations</strong> and the rows represent the
+four <strong>suits.</strong> The last three values, Jack, Queen, and King are called
+<strong>face cards.</strong></p>
+<p><strong>Example 1.8.</strong> Consider a deck of 52 cards.</p>
+<ol style="list-style-type: decimal">
+<li>How many ways can 5 cards be chosen?</li>
+<li>How many ways can 5 cards be chosen if exactly 2 cards must be
+Queens?</li>
+<li>How many ways can 5 cards be chosen if exactly 2 Queens and 2 Kings
+must be chosen?</li>
+<li>How many ways can we choose 5 cards such that exactly two have the
+same value?</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\binom{52}{5}\)</span></p></li>
+<li><p>A deck of cards has 4 Queens. We first choose two Queens from the
+set of 4 Queens and 3 additional cards are chosen from the remaining
+48 cards (since 52-4 = 48). Therefore, the answer is
+$$\binom{4}{2}\binom{48}{3}.$$</p></li>
+<li><p><span class="math inline">\(\binom{4}{2}\binom{4}{2}\binom{44}{1}\)</span></p></li>
+<li><p>There are 13 different values in a deck of cards: Ace, 2, 3, …,
+Q, K. Each value appears on 4 cards. To choose two cards from the
+same value, we first pick a value. This can be done in
+<span class="math inline">\(\binom{13}{1}=13\)</span> ways. Thereafter, we choose 2 cards from the 4
+cards of this chosen value. This can be done in <span class="math inline">\(\binom{4}{2}\)</span> ways.
+Now we choose 3 additional cards that are different from this value.
+However, we also must make sure that we do not pick more than one
+card from another value. Out of the 12 values left, we first choose
+three values (<span class="math inline">\(\binom{12}{3}\)</span>ways), and then from each value, we
+choose a card (<span class="math inline">\(\binom{4}{1}^3=4^3\)</span> ways). Therefore, the final
+answer is <span class="math display">\[13\cdot\binom{4}{2}\cdot \binom{12}{3}\cdot 4^3.\]</span></p></li>
+</ol>
+<p><strong>Exercise 1.7.</strong> How many ways can five cards be chosen such that all
+the values are unique?</p>
+<p><strong>Exercise 1.8.</strong> How many ways can five cards be chosen such that two
+cards are of one value and three cards of another value? (For example,
+QQAAA,22299,etc.).</p>
+</div>
+<div id="worked-examples" class="section level3 hasAnchor" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Worked Examples<a href="fundamentals-of-probability-and-its-axioms.html#worked-examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>How many different ways can 5 cards be chosen from a deck of 52 if
+exactly two of the cards are of the same value and the other three
+cards are of different values? (Example: AA5JQ, 66KQ2, etc.)</li>
+</ol>
+<p><strong>Solution:</strong> A standard deck of cards has 13 different valueS. We need
+to first choose a value and then pick two cards from that value. Since
+each value has 4 cards, we can do this in <span class="math inline">\(\binom{13}{1}\binom{4}{2}\)</span>
+ways. Thereafter, the other three cards must be picked from three other
+values. Since we have already picked 2 cards from one of the values,
+there are 12 values left to choose from. We first pick 3 values and then
+choose a card from each value. This can be done on
+<span class="math inline">\(\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}\)</span> ways. Therefore,
+the final answer is
+<span class="math display">\[\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.\]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>How many ways can 5 cards be chosen from a standard 52-card deck if
+all 5 cards must have different values? (Ex: A2JQ3, 7J2Q4, etc.)</li>
+</ol>
+<p><strong>Solution:</strong> This is a little bit similar to the previous problem, but
+here we have to choose 5 distinct values. We first choose 5 values and
+then from each value, we pick a card. Therefore, the final answer is
+<span class="math display">\[\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li>A class consists of 40 seniors and 60 juniors. The teacher wants to
+form a committee consisting of 4 seniors and 6 juniors.</li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li>How many ways can the committee be formed?</li>
+<li>How many ways can the committee be formed if two specific seniors do
+not wish to serve on the committee together?</li>
+<li>Greg is one of the seniors in the class. How many different
+committees can be formed that include Greg as a member?</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(\binom{40}{4}\binom{60}{6}\)</span></p></li>
+<li><p>We will find the answer to this using an indirect method. Let’s
+first find the number of committees where the two specific students
+together. The set of seniors consists of these 2
+specific students and 38 other seniors. The number of ways we can
+choose 4 seniors where two specific students are always included in
+the committee is <span class="math inline">\(\binom{2}{2}\binom{38}{2}=\binom{38}{2}\)</span>.</p></li>
+<li><p>Since there are no restrictions for the juniors, the total number of
+committees where these two specific students are in the committee is
+<span class="math inline">\(\binom{38}{2}\binom{60}{6}.\)</span> Since the total number of committees
+is <span class="math inline">\(\binom{40}{4}\binom{60}{6}\)</span> (this is what we found in part (a)),
+we can find the answer to this question by subtracting the number of
+committees where the two students are together from the total number
+of committees (this gives us the number of committees where only one
+of them are together or none of them are in the committee):
+<span class="math display">\[\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}.\]</span></p></li>
+</ol>
+<p><span class="math display">\[\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}.\]</span></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Ten identical pieces of candy are to be distributed between four
+students - A,B,C,and D.</li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li><p>How many ways can the candy be distributed?</p></li>
+<li><p>How many ways can the candy be distributed if <span class="math inline">\(A\)</span> must receive
+exactly two pieces?</p></li>
+<li><p>How many ways can the candy be distributed if A must receive at
+least two pieces?</p></li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Let’s use <span class="math inline">\(X\)</span> to represent a piece of candy. We can use three lines
+(dividers) to divide the candy between the three students. For
+example <span class="math display">\[X|XX|XXX|XXXX\]</span> means A gets 1, B gets 2, C gets 3, and D
+gets 4. Similarly, <span class="math display">\[X||XX|XXXXXXX\]</span> means A receives 1, B receives
+none, C receives 2, and D receives 7. Therefore, we can find the
+total number of distributions by finding the total number of
+arrangements of the Xs and the lines. Since there are 10 Xs and
+three lines, but the 10 Xs are identical and the 3 lines are
+identical (total 13 objects), the total number of ways the candy can
+be distributed is <span class="math display">\[\frac{13!}{3!10!}=\binom{13}{3}.\]</span></p></li>
+<li><p><span class="math display">\[\underbrace{XX}_{A\text{ receives 2
+}}\underbrace{XXXXXXXX}_{\text{Distribute the rest between B,C,D}}.\]</span>
+This problems simplifies to 8 pieces of candy and three students -
+B,C,D. To distribute between 3 students, we need 2 lines. Therefore,
+the total number of distributions is
+<span class="math display">\[\frac{10!}{2!8!}=\binom{10}{2}.\]</span></p></li>
+<li><p>This is similar to the previous part. Initially, we give A two
+pieces of candy. However, when we distribute the other 8 pieces of
+candy, we distribute between all the 4 students. This way, A gets at
+least 2. <span class="math display">\[\underbrace{XX}_{A\text{ receives 2
+}}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}.\]</span>
+Therefore, we have 8 Xs and 3 lines (total 11). The answer is
+<span class="math display">\[\frac{11!}{3!8!}=\binom{11}{3}.\]</span></p></li>
+</ol>
+<!-- -->
+<ol start="5" style="list-style-type: decimal">
+<li>All the cards of deck of 52-cards are arranged in a line.</li>
+</ol>
+<!-- -->
+<ol style="list-style-type: lower-alpha">
+<li>How many ways can the cards be arranged such that the colors (red
+and black) alternate?</li>
+<li>How many ways can the cards be arranged if not all four Queens are
+together?</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li>We can arrange the cards starting with a red card (RBRB…) or with
+a black card (BRBR…). Since there are 26 red cards and 26 black
+cards, the answer is <span class="math display">\[ 26!26!\cdot2.\]</span></li>
+<li>The total number of arrangements without any restrictions is 4!. The
+number of ways we arrange the cards keeping the queens
+together is <span class="math inline">\(4!49!\)</span> (48 other cards + one block of 4 queens = 49
+objects). Therefore, the number of arrangements where at least one
+queen is separated is <span class="math display">\[52!-49!4!.\]</span></li>
+</ol>
 
 </div>
 </div>
