@@ -347,3 +347,53 @@ c.  This is similar to the previous part. Initially, we give A two
     \textit{all} the queens together is $4!49!$ (48 other cards + one
     block of 4 queens = 49 objects). Therefore, the number of
     arrangements where at least one queen is separated is $$52!-49!4!.$$
+  
+## Review of Set Theory 
+**Intersection of Two Sets A and B**
+
+The intersection of two sets, denoted by $A \cap B$ and read as "$A$ intersection $B$", consists of all elements that are common to both $A$ and $B$.
+
+```{r intersec, echo = FALSE, out.width='50%', out.height='40%', fig.cap="Intersection of Two Sets $A$ and $B$"}
+knitr::include_graphics("Ven1.png")
+```
+
+**Union of Two Sets A and B**
+
+The union of two sets, denoted by $A \cup B$ and read as "$A$ union $B$", consists of all elements in $A$ or $B$ or both. 
+
+```{r unio, echo = FALSE, out.width='50%', out.height='40%', fig.cap="Union of Two Sets $A$ and $B$"}
+knitr::include_graphics("Ven2.png")
+```
+
+**Complement of an Event A**
+
+The complement of an event, denoted by $A^c$ and read as "complement of $A$", consists of everything not in $A$, relative to the universal set $S$. 
+
+```{r compl, echo = FALSE, out.width='50%', out.height='40%', fig.cap="Complement of an Event A"}
+knitr::include_graphics("Ven3.png")
+```
+
+**A Subset of an Event**
+
+$A$ is a subset of an event $B$, denoted by $A \subseteq B$ and read as "$A$ is a subset of $B$", when every element of event $A$ is in event $B$. 
+
+```{r subs, echo = FALSE, out.width='50%', out.height='40%', fig.cap="Subset of an Event"}
+knitr::include_graphics("Ven4.png")
+```
+**Set Difference**
+
+$A$ difference $B$, denoted by $A-B$ and read as "$A$ minus $B$", consists of elements in $A$ that are not in $B$. 
+
+```{r AminB, echo = FALSE, out.width='50%', out.height='40%', fig.cap="Set Difference: A-B"}
+knitr::include_graphics("Ven5.png")
+```
+As in `@ref(fig:AminB)`, $A-B=A \cap B^c.$
+
+$B$ difference $A$, denoted by $B-A$ and read as "$B$ minus $A$", consists of elements in $B$ that are not in $A$. 
+
+```{r BminA, echo = FALSE, out.width='50%', out.height='40%',fig.cap="Set Difference: B-A"}
+knitr::include_graphics("Ven6.png")
+```
+As shown in `@ref(fig:BminA)`, $B-A=B \cap A^c.$
+
+

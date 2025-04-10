@@ -1,0 +1,13 @@
+INFO [2025-04-09 22:58:09] $x
+INFO [2025-04-09 22:58:09] my_sets
+INFO [2025-04-09 22:58:09] 
+INFO [2025-04-09 22:58:09] $category.names
+INFO [2025-04-09 22:58:09] c("Set 1", "Set 2", "Set 3")
+INFO [2025-04-09 22:58:09] 
+INFO [2025-04-09 22:58:09] $filename
+INFO [2025-04-09 22:58:09] [1] "my_venn_diagram.png"
+INFO [2025-04-09 22:58:09] 
+INFO [2025-04-09 22:58:09] $output
+INFO [2025-04-09 22:58:09] [1] TRUE
+INFO [2025-04-09 22:58:09] 
+ERROR [2025-04-09 23:24:08] Unexpected parameter length for "fill"

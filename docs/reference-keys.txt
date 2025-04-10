@@ -1,7 +1,14 @@
 fig:ExCardDeck
+fig:intersec
+fig:unio
+fig:compl
+fig:subs
+fig:AminB
+fig:BminA
 fundamentals-of-probability-and-its-axioms
 combinations-and-permutations
 permutations
 combinations
 worked-examples
+review-of-set-theory
 basic-probability

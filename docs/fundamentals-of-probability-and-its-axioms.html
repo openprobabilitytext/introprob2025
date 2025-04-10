@@ -23,7 +23,7 @@
 <meta name="author" content="Madhuka and Rajinda" />
 
 
-<meta name="date" content="2025-04-07" />
+<meta name="date" content="2025-04-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -521,6 +521,7 @@ window.onload = function() {
 <li class="chapter" data-level="1.1.2" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#combinations"><i class="fa fa-check"></i><b>1.1.2</b> Combinations</a></li>
 <li class="chapter" data-level="1.1.3" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#worked-examples"><i class="fa fa-check"></i><b>1.1.3</b> Worked Examples</a></li>
 </ul></li>
+<li class="chapter" data-level="1.2" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#review-of-set-theory"><i class="fa fa-check"></i><b>1.2</b> Review of Set Theory</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="basic-probability.html"><a href="basic-probability.html"><i class="fa fa-check"></i><b>2</b> Basic Probability</a></li>
 <li class="divider"></li>
@@ -848,8 +849,60 @@ the queens together is <span class="math inline">\(4!49!\)</span> (48 other card
 block of 4 queens = 49 objects). Therefore, the number of
 arrangements where at least one queen is separated is <span class="math display">\[52!-49!4!.\]</span></p></li>
 </ol>
-
 </div>
+</div>
+<div id="review-of-set-theory" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Review of Set Theory<a href="fundamentals-of-probability-and-its-axioms.html#review-of-set-theory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Intersection of Two Sets A and B</strong></p>
+<p>The intersection of two sets, denoted by <span class="math inline">\(A \cap B\)</span> and read as “<span class="math inline">\(A\)</span> intersection <span class="math inline">\(B\)</span>”, consists of all elements that are common to both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:intersec"></span>
+<img src="Ven1.png" alt="Intersection of Two Sets $A$ and $B$" width="50%" height="40%" />
+<p class="caption">
+Figure 1.2: Intersection of Two Sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>
+</p>
+</div>
+<p><strong>Union of Two Sets A and B</strong></p>
+<p>The union of two sets, denoted by <span class="math inline">\(A \cup B\)</span> and read as “<span class="math inline">\(A\)</span> union <span class="math inline">\(B\)</span>”, consists of all elements in <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unio"></span>
+<img src="Ven2.png" alt="Union of Two Sets $A$ and $B$" width="50%" height="40%" />
+<p class="caption">
+Figure 1.3: Union of Two Sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>
+</p>
+</div>
+<p><strong>Complement of an Event A</strong></p>
+<p>The complement of an event, denoted by <span class="math inline">\(A^c\)</span> and read as “complement of <span class="math inline">\(A\)</span>”, consists of everything not in <span class="math inline">\(A\)</span>, relative to the universal set <span class="math inline">\(S\)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:compl"></span>
+<img src="Ven3.png" alt="Complement of an Event A" width="50%" height="40%" />
+<p class="caption">
+Figure 1.4: Complement of an Event A
+</p>
+</div>
+<p><strong>A Subset of an Event</strong></p>
+<p><span class="math inline">\(A\)</span> is a subset of an event <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A \subseteq B\)</span> and read as “<span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span>”, when every element of event <span class="math inline">\(A\)</span> is in event <span class="math inline">\(B\)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:subs"></span>
+<img src="Ven4.png" alt="Subset of an Event" width="50%" height="40%" />
+<p class="caption">
+Figure 1.5: Subset of an Event
+</p>
+</div>
+<p><strong>Set Difference</strong></p>
+<p><span class="math inline">\(A\)</span> difference <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A-B\)</span> and read as “<span class="math inline">\(A\)</span> minus <span class="math inline">\(B\)</span>”, consists of elements in <span class="math inline">\(A\)</span> that are not in <span class="math inline">\(B\)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:AminB"></span>
+<img src="Ven5.png" alt="Set Difference: A-B" width="50%" height="40%" />
+<p class="caption">
+Figure 1.6: Set Difference: A-B
+</p>
+</div>
+<p>As in <code><a href="fundamentals-of-probability-and-its-axioms.html#fig:AminB">1.6</a></code>, <span class="math inline">\(A-B=A \cap B^c.\)</span></p>
+<p><span class="math inline">\(B\)</span> difference <span class="math inline">\(A\)</span>, denoted by <span class="math inline">\(B-A\)</span> and read as “<span class="math inline">\(B\)</span> minus <span class="math inline">\(A\)</span>”, consists of elements in <span class="math inline">\(B\)</span> that are not in <span class="math inline">\(A\)</span>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:BminA"></span>
+<img src="Ven6.png" alt="Set Difference: B-A" width="50%" height="40%" />
+<p class="caption">
+Figure 1.7: Set Difference: B-A
+</p>
+</div>
+<p>As shown in <code><a href="fundamentals-of-probability-and-its-axioms.html#fig:BminA">1.7</a></code>, <span class="math inline">\(B-A=B \cap A^c.\)</span></p>
+
 </div>
 </div>
             </section>
