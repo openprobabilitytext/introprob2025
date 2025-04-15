@@ -23,7 +23,7 @@
 <meta name="author" content="Madhuka and Rajinda" />
 
 
-<meta name="date" content="2025-04-11" />
+<meta name="date" content="2025-04-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -522,6 +522,11 @@ window.onload = function() {
 <li class="chapter" data-level="1.1.3" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#worked-examples"><i class="fa fa-check"></i><b>1.1.3</b> Worked Examples</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#review-of-set-theory"><i class="fa fa-check"></i><b>1.2</b> Review of Set Theory</a></li>
+<li class="chapter" data-level="1.3" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#axioms-of-probability"><i class="fa fa-check"></i><b>1.3</b> Axioms of Probability</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#sample-spaces-with-equally-likely-outcomes"><i class="fa fa-check"></i><b>1.3.1</b> Sample spaces with equally likely outcomes</a></li>
+<li class="chapter" data-level="1.3.2" data-path="fundamentals-of-probability-and-its-axioms.html"><a href="fundamentals-of-probability-and-its-axioms.html#worked-examples-1"><i class="fa fa-check"></i><b>1.3.2</b> Worked Examples</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="basic-probability.html"><a href="basic-probability.html"><i class="fa fa-check"></i><b>2</b> Basic Probability</a></li>
 <li class="divider"></li>
@@ -581,8 +586,9 @@ permutations.</p>
 <p>Consider <span class="math inline">\(k\)</span> experiments. Let <span class="math inline">\(n_i\)</span> denote the number of possible
 outcomes of the <span class="math inline">\(i\)</span>th experiment where <span class="math inline">\(i=1,2,\dots,k.\)</span> Then the total
 of number of possible outcomes is
-<span class="math display">\[n_1\times n_2\times\cdots\times n_k.\]</span> <strong>Example 1.2.</strong> A 6-sided die
-is rolled twice. How many possible outcomes are there?</p>
+<span class="math display">\[n_1\times n_2\times\cdots\times n_k.\]</span></p>
+<p><strong>Example 1.2.</strong> A 6-sided die is rolled twice. How many possible
+outcomes are there?</p>
 <p><strong>Solution:</strong></p>
 <p>First roll has 6 outcomes and the second roll has 6 outcomes. Therefore,
 there are <span class="math inline">\(6\times 6 = 36\)</span> possible outcomes when a dice rolled twice.</p>
@@ -651,7 +657,10 @@ Since we have two identical objects, the number of permutations has to
 be less than <span class="math inline">\(3!\)</span> (since permuting the two ``A”s gives us the same
 arrangement).</p>
 <p><strong>Theorem 1.1: Permutations of non-identical objects</strong></p>
-<p>Consider a set of <span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span> objects are alike, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of permutations of these <span class="math inline">\(n\)</span> objects is given by <span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
+<p>Consider a set of <span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span>
+objects are alike, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of
+permutations of these <span class="math inline">\(n\)</span> objects is given by
+<span class="math display">\[\frac{n!}{n_1!n_2!\cdots n_k!}\]</span></p>
 <p><strong>Example 1.6.</strong> Find the number of ways the following words can be
 permuted:</p>
 <ol style="list-style-type: decimal">
@@ -708,9 +717,9 @@ cards. This is the composition of a deck of cards:</p>
 Figure 1.1: Illustration of a standard deck of cards. Source: Missouri Western State University (<a href="https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf" class="uri">https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf</a>)
 </p>
 </div>
-<p>In the Figure <code><a href="fundamentals-of-probability-and-its-axioms.html#fig:ExCardDeck">1.1</a></code>, the columns represent the
-different <strong>values</strong> or <strong>denominations</strong> and the rows represent the
-four <strong>suits.</strong> The last three values, Jack, Queen, and King are called
+<p>In the Figure<code><a href="fundamentals-of-probability-and-its-axioms.html#fig:ExCardDeck">1.1</a></code>, the columns represent the different
+<strong>values</strong> or <strong>denominations</strong> and the rows represent the four
+<strong>suits.</strong> The last three values, Jack, Queen, and King are called
 <strong>face cards.</strong></p>
 <p><strong>Example 1.8.</strong> Consider a deck of 52 cards.</p>
 <ol style="list-style-type: decimal">
@@ -854,7 +863,9 @@ arrangements where at least one queen is separated is <span class="math display"
 <div id="review-of-set-theory" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> Review of Set Theory<a href="fundamentals-of-probability-and-its-axioms.html#review-of-set-theory" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Intersection of Two Sets A and B</strong></p>
-<p>The intersection of two sets, denoted by <span class="math inline">\(A \cap B\)</span> and read as “<span class="math inline">\(A\)</span> intersection <span class="math inline">\(B\)</span>”, consists of all elements that are common to both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
+<p>The intersection of two sets, denoted by <span class="math inline">\(A \cap B\)</span> and read as “<span class="math inline">\(A\)</span>
+intersection <span class="math inline">\(B\)</span>”, consists of all elements that are common to both <span class="math inline">\(A\)</span>
+and <span class="math inline">\(B\)</span>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:intersec"></span>
 <img src="Ven1.png" alt="Intersection of Two Sets $A$ and $B$" width="50%" height="40%" />
 <p class="caption">
@@ -862,7 +873,8 @@ Figure 1.2: Intersection of Two Sets <span class="math inline">\(A\)</span> and 
 </p>
 </div>
 <p><strong>Union of Two Sets A and B</strong></p>
-<p>The union of two sets, denoted by <span class="math inline">\(A \cup B\)</span> and read as “<span class="math inline">\(A\)</span> union <span class="math inline">\(B\)</span>”, consists of all elements in <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both.</p>
+<p>The union of two sets, denoted by <span class="math inline">\(A \cup B\)</span> and read as “<span class="math inline">\(A\)</span> union
+<span class="math inline">\(B\)</span>”, consists of all elements in <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> or both.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unio"></span>
 <img src="Ven2.png" alt="Union of Two Sets $A$ and $B$" width="50%" height="40%" />
 <p class="caption">
@@ -870,7 +882,9 @@ Figure 1.3: Union of Two Sets <span class="math inline">\(A\)</span> and <span c
 </p>
 </div>
 <p><strong>Complement of an Event A</strong></p>
-<p>The complement of an event, denoted by <span class="math inline">\(A^c\)</span> and read as “complement of <span class="math inline">\(A\)</span>”, consists of everything not in <span class="math inline">\(A\)</span>, relative to the universal set <span class="math inline">\(S\)</span>.</p>
+<p>The complement of an event, denoted by <span class="math inline">\(A^c\)</span> and read as “complement of
+<span class="math inline">\(A\)</span>”, consists of everything not in <span class="math inline">\(A\)</span>, relative to the universal set
+<span class="math inline">\(S\)</span>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:compl"></span>
 <img src="Ven3.png" alt="Complement of an Event A" width="50%" height="40%" />
 <p class="caption">
@@ -878,7 +892,9 @@ Figure 1.4: Complement of an Event A
 </p>
 </div>
 <p><strong>A Subset of an Event</strong></p>
-<p><span class="math inline">\(A\)</span> is a subset of an event <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A \subseteq B\)</span> and read as “<span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span>”, when every element of event <span class="math inline">\(A\)</span> is in event <span class="math inline">\(B\)</span>.</p>
+<p><span class="math inline">\(A\)</span> is a subset of an event <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A \subseteq B\)</span> and read as
+“<span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span>”, when every element of event <span class="math inline">\(A\)</span> is in event
+<span class="math inline">\(B\)</span>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:subs"></span>
 <img src="Ven4.png" alt="Subset of an Event" width="50%" height="40%" />
 <p class="caption">
@@ -886,23 +902,182 @@ Figure 1.5: Subset of an Event
 </p>
 </div>
 <p><strong>Set Difference</strong></p>
-<p><span class="math inline">\(A\)</span> difference <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A-B\)</span> and read as “<span class="math inline">\(A\)</span> minus <span class="math inline">\(B\)</span>”, consists of elements in <span class="math inline">\(A\)</span> that are not in <span class="math inline">\(B\)</span>.</p>
+<p><span class="math inline">\(A\)</span> difference <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A-B\)</span> and read as “<span class="math inline">\(A\)</span> minus <span class="math inline">\(B\)</span>”,
+consists of elements in <span class="math inline">\(A\)</span> that are not in <span class="math inline">\(B\)</span>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:AminB"></span>
 <img src="Ven5.png" alt="Set Difference: A-B" width="50%" height="40%" />
 <p class="caption">
 Figure 1.6: Set Difference: A-B
 </p>
 </div>
-<p>As in <code><a href="fundamentals-of-probability-and-its-axioms.html#fig:AminB">1.6</a></code>, <span class="math inline">\(A-B=A \cap B^c.\)</span></p>
-<p><span class="math inline">\(B\)</span> difference <span class="math inline">\(A\)</span>, denoted by <span class="math inline">\(B-A\)</span> and read as “<span class="math inline">\(B\)</span> minus <span class="math inline">\(A\)</span>”, consists of elements in <span class="math inline">\(B\)</span> that are not in <span class="math inline">\(A\)</span>.</p>
+<p>As in Figure<code><a href="fundamentals-of-probability-and-its-axioms.html#fig:AminB">1.6</a></code>, <span class="math inline">\(A-B=A \cap B^c.\)</span></p>
+<p><span class="math inline">\(B\)</span> difference <span class="math inline">\(A\)</span>, denoted by <span class="math inline">\(B-A\)</span> and read as “<span class="math inline">\(B\)</span> minus <span class="math inline">\(A\)</span>”,
+consists of elements in <span class="math inline">\(B\)</span> that are not in <span class="math inline">\(A\)</span>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:BminA"></span>
 <img src="Ven6.png" alt="Set Difference: B-A" width="50%" height="40%" />
 <p class="caption">
 Figure 1.7: Set Difference: B-A
 </p>
 </div>
-<p>As shown in <code><a href="fundamentals-of-probability-and-its-axioms.html#fig:BminA">1.7</a></code>, <span class="math inline">\(B-A=B \cap A^c.\)</span></p>
+<p>As shown in Figure<code><a href="fundamentals-of-probability-and-its-axioms.html#fig:BminA">1.7</a></code>, <span class="math inline">\(B-A=B \cap A^c.\)</span></p>
+<p><strong>Theorem 1.3: De Morgan’s Laws}</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\((A\cup B)^c = A^c \cap B^c\)</span></li>
+<li><span class="math inline">\((A\cap B)^c = A^c \cup B^c\)</span></li>
+</ol>
+</div>
+<div id="axioms-of-probability" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Axioms of Probability<a href="fundamentals-of-probability-and-its-axioms.html#axioms-of-probability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Let <span class="math inline">\(S\)</span> be a sample space. A probability measure <span class="math inline">\(P\)</span> is a set function
+that satisfies the following statements:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(P(S)=1\)</span></li>
+<li><span class="math inline">\(P(A)\geq 0 \mbox{ for any event } A\)</span>.</li>
+<li><span class="math inline">\(\mbox{If } A_1,A_2,... \mbox{ is a sequence of mutually exclusive events (i.e. } A_i\cap A_j = \mbox{ for all } i\neq j\mbox{), then }\)</span>
+<span class="math display">\[P\left(\bigcup_{i=1}^{\infty}A_i\right)=\sum_{i=1}^{\infty}A_i.\]</span></li>
+</ol>
+<p><strong>Theorem 1.4: Basic Properties of Probability Theory</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(P(\emptyset)=0\)</span></li>
+<li><span class="math inline">\(P(A^c)=1-P(A)\)</span></li>
+<li><span class="math inline">\(P(A-B) = P(A)-P(A\cap B)\)</span></li>
+<li><span class="math inline">\(\mbox{If }A\subset B, \mbox{ then } P(A)\leq P(B)\)</span></li>
+<li><span class="math inline">\(P(A\cup B)=P(A)+P(B)-P(A\cap B)\)</span></li>
+</ol>
+<p><strong>Proof:</strong> We will leave 4 and 5 as exercises.</p>
+<p>1.Observe that <span class="math inline">\(\emptyset \cap S = \emptyset\)</span> and
+<span class="math inline">\(\emptyset \cup S = S.\)</span> Therefore,
+<span class="math display">\[1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0.\]</span>
+2.Observe that <span class="math inline">\(A^c\cup A = S\)</span> and <span class="math inline">\(A^c\cap A = \emptyset\)</span>. Therefore,
+<span class="math display">\[1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A).\]</span> 3.Observe
+that <span class="math inline">\((A-B)\cup (A\cap B)=A\)</span> and <span class="math inline">\((A-B)\cap (A\cap B)=\emptyset.\)</span>
+Therefore,
+<span class="math display">\[P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B).\]</span>
+<strong>Example 1.9.</strong> <span class="math inline">\(P(A)=0.4, P(B)=0.5,P(A\cap B)=0.1.\)</span> Find the following
+probabilities:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(P(A^c)\)</span></li>
+<li><span class="math inline">\(P(A\cup B)\)</span></li>
+<li><span class="math inline">\(P(A\cap B^c)\)</span></li>
+<li><span class="math inline">\(P(A\cup B^c)\)</span></li>
+<li><span class="math inline">\(P(A^c\cap B^c)\)</span></li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(P(A^c)=1-P(A) = 1-0.4 = 0.6.\)</span></li>
+<li><span class="math inline">\(P(A\cup B)=P(A)+P(B)-P(A\cap B)=0.4+0.5-0.1 = 0.8.\)</span></li>
+<li><span class="math inline">\(P(A\cap B^c)=P(A-B)=P(A)-P(A\cap B)= 0.4-0.1=0.3\)</span></li>
+<li><span class="math inline">\(P(A\cup B^c)=P(A)+P(B^c)-P(A\cap B^c)=0.4+(1-0.5)-0.3 = 0.6.\)</span></li>
+<li>We use De Morgan’s law for this:
+<span class="math display">\[P(A^c\cap B^c)=P((A\cup B)^c)=1-P(A\cup B )=1-0.8 = 0.2.\]</span></li>
+</ol>
+<div id="sample-spaces-with-equally-likely-outcomes" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Sample spaces with equally likely outcomes<a href="fundamentals-of-probability-and-its-axioms.html#sample-spaces-with-equally-likely-outcomes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Consider the sample space <span class="math inline">\(S=\{a_1,a_2,\dots,a_N\}.\)</span> If all these
+outcomes are equally likely, then
+<span class="math display">\[P(\{a_1\})=\cdots=P(\{a_N\})=\frac{1}{N}.\]</span></p>
+<p>If <span class="math inline">\(A\)</span> is any event in <span class="math inline">\(S,\)</span> then <span class="math display">\[P(A) = \frac{|A|}{|S|},\]</span> where <span class="math inline">\(|A|\)</span>
+denotes the number of outcomes in <span class="math inline">\(A.\)</span></p>
+<p><strong>Example 1.10.</strong> Suppose a fair die is rolled twice.</p>
+<ol style="list-style-type: decimal">
+<li>Find the probability of rolling a double.</li>
+<li>Find the probability of rolling a sum of 5.</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(A=\{\text{a double is rolled}\}=\{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}\)</span>.
+Since <span class="math inline">\(|S|=36\)</span> and <span class="math inline">\(|A|=6,\)</span> <span class="math display">\[P(A)=\frac{6}{36}=\frac{1}{6}.\]</span></p></li>
+<li><p><span class="math inline">\(A=\{(1,4), (2,3),(3,2),(4,1)\}\)</span> <span class="math display">\[P(A)=\frac{4}{36}=\frac{1}{9}.\]</span></p></li>
+</ol>
+<p><strong>Exercise 1.9.</strong> Four cards are randomly picked from a deck of 52
+cards. Find the probability of the following events.</p>
+<ol style="list-style-type: decimal">
+<li><p>Exactly one card is a Queen.</p></li>
+<li><p>At least one card is a Queen.</p></li>
+<li><p>At least one card is a Queen or exactly two cards are Kings.</p></li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Let’s first find out what <span class="math inline">\(|S|\)</span> is. To figure out the size of the
+sample space, it’s vital to understand what the “experiment” is. We
+are drawing four cards from the deck. How many ways can we do that?
+<span class="math display">\[|S|=\binom{52}{4}.\]</span> Now define
+<span class="math inline">\(Q_1 = \{\text{exactly one card is a Queen}\}\)</span>. Then
+<span class="math display">\[|Q_1|=\binom{4}{1}\binom{48}{3}.\]</span> Therefore,
+<span class="math display">\[P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}.\]</span></li>
+<li>Let <span class="math inline">\(Q=\{\text{at least one card is a Queen}\}.\)</span> Then
+<span class="math inline">\(Q^c=\{\text{no Queens are picked}\}.\)</span> Notice that
+<span class="math display">\[P(Q^c)=\frac{\binom{48}{4}}{\binom{52}{4}}.\]</span>
+Therefore,<span class="math display">\[P(Q)=1-P(Q^c)=1-\frac{\binom{48}{4}}{\binom{52}{4}}.\]</span></li>
+<li>Let <span class="math inline">\(Q_1 = \{\text{exactly one card is a Queen}\}\)</span> and
+<span class="math inline">\(K_2 = \{\text{exactly two cards are Kings}\}.\)</span> Then the probability
+that <span class="math inline">\(Q_1\)</span> occurs of <span class="math inline">\(K_2\)</span> occurs is
+<span class="math display">\[P(Q_1\cup K_2)=P(Q_1)+P(K_2)-P(Q_1\cap K_2)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}+\frac{\binom{4}{2}\binom{48}{2}}{\binom{52}{4}}-\frac{\binom{4}{1}\binom{4}{2}\binom{44}{1}}{\binom{52}{4}}.\]</span></li>
+</ol>
+<p><strong>Exercise 1.10.</strong> The 26 letters of the alphabet are arranged in a
+line. What is the probability that the word MATH appears consecutively
+in that order somewhere in the arrangement?</p>
+<p>We are arranging all 26 letters in a line. How many ways can we do this?
+26! Therefore, <span class="math inline">\(|S|=26!\)</span> Now let’s figure out how many ways we can
+arrange the 26 letters where the block of letters MATH appears together
+exactly in this order. Let’s think of the block “MATH” as one object,
+and together with the other 22 letters, we have 23 objects. Therefore,
+the probability is <span class="math display">\[\frac{23!}{26!}.\]</span></p>
+</div>
+<div id="worked-examples-1" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Worked Examples<a href="fundamentals-of-probability-and-its-axioms.html#worked-examples-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Two cards are randomly selected from a deck of cards. What is the
+probability that they form a blackjack? That is, what is the
+probability that one of the cards is an ace and the other one is
+either a ten, a jack, a queen, or a king?</li>
+<li>A fair die is rolled 4 times. What is the probability that a “6” is
+observed at least once?</li>
+<li>In a class of 35, what is the probability that at least two students
+will share the same birthday? Ignore leap years.</li>
+<li>A die is rolled three times. What is the probability that all three
+rolls result in different numbers?</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>The number of ways a single ace can be chosen is <span class="math inline">\(\binom{4}{1}.\)</span> To
+form a blackjack, the other card has to be a ten, a jack, a queen,
+or a king. There are 16 such cards in a deck. Therefore, the
+probability of forming a blackjack is
+<span class="math display">\[\frac{\binom{4}{1}\binom{16}{1}}{\binom{52}{2}}.\]</span></p></li>
+<li><p>If a die is rolled four times, the total number of possible outcomes
+if <span class="math inline">\(6^4.\)</span> This is a number of outcomes in the sample space.
+Now let’s define some events:</p>
+<p><span class="math inline">\(A=\{\mbox{at least one 6 is observed}\}\)</span></p>
+<p><span class="math inline">\(A^c=\{\mbox{no 6s are observed}\}\)</span></p>
+<p>It is easier to compute <span class="math inline">\(P(A^c)\)</span> directly than <span class="math inline">\(P(A).\)</span> The number of
+ways a die can be rolled four times such that a “6” does not appear
+is <span class="math inline">\(5\times 5\times 5\times 5 = 5^4\)</span> (we can roll any one of the
+numbers 1,2,3,4, or 5, but not a 6). Therefore,</p>
+<p><span class="math display">\[P(A^c)=\frac{5^4}{6^4}.\]</span>It follows that
+<span class="math display">\[P(A)=1-P(A^c)=1-\left(\frac{5}{6}\right)^4.\]</span></p></li>
+<li><p>There are various ways to rephrase this question. Suppose each
+student randomly selects a number between 1 and 365. What is the
+probability that at least two students will pick the same number?
+Another way to think of this problem is, suppose there is a die with
+365 sides and you roll it 35 times. What is the probability that the
+same number is rolled at least twice? Whichever way you prefer to
+rephrase this question, the answer remains the same. Let’s defined
+some events:</p>
+<p><span class="math inline">\(A=\{\mbox{at least two students share the same birthday}\}\)</span></p>
+<p><span class="math inline">\(A^c=\{\mbox{all birthdays are unique}\}\)</span></p>
+<p>The number of elements in the sample space is the total outcomes
+possible when each student gets to pick a number between 1-365.
+Therefore, <span class="math inline">\(|S|=365^{35}.\)</span> Next, the number of outcomes possible
+where no student picks the same number is
+<span class="math display">\[365\times 364\times\cdots\times 331 = \frac{365!}{330!}.\]</span></p>
+<p>Therefore,
+<span class="math display">\[P(A^c)=\frac{\frac{365!}{330!}}{365^{35}}=\frac{365!}{330!365^{35}}.\]</span>
+Hence, <span class="math display">\[P(A)=1-\frac{365!}{330!365^{35}}\approx 0.866.\]</span></p></li>
+<li><p><span class="math inline">\(\frac{6\cdot 5\cdot 4}{6^3}= \frac{5}{9}.\)</span></p></li>
+</ol>
 
+</div>
 </div>
 </div>
             </section>

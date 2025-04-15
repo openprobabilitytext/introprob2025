@@ -21,7 +21,19 @@
 \setlength{\fboxsep}{.8em}
 
 \usepackage{graphicx}
+%Newly added below this
+\usepackage{grffile}  
+\usepackage{caption
+\usepackage{subcaption} 
+\usepackage{float}           % To force figure placement [H]
+\usepackage{wrapfig}         % To wrap text around figures (optional)
+\captionsetup[figure]{skip=8pt, labelfont=bf, labelsep=colon}
+\setkeys{Gin}{width=\linewidth, keepaspectratio}
+\usepackage{placeins}        % \FloatBarrier to control float locations
+\usepackage{adjustbox}       % For scaling and centering
+\usepackage[export]{adjustbox} % Better image alignment options
 
+%Newly added above this
 \usepackage{multirow}
 \usepackage{tabularx}
 

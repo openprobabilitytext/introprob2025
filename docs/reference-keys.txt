@@ -11,4 +11,7 @@ permutations
 combinations
 worked-examples
 review-of-set-theory
+axioms-of-probability
+sample-spaces-with-equally-likely-outcomes
+worked-examples-1
 basic-probability
