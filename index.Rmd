@@ -4,11 +4,24 @@ author: "Madhuka and Rajinda"
 date: "April 14, 2025"
 site: bookdown::bookdown_site
 output:
-  bookdown::gitbook
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: section
+        before: |
+          <li><strong>Contents</strong></li>
+  bookdown::pdf_book:
+    latex_engine: xelatex
+    citation_package: natbib
+    keep_tex: true
+    includes:
+      in_header: preamble.tex
+    toc: true
+    number_sections: true
+    fig_caption: true
 documentclass: krantzNoCorner
-classoption: krantz
-colorlinks: yes
 fontsize: 12pt
+colorlinks: yes
 github-repo: https://github.com/openprobabilitytext/introprob2025
 ---
 

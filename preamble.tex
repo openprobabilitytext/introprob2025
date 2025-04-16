@@ -1,4 +1,3 @@
-
 \usepackage{booktabs}
 \usepackage{empheq}
 \setcounter{secnumdepth}{2}
@@ -8,32 +7,18 @@
 \usepackage{amssymb}
 \usepackage{array}
 \usepackage{caption}
-\captionsetup[figureNoLabel]{labelformat=empty, justification=raggedright}
+\captionsetup[figure]{font=small, labelfont=bf, justification=justified} % Improved caption styling
 
 \usepackage{color}
 \usepackage{colortbl}
 \usepackage{xcolor}
 \usepackage{xr}
 
-
 \usepackage{fancyvrb}
 \usepackage{framed}
 \setlength{\fboxsep}{.8em}
 
 \usepackage{graphicx}
-%Newly added below this
-\usepackage{grffile}  
-\usepackage{caption
-\usepackage{subcaption} 
-\usepackage{float}           % To force figure placement [H]
-\usepackage{wrapfig}         % To wrap text around figures (optional)
-\captionsetup[figure]{skip=8pt, labelfont=bf, labelsep=colon}
-\setkeys{Gin}{width=\linewidth, keepaspectratio}
-\usepackage{placeins}        % \FloatBarrier to control float locations
-\usepackage{adjustbox}       % For scaling and centering
-\usepackage[export]{adjustbox} % Better image alignment options
-
-%Newly added above this
 \usepackage{multirow}
 \usepackage{tabularx}
 
@@ -64,31 +49,36 @@
   \color{white}
   \begin{shaded}}
  {\end{shaded}}
- 
-% \newenvironment{greybox}{
-%   \definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}  % light grey??
-%   \color{white}
-%   \begin{shaded}}
-%  {\end{shaded}}
- 
-% \usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
 
+% Margins setup - ensure same margins on all pages
+\usepackage[
+  top=1in,
+  bottom=1.2in,
+  left=1in,
+  right=1in,
+  heightrounded,
+  a4paper
+]{geometry}
 
+% Center all figures by default
+\usepackage{float}
+\floatplacement{figure}{H}
 
-%\usepackage{wrapfig}
+% Adjust figure width and space around it
+\setlength{\belowcaptionskip}{-10pt}  % Decrease space after figures
+\setlength{\abovecaptionskip}{10pt}   % Space before captions
 
+% Allow scaling for large images
+\setkeys{Gin}{width=0.75\textwidth}
 
-
-\setlength{\fboxsep}{.8em}
+% Reduce space between paragraphs
+\setlength{\parskip}{1.5mm}
 
 \renewcommand{\hrulefill}{%
   \leavevmode\leaders\hrule height 2pt\hfill\kern0pt }
-  
+
 \renewcommand{\dotfill}{%
   \leavevmode\cleaders\hbox to 0.60em{\hss .\hss }\hfill\kern0pt }
-  
-
 
 \usepackage{makeidx}
 \makeindex
-
