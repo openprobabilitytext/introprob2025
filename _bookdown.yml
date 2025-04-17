@@ -6,8 +6,3 @@ view: https://github.com/openprobabilitytext/introprob2025/blob/main/%s
 language:
   ui:
     chapter_name: "Chapter "
-
-rmd_files: ["index.Rmd", 
-           "Preface.Rmd",
-           "02-Counting.Rmd",
-           "03-Probability.Rmd"]

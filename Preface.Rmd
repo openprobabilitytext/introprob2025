@@ -1,4 +1,7 @@
-# Preface {-}
+
+<!-- # Preface {-} -->
+
+#### Book Description{-}
 Introduction to Probability is a freely available textbook designed for MATH350 students.
 
 - This edition includes a variety of examples to help you learn probability    concepts at your own pace.
