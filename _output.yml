@@ -34,7 +34,8 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/openprobabilitytext/introprob2025/" target="blank">Introduction to Probability on GitHub</a></li>
   toc_depth: 3                 
-  edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+  #edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+  edit: null 
   download: null
   sharing:
     facebook: no

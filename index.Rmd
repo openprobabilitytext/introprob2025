@@ -10,6 +10,14 @@ output:
         collapse: section
         before: |
           <li><strong>Contents</strong></li>
+    toolbar:
+      position: fixed
+      buttons:
+       - toggle-summary
+       - search
+       - font-settings
+       - toggle-night-mode
+       - download
   bookdown::pdf_book:
     latex_engine: xelatex
     citation_package: natbib
@@ -22,7 +30,7 @@ output:
 documentclass: krantzNoCorner
 fontsize: 12pt
 colorlinks: yes
-github-repo: https://github.com/openprobabilitytext/introprob2025
+#github-repo: https://github.com/openprobabilitytext/introprob2025
 ---
 
 
