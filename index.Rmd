@@ -22,7 +22,7 @@ output:
 documentclass: krantzNoCorner
 fontsize: 12pt
 colorlinks: yes
-github-repo: https://github.com/openprobabilitytext/introprob2025
+github-repo: https://github.com/openprobabilitytext/introprob2025/
 ---
 
 
