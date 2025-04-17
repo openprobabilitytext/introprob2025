@@ -1,14 +1,12 @@
 bookdown::pdf_document2:
   includes:
     in_header: preamble.tex
-    #before_body: coverpage.tex
   toc: TRUE
   toc_depth: '3'
   citation_package: natbib
   keep_tex: yes
   dev: "cairo_pdf"
   latex_engine: pdflatex  
-#  latex_engine: xelatex
   biblio-style: econPeriod
   template: null
   pandoc_args: --top-level-division=chapter
@@ -31,12 +29,9 @@ bookdown::gitbook:
       collapse: subsection
       before: |
         <li><a href="./">Probability </a></li>
-      after: |
-        <li><a href="https://github.com/openprobabilitytext/introprob2025/" target="blank">Introduction to Probability on GitHub</a></li>
-  toc_depth: 3                 
-  #edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
-  edit: null 
-  download:["pdf", "epub"]
+  edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+  #edit: null
+  download: null
   sharing:
     facebook: no
     twitter: no
@@ -46,3 +41,7 @@ bookdown::gitbook:
     instapper: no
     vk: no
     all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']
+    
+    
+    
+ 

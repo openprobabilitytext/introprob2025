@@ -10,14 +10,6 @@ output:
         collapse: section
         before: |
           <li><strong>Contents</strong></li>
-    toolbar:
-      position: fixed
-      buttons:
-       - toggle-summary
-       - search
-       - font-settings
-       - toggle-night-mode
-       - download
   bookdown::pdf_book:
     latex_engine: xelatex
     citation_package: natbib
@@ -30,7 +22,7 @@ output:
 documentclass: krantzNoCorner
 fontsize: 12pt
 colorlinks: yes
-#github-repo: https://github.com/openprobabilitytext/introprob2025
+github-repo: https://github.com/openprobabilitytext/introprob2025
 ---
 
 
@@ -52,8 +44,7 @@ SHOW_PDF          <- TRUE
 SHOW_EXAMPLE_SOLN <- TRUE
 SHOW_EXER_SOLN    <- TRUE
 ANIMATIONHOOK     <- 'gifski'
-GLOSSARY          <- FALSE
-DIST_TABLES_LATEX <- FALSE
+
 
 if (PdfEval){
 QUIZ              <- FALSE
@@ -61,15 +52,9 @@ ANIMATION         <- FALSE
 SHOW_PDF          <- FALSE
 SHOW_EXER_SOLN    <- FALSE
 ANIMATIONHOOK     <- NULL
-GLOSSARY          <- TRUE
-DIST_TABLES_LATEX <- TRUE
 numAnimation = 1
 }
-# Switches that control the number of animations in Chapter 6
-# Use these for pdf output - maybe later
-#numAnimation = 1
-#numAnimation2 = 2
-#numAnimation3 = 2
+
 
 roundCom  <- function(number, digits) {
   rounded_number <- round(number, digits)
