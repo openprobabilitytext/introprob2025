@@ -36,7 +36,7 @@ bookdown::gitbook:
   toc_depth: 3                 
   #edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
   edit: null 
-  download: null
+  download:["pdf", "epub"]
   sharing:
     facebook: no
     twitter: no
