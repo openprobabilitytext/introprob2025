@@ -1,0 +1,13 @@
+# Discrete Random Variables and Distributions
+
+## Random Variables
+
+## Probability Mass Functions (PMFs)
+
+## Cumulative Distribution Functions (CDFs)
+
+## Expected Value and Properties
+
+## Variance and Standard Deviation
+
+## Common Discrete Distributions: Binomial, Geometric, Poisson, Negative Binomial, multinomial

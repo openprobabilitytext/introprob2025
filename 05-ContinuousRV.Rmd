@@ -1,0 +1,13 @@
+# Continuous Random Variables and Distributions
+
+## Continuous Random Variables
+
+## Probability Density Functions (PDFs)
+
+## Cumulative Distribution Functions (CDFs)
+
+## Expected Value and Variance (Continuous Case)
+
+## Uniform, Exponential, and Normal Distributions
+
+## Change of Variables and Applications

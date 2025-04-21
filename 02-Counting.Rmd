@@ -10,23 +10,14 @@ the set of all possible outcomes of some random experiment and
 **events**, which are subsets of the sample space. Typically, the sample
 space is denoted by $S$ or $\Omega.$ Consider the following example:
 
-**Example 1.1.** Suppose a fair coin is flipped twice.What is the
-probability of flipping at least one head?
+**Example 1.1.** Suppose a fair coin is flipped twice.How many outcomes include at least one head?
 
 **Solution:**
 
 The sample space of this experiment can expressed as
 $S=\{HH,HT,TH,TT\}$. Now, consider the event:
-$$A=\{\text{At least one outcome is a head}\}$$ Notice that $A\subset S$
-($A$ is a subset of $S$). Since $A=\{HH,HT,TH\},$ we can find the
-probability as follows:
-$$P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.$$
-
-The above method of computing the probability of an event, while very
-useful, is not always suitable for the following reasons:
-
-1.  Each outcome has to be equally likely.
-2.  The sets must be countable.
+$$A=\{\text{At least one outcome is a head}\}$$
+Since $A=\{HH,HT,TH\},$ 3 outcomes include at least one head. Notice that $A\subset S$. 
 
 From the previous example, it is clear that counting the number of
 elements of sets is very important when dealing with discrete sets. We
@@ -467,6 +458,12 @@ $$P(\{a_1\})=\cdots=P(\{a_N\})=\frac{1}{N}.$$
 
 If $A$ is any event in $S,$ then $$P(A) = \frac{|A|}{|S|},$$ where $|A|$
 denotes the number of outcomes in $A.$
+
+This method of computing the probability of an event, while very
+useful, is not always suitable for the following reasons:
+
+1.  Each outcome has to be equally likely.
+2.  The sets must be countable.
 
 **Example 1.10.** Suppose a fair die is rolled twice.
 

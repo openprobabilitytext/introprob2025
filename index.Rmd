@@ -1,6 +1,6 @@
 --- 
 title: "Introduction to Probability"
-author: "Madhuka and Rajinda"
+author: "Madhuka Gamage and Rajinda Wickrama"
 date: "April 14, 2025"
 site: bookdown::bookdown_site
 output:
