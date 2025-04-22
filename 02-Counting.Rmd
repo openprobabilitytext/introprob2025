@@ -4,9 +4,9 @@
 
 Counting plays a fundamental role in probability. Many probability problems involve determining how many outcomes belong to certain sets. To do this, we use counting techniques such as **combinations** and **permutations**.
 
-In probability, we work with a special set called the **sample space**, usually denoted by $S$ or $\Omega$, which contains all possible outcomes of a random experiment. Each individual outcome is denoted by $\omega \in \Omega$.
+In probability, we work with a special set called the **sample space**, usually denoted by $S$ or $\Omega$, which contains all possible outcomes of a random experiment. Each individual outcome is denoted by $\omega \in S$.
 
-An **event** is any ***subset*** of the sample space. That is, if $A$ is an event, then $A \subseteq \Omega$. If $A$ contains all the elements of $\Omega$, it is called an ***improper subset***; if it contains only some of the elements, it is a ***proper subset***, denoted $A \subset \Omega$ .
+An **event** is any ***subset*** of the sample space. That is, if $A$ is an event, then $A \subseteq S$. If $A$ contains all the elements of $S$, it is called an ***improper subset***; if it contains only some of the elements, it is a ***proper subset***, denoted $A \subset S$ .
 
 Understanding how to count the number of outcomes in the sample space, or within specific events, is essential for calculating probabilities. 
 
