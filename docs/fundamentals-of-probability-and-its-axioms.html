@@ -606,7 +606,7 @@ window.onload = function() {
 <p>Understanding how to count the number of outcomes in the sample space, or within specific events, is essential for calculating probabilities.</p>
 <p><strong>Example 1.1.</strong> Suppose a fair coin is flipped twice.How many outcomes include at least one head?</p>
 <p><strong>Solution:</strong></p>
-<p>The sample space of this experiment can expressed as
+<p>The sample space of this experiment can be expressed as
 <span class="math inline">\(S=\{HH,HT,TH,TT\}\)</span>. Now, consider the event:
 <span class="math display">\[A=\{\text{At least one outcome is a head}\}\]</span>
 Since <span class="math inline">\(A=\{HH,HT,TH\},\)</span> 3 outcomes include at least one head. Notice that <span class="math inline">\(A\subset S\)</span>.</p>
@@ -621,14 +621,17 @@ permutations.</p>
 <p>Consider <span class="math inline">\(k\)</span> experiments. Let <span class="math inline">\(n_i\)</span> denote the number of possible
 outcomes of the <span class="math inline">\(i\)</span>th experiment where <span class="math inline">\(i=1,2,\dots,k.\)</span> Then the total
 of number of possible outcomes is
-<span class="math display">\[n_1\times n_2\times\cdots\times n_k\]</span></p>
+<span class="math display">\[n_1\times n_2\times\cdots\times n_k.\]</span>
+Note (With Repetition):</p>
+<p>Consider <span class="math inline">\(k\)</span> experiments. Suppose that each experiment has the same number of possible outcomes, say <span class="math inline">\(n\)</span>, and that the outcome of one experiment does not affect the outcomes of the others (i.e., repetition is allowed). Then the total number of possible outcomes is
+<span class="math display">\[
+n \times n \times \cdots \times n = n^k.
+\]</span></p>
 <p><strong>Example 1.2.</strong> A 6-sided die is rolled twice. How many possible
 outcomes are there?</p>
 <p><strong>Solution:</strong></p>
 <p>First roll has 6 outcomes and the second roll has 6 outcomes. Therefore,
 there are <span class="math inline">\(6\times 6 = 36\)</span> possible outcomes when a dice rolled twice.</p>
-<p>In general, if a 6-die is rolled <span class="math inline">\(n\)</span> times, then there are <span class="math inline">\(6^n\)</span>
-possible outcomes.</p>
 <p><strong>Example 1.3.</strong> Suppose a password must contain exactly 4 symbols,
 where each symbol is either a letter (a-z) or a number (0-9). How many
 passwords can be created,</p>
@@ -691,7 +694,7 @@ non-distinct (some are identical). Consider the permutations of AAB.
 Since we have two identical objects, the number of permutations has to
 be less than <span class="math inline">\(3!\)</span> (since permuting the two A’s gives us the same
 arrangement).</p>
-<p><strong>Theorem 1.1: Permutations of non-identical objects</strong></p>
+<p><strong>Theorem 1.2: Permutations of non-identical objects</strong></p>
 <p>Consider a set of <span class="math inline">\(n\)</span> objects of which <span class="math inline">\(n_1\)</span> objects are alike, <span class="math inline">\(n_2\)</span>
 objects are alike, <span class="math inline">\(\dots\)</span>, <span class="math inline">\(n_k\)</span> objects are alike. Then, the number of
 permutations of these <span class="math inline">\(n\)</span> objects is given by
@@ -828,7 +831,7 @@ are together?</li>
 </ol>
 <p><strong>Solution:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>A standard deck of cards has 13 different valueS. We need to first
+<li><p>A standard deck of cards has 13 different values. We need to first
 choose a value and then pick two cards from that value. Since each
 value has 4 cards, we can do this in <span class="math inline">\(\binom{13}{1}\binom{4}{2}\)</span>
 ways. Thereafter, the other three cards must be picked from three
@@ -884,10 +887,10 @@ candy, we distribute between all the 4 students. This way, A gets at
 least 2. <span class="math display">\[\underbrace{XX}_{A\text{ receives 2
 }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}\]</span>
 Therefore, we have 8 Xs and 3 lines (total 11). The answer is
-<span class="math display">\[\frac{11!}{3!8!}=\binom{11}{3}.\]</span> 5.a. We can arrange the cards
+<span class="math display">\[\frac{11!}{3!8!}=\binom{11}{3}\]</span> 5.a. We can arrange the cards
 starting with a red card (RBRB…) or with a black card (BRBR…).
 Since there are 26 red cards and 26 black cards, the answer is
-<span class="math display">\[ 26!26!\cdot2.\]</span> b. The total number of arrangements without any
+<span class="math display">\[ 26!26!\cdot2\]</span> b. The total number of arrangements without any
 restrictions is 4!. The number of ways we arrange the cards keeping
 the queens together is <span class="math inline">\(4!49!\)</span> (48 other cards + one
 block of 4 queens = 49 objects). Therefore, the number of
@@ -955,7 +958,23 @@ Figure 1.7: Set Difference: B-A
 </p>
 </div>
 <p>As shown in Figure<code><a href="fundamentals-of-probability-and-its-axioms.html#fig:BminA">1.7</a></code>, <span class="math inline">\(B-A=B \cap A^c.\)</span></p>
-<p><strong>Theorem 1.3: De Morgan’s Laws}</strong></p>
+<p>##Laws of Set Theory</p>
+<p><strong>Commutative Laws</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(A \cup B = B \cup A\)</span></li>
+<li><span class="math inline">\(A \cap B = B \cap A\)</span></li>
+</ol>
+<p><strong>Associative Laws</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\((A \cup B) \cup C = A \cup (B \cup C)\)</span></li>
+<li><span class="math inline">\((A \cap B) \cap C = A \cap (B \cap C)\)</span></li>
+</ol>
+<p><strong>Distributive Laws</strong></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)</span></li>
+<li><span class="math inline">\(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)</span></li>
+</ol>
+<p><strong>De Morgan’s Laws</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\((A\cup B)^c = A^c \cap B^c\)</span></li>
 <li><span class="math inline">\((A\cap B)^c = A^c \cup B^c\)</span></li>
@@ -971,7 +990,7 @@ that satisfies the following statements:</p>
 <li><span class="math inline">\(\mbox{If } A_1,A_2,... \mbox{ is a sequence of mutually exclusive events (i.e. } A_i\cap A_j = \mbox{ for all } i\neq j\mbox{), then }\)</span>
 <span class="math display">\[P\left(\bigcup_{i=1}^{\infty}A_i\right)=\sum_{i=1}^{\infty}A_i.\]</span></li>
 </ol>
-<p><strong>Theorem 1.4: Basic Properties of Probability Theory</strong></p>
+<p><strong>Theorem 1.3: Basic Properties of Probability Theory</strong></p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(P(\emptyset)=0\)</span></li>
 <li><span class="math inline">\(P(A^c)=1-P(A)\)</span></li>
@@ -984,7 +1003,7 @@ that satisfies the following statements:</p>
 <span class="math inline">\(\emptyset \cup S = S.\)</span> Therefore,
 <span class="math display">\[1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0\]</span>
 2.Observe that <span class="math inline">\(A^c\cup A = S\)</span> and <span class="math inline">\(A^c\cap A = \emptyset\)</span>. Therefore,
-<span class="math display">\[1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A).\]</span> 3.Observe
+<span class="math display">\[1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A)\]</span> 3.Observe
 that <span class="math inline">\((A-B)\cup (A\cap B)=A\)</span> and <span class="math inline">\((A-B)\cap (A\cap B)=\emptyset.\)</span>
 Therefore,
 <span class="math display">\[P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B)\]</span>
@@ -1042,9 +1061,9 @@ cards. Find the probability of the following events.</p>
 <li>Let’s first find out what <span class="math inline">\(|S|\)</span> is. To figure out the size of the
 sample space, it’s vital to understand what the “experiment” is. We
 are drawing four cards from the deck. How many ways can we do that?
-<span class="math display">\[|S|=\binom{52}{4}.\]</span> Now define
+<span class="math display">\[|S|=\binom{52}{4}\]</span> Now define
 <span class="math inline">\(Q_1 = \{\text{exactly one card is a Queen}\}\)</span>. Then
-<span class="math display">\[|Q_1|=\binom{4}{1}\binom{48}{3}.\]</span> Therefore,
+<span class="math display">\[|Q_1|=\binom{4}{1}\binom{48}{3}\]</span> Therefore,
 <span class="math display">\[P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}\]</span></li>
 <li>Let <span class="math inline">\(Q=\{\text{at least one card is a Queen}\}.\)</span> Then
 <span class="math inline">\(Q^c=\{\text{no Queens are picked}\}.\)</span> Notice that
