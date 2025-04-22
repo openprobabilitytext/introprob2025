@@ -313,7 +313,7 @@ $$\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}$$
 4. a. Let's use $X$ to represent a piece of candy. We can use three
 lines (dividers) to divide the candy between the three students. For
 example $$X|XX|XXX|XXXX$$ means A gets 1, B gets 2, C gets 3, and D gets
-4. Similarly, $$X||XX|XXXXXXX$$ means A receives 1, B receives none, C
+4. Similarly, $$X|~~~|XX|XXXXXXX$$ means A receives 1, B receives none, C
 receives 2, and D receives 7. Therefore, we can find the total number of
 distributions by finding the total number of arrangements of the Xs and
 the lines. Since there are 10 Xs and three lines, but the 10 Xs are
