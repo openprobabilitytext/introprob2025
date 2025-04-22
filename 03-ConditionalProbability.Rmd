@@ -10,4 +10,4 @@
 
 ## Bayes’ Theorem
 
-## Applications and Common Misconceptions
+## Applications

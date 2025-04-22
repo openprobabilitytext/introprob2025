@@ -78,7 +78,7 @@
 
 \usepackage{setspace}
 \usepackage{scalefnt}
-
+\usepackage{ragged2e}
 \usepackage{verbatim}
 \usepackage{pdfpages}
 \usepackage{mdframed}
@@ -190,7 +190,7 @@ Understanding how to count the number of outcomes in the sample space, or within
 
 \textbf{Solution:}
 
-The sample space of this experiment can expressed as
+The sample space of this experiment can be expressed as
 \(S=\{HH,HT,TH,TT\}\). Now, consider the event:
 \[A=\{\text{At least one outcome is a head}\}\]
 Since \(A=\{HH,HT,TH\},\) 3 outcomes include at least one head. Notice that \(A\subset S\).
@@ -210,7 +210,13 @@ We will begin by stating the following crucial theorem.
 Consider \(k\) experiments. Let \(n_i\) denote the number of possible
 outcomes of the \(i\)th experiment where \(i=1,2,\dots,k.\) Then the total
 of number of possible outcomes is
-\[n_1\times n_2\times\cdots\times n_k\]
+\[n_1\times n_2\times\cdots\times n_k.\]
+\textbf{Note (With Repetition):}
+
+Consider \(k\) experiments. Suppose that each experiment has the same number of possible outcomes, say \(n\), and that the outcome of one experiment does not affect the outcomes of the others (i.e., repetition is allowed). Then the total number of possible outcomes is
+\[
+n \times n \times \cdots \times n = n^k.
+\]
 
 \textbf{Example 1.2.} A 6-sided die is rolled twice. How many possible
 outcomes are there?
@@ -219,9 +225,6 @@ outcomes are there?
 
 First roll has 6 outcomes and the second roll has 6 outcomes. Therefore,
 there are \(6\times 6 = 36\) possible outcomes when a dice rolled twice.
-
-In general, if a 6-die is rolled \(n\) times, then there are \(6^n\)
-possible outcomes.
 
 \textbf{Example 1.3.} Suppose a password must contain exactly 4 symbols,
 where each symbol is either a letter (a-z) or a number (0-9). How many
@@ -267,14 +270,14 @@ passwords contain at least one letter?
 
 Total number of passwords = \(36^4\). Total number of passwords not
 containing a letter = \(10^4\). Therefore, the number of passwords
-containing at least one letter is \[36^4-10^4.\]
+containing at least one letter is \[36^4-10^4\]
 
 Imagine three objects labeled \(A,B,\) and \(C.\) The number of ways we can
 arrange these objects is called a \emph{permutation.} These objects can be
 arranged in six different ways: \[ABC, ACB, BAC, BCA, CAB, CBA.\] The
 formula to find the number of permutations of \(n\) \emph{distinct} objects is
 \[n!=n\times (n-1)\times\cdots\times 2\times 1.\] For three distinct
-objects, the number of permutations is \(3!=6.\)
+objects, the number of permutations is \(3!=6\)
 
 \textbf{Example 1.5.} In a class, there are 4 sophomores, 7 juniors, and 3
 seniors.
@@ -318,10 +321,10 @@ two seniors should be together?
 Now let's learn how to find the permutations of objects that are
 non-distinct (some are identical). Consider the permutations of AAB.
 Since we have two identical objects, the number of permutations has to
-be less than \(3!\) (since permuting the two ``A''s gives us the same
+be less than \(3!\) (since permuting the two A's gives us the same
 arrangement).
 
-\textbf{Theorem 1.1: Permutations of non-identical objects}
+\textbf{Theorem 1.2: Permutations of non-identical objects}
 
 Consider a set of \(n\) objects of which \(n_1\) objects are alike, \(n_2\)
 objects are alike, \(\dots\), \(n_k\) objects are alike. Then, the number of
@@ -353,13 +356,13 @@ permuted:
   4 different letters. Therefore, number of permutations: \[4!.\]
 \item
   4 letters word, 2 letters are alike. Therefore, number of
-  permutations: \[\frac{4!}{2!}.\]
+  permutations: \[\frac{4!}{2!}\]
 \item
   4 letters word, 2 letters are alike and another 2 letters are alike.
-  Therefore, number of permutations: \[\frac{4!}{2!2!}.\]
+  Therefore, number of permutations: \[\frac{4!}{2!2!}\]
 \item
   7 letters word, 3 letters are alike and another 2 letters are alike.
-  Therefore, number of permutations: \[\frac{7!}{3!2!}.\]
+  Therefore, number of permutations: \[\frac{7!}{3!2!}\]
 \end{enumerate}
 
 In each of the above questions, we make an adjustment for over-counting
@@ -372,7 +375,7 @@ Combinations are the number of ways a subset can be chosen from a larger
 set where the order of the selection does not matter. Consider a set of
 \(n\) distinct objects. The number of ways a subset of \(r\leq n\) objects
 can be chosen can be computed using the formula
-\[{n\choose r} = \frac{n!}{r!(n-r)!}.\] The key point here is that,
+\[{n\choose r} = \frac{n!}{r!(n-r)!}\] The key point here is that,
 unlike in permutations, the order of the \(r\) objects selected is
 irrelevant.
 
@@ -395,13 +398,13 @@ irrelevant.
 \item
   \(10\choose 3\)
 \item
-  The number of ways two math books can be chosen = \(4\choose 2\)\textbackslash{} The
+  The number of ways two math books can be chosen = \(4\choose 2\) The
   number of ways two other books (non-math) can be chosen =
-  \(6\choose 2\)\textbackslash{}
+  \(6\choose 2\)
 \end{enumerate}
 
 Therefore, the total number of ways exactly two math books can be chosen
-is \[{4\choose 2}{6\choose 2}.\]
+is \[{4\choose 2}{6\choose 2}\]
 
 \textbf{Exercise 1.5.} How many ways can at least one math book be chosen?
 
@@ -447,7 +450,7 @@ In the Figure\texttt{\ref{fig:ExCardDeck}}, the columns represent the different
   A deck of cards has 4 Queens. We first choose two Queens from the
   set of 4 Queens and 3 additional cards are chosen from the remaining
   48 cards (since 52-4 = 48). Therefore, the answer is
-  \[\binom{4}{2}\binom{48}{3}.\]
+  \[\binom{4}{2}\binom{48}{3}\]
 \item
   \(\binom{4}{2}\binom{4}{2}\binom{44}{1}\)
 \item
@@ -461,7 +464,7 @@ In the Figure\texttt{\ref{fig:ExCardDeck}}, the columns represent the different
   card from another value. Out of the 12 values left, we first choose
   three values (\(\binom{12}{3}\)ways), and then from each value, we
   choose a card (\(\binom{4}{1}^3=4^3\) ways). Therefore, the final
-  answer is \[13\cdot\binom{4}{2}\cdot \binom{12}{3}\cdot 4^3.\]
+  answer is \[13\cdot\binom{4}{2}\cdot \binom{12}{3}\cdot 4^3\]
 \end{enumerate}
 
 \textbf{Exercise 1.7.} How many ways can five cards be chosen such that all
@@ -535,7 +538,7 @@ QQAAA,22299,etc.).
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  A standard deck of cards has 13 different valueS. We need to first
+  A standard deck of cards has 13 different values. We need to first
   choose a value and then pick two cards from that value. Since each
   value has 4 cards, we can do this in \(\binom{13}{1}\binom{4}{2}\)
   ways. Thereafter, the other three cards must be picked from three
@@ -544,12 +547,12 @@ QQAAA,22299,etc.).
   values and then choose a card from each value. This can be done on
   \(\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}\) ways. Therefore,
   the final answer is
-  \[\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.\]
+  \[\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}\]
 \item
   This is a little bit similar to the previous problem, but here we
   have to choose 5 distinct values. We first choose 5 values and then
   from each value, we pick a card. Therefore, the final answer is
-  \[\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.\]
+  \[\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5\]
 \item
   a. \(\binom{40}{4}\binom{60}{6}\)
 
@@ -567,11 +570,11 @@ QQAAA,22299,etc.).
   committees where the two students are together from the total number
   of committees (this gives us the number of committees where only one
   of them are together or none of them are in the committee):
-  \[\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}.\]
+  \[\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}\]
 \end{enumerate}
 
 c.
-\[\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}.\]
+\[\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}\]
 4. a. Let's use \(X\) to represent a piece of candy. We can use three
 lines (dividers) to divide the candy between the three students. For
 example \[X|XX|XXX|XXXX\] means A gets 1, B gets 2, C gets 3, and D gets
@@ -581,7 +584,7 @@ distributions by finding the total number of arrangements of the Xs and
 the lines. Since there are 10 Xs and three lines, but the 10 Xs are
 identical and the 3 lines are identical (total 13 objects), the total
 number of ways the candy can be distributed is
-\[\frac{13!}{3!10!}=\binom{13}{3}.\]
+\[\frac{13!}{3!10!}=\binom{13}{3}\]
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -592,22 +595,22 @@ number of ways the candy can be distributed is
   This problems simplifies to 8 pieces of candy and three students -
   B,C,D. To distribute between 3 students, we need 2 lines. Therefore,
   the total number of distributions is
-  \[\frac{10!}{2!8!}=\binom{10}{2}.\]
+  \[\frac{10!}{2!8!}=\binom{10}{2}\]
 \item
   This is similar to the previous part. Initially, we give A two
   pieces of candy. However, when we distribute the other 8 pieces of
   candy, we distribute between all the 4 students. This way, A gets at
   least 2. \[\underbrace{XX}_{A\text{ receives 2 
-   }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}.\]
+   }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}\]
   Therefore, we have 8 Xs and 3 lines (total 11). The answer is
-  \[\frac{11!}{3!8!}=\binom{11}{3}.\] 5.a. We can arrange the cards
+  \[\frac{11!}{3!8!}=\binom{11}{3}\] 5.a. We can arrange the cards
   starting with a red card (RBRB\ldots) or with a black card (BRBR\ldots).
   Since there are 26 red cards and 26 black cards, the answer is
-  \[ 26!26!\cdot2.\] b. The total number of arrangements without any
+  \[ 26!26!\cdot2\] b. The total number of arrangements without any
   restrictions is 4!. The number of ways we arrange the cards keeping
   \textit{all} the queens together is \(4!49!\) (48 other cards + one
   block of 4 queens = 49 objects). Therefore, the number of
-  arrangements where at least one queen is separated is \[52!-49!4!.\]
+  arrangements where at least one queen is separated is \[52!-49!4!\]
 \end{enumerate}
 
 \hypertarget{review-of-set-theory}{%
@@ -672,7 +675,43 @@ consists of elements in \(B\) that are not in \(A\).
 
 As shown in Figure\texttt{\ref{fig:BminA}}, \(B-A=B \cap A^c.\)
 
-\textbf{Theorem 1.3: De Morgan's Laws\}}
+\hypertarget{laws-of-set-theory}{%
+\section{Laws of Set Theory}\label{laws-of-set-theory}}
+
+\textbf{Commutative Laws}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(A \cup B = B \cup A\)
+\item
+  \(A \cap B = B \cap A\)
+\end{enumerate}
+
+\textbf{Associative Laws}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \((A \cup B) \cup C = A \cup (B \cup C)\)
+\item
+  \((A \cap B) \cap C = A \cap (B \cap C)\)
+\end{enumerate}
+
+\textbf{Distributive Laws}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)
+\item
+  \(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)
+\end{enumerate}
+
+\textbf{De Morgan's Laws}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -687,13 +726,13 @@ As shown in Figure\texttt{\ref{fig:BminA}}, \(B-A=B \cap A^c.\)
 \section{Axioms of Probability}\label{axioms-of-probability}}
 
 Let \(S\) be a sample space. A probability measure \(P\) is a set function
-that satisfies the following statements:
+that satisfies the following axioms, known as \textbf{Kolmogorov's Axioms of Probability}:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(P(S)=1\)
+  \(P(S)=1.\)
 \item
   \(P(A)\geq 0 \mbox{ for any event } A\).
 \item
@@ -701,7 +740,7 @@ that satisfies the following statements:
   \[P\left(\bigcup_{i=1}^{\infty}A_i\right)=\sum_{i=1}^{\infty}A_i.\]
 \end{enumerate}
 
-\textbf{Theorem 1.4: Basic Properties of Probability Theory}
+\textbf{Theorem 1.3: Basic Properties of Probability Theory}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -722,12 +761,12 @@ that satisfies the following statements:
 
 1.Observe that \(\emptyset \cap S = \emptyset\) and
 \(\emptyset \cup S = S.\) Therefore,
-\[1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0.\]
+\[1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0\]
 2.Observe that \(A^c\cup A = S\) and \(A^c\cap A = \emptyset\). Therefore,
-\[1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A).\] 3.Observe
+\[1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A)\] 3.Observe
 that \((A-B)\cup (A\cap B)=A\) and \((A-B)\cap (A\cap B)=\emptyset.\)
 Therefore,
-\[P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B).\]
+\[P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B)\]
 \textbf{Example 1.9.} \(P(A)=0.4, P(B)=0.5,P(A\cap B)=0.1.\) Find the following
 probabilities:
 
@@ -752,16 +791,16 @@ probabilities:
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(P(A^c)=1-P(A) = 1-0.4 = 0.6.\)
+  \(P(A^c)=1-P(A) = 1-0.4 = 0.6\)
 \item
-  \(P(A\cup B)=P(A)+P(B)-P(A\cap B)=0.4+0.5-0.1 = 0.8.\)
+  \(P(A\cup B)=P(A)+P(B)-P(A\cap B)=0.4+0.5-0.1 = 0.8\)
 \item
   \(P(A\cap B^c)=P(A-B)=P(A)-P(A\cap B)= 0.4-0.1=0.3\)
 \item
-  \(P(A\cup B^c)=P(A)+P(B^c)-P(A\cap B^c)=0.4+(1-0.5)-0.3 = 0.6.\)
+  \(P(A\cup B^c)=P(A)+P(B^c)-P(A\cap B^c)=0.4+(1-0.5)-0.3 = 0.6\)
 \item
   We use De Morgan's law for this:
-  \[P(A^c\cap B^c)=P((A\cup B)^c)=1-P(A\cup B )=1-0.8 = 0.2.\]
+  \[P(A^c\cap B^c)=P((A\cup B)^c)=1-P(A\cup B )=1-0.8 = 0.2\]
 \end{enumerate}
 
 \hypertarget{sample-spaces-with-equally-likely-outcomes}{%
@@ -769,7 +808,7 @@ probabilities:
 
 Consider the sample space \(S=\{a_1,a_2,\dots,a_N\}.\) If all these
 outcomes are equally likely, then
-\[P(\{a_1\})=\cdots=P(\{a_N\})=\frac{1}{N}.\]
+\[P(\{a_1\})=\cdots=P(\{a_N\})=\frac{1}{N}\]
 
 If \(A\) is any event in \(S,\) then \[P(A) = \frac{|A|}{|S|},\] where \(|A|\)
 denotes the number of outcomes in \(A.\)
@@ -802,10 +841,10 @@ useful, is not always suitable for the following reasons:
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \(A=\{\text{a double is rolled}\}=\{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}\).
-  Since \(|S|=36\) and \(|A|=6,\) \[P(A)=\frac{6}{36}=\frac{1}{6}.\]
+  \(A=\{\text{a double is rolled}\}=\{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}\)
+  Since \(|S|=36\) and \(|A|=6,\) \[P(A)=\frac{6}{36}=\frac{1}{6}\]
 \item
-  \(A=\{(1,4), (2,3),(3,2),(4,1)\}\) \[P(A)=\frac{4}{36}=\frac{1}{9}.\]
+  \(A=\{(1,4), (2,3),(3,2),(4,1)\}\) \[P(A)=\frac{4}{36}=\frac{1}{9}\]
 \end{enumerate}
 
 \textbf{Exercise 1.9.} Four cards are randomly picked from a deck of 52
@@ -830,20 +869,20 @@ cards. Find the probability of the following events.
   Let's first find out what \(|S|\) is. To figure out the size of the
   sample space, it's vital to understand what the ``experiment'' is. We
   are drawing four cards from the deck. How many ways can we do that?
-  \[|S|=\binom{52}{4}.\] Now define
+  \[|S|=\binom{52}{4}\] Now define
   \(Q_1 = \{\text{exactly one card is a Queen}\}\). Then
-  \[|Q_1|=\binom{4}{1}\binom{48}{3}.\] Therefore,
-  \[P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}.\]
+  \[|Q_1|=\binom{4}{1}\binom{48}{3}\] Therefore,
+  \[P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}\]
 \item
   Let \(Q=\{\text{at least one card is a Queen}\}.\) Then
   \(Q^c=\{\text{no Queens are picked}\}.\) Notice that
-  \[P(Q^c)=\frac{\binom{48}{4}}{\binom{52}{4}}.\]
-  Therefore,\[P(Q)=1-P(Q^c)=1-\frac{\binom{48}{4}}{\binom{52}{4}}.\]
+  \[P(Q^c)=\frac{\binom{48}{4}}{\binom{52}{4}}\]
+  Therefore,\[P(Q)=1-P(Q^c)=1-\frac{\binom{48}{4}}{\binom{52}{4}}\]
 \item
   Let \(Q_1 = \{\text{exactly one card is a Queen}\}\) and
   \(K_2 = \{\text{exactly two cards are Kings}\}.\) Then the probability
   that \(Q_1\) occurs of \(K_2\) occurs is
-  \[P(Q_1\cup K_2)=P(Q_1)+P(K_2)-P(Q_1\cap K_2)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}+\frac{\binom{4}{2}\binom{48}{2}}{\binom{52}{4}}-\frac{\binom{4}{1}\binom{4}{2}\binom{44}{1}}{\binom{52}{4}}.\]
+  \[P(Q_1\cup K_2)=P(Q_1)+P(K_2)-P(Q_1\cap K_2)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}+\frac{\binom{4}{2}\binom{48}{2}}{\binom{52}{4}}-\frac{\binom{4}{1}\binom{4}{2}\binom{44}{1}}{\binom{52}{4}}\]
 \end{enumerate}
 
 \textbf{Exercise 1.10.} The 26 letters of the alphabet are arranged in a
@@ -855,7 +894,7 @@ We are arranging all 26 letters in a line. How many ways can we do this?
 arrange the 26 letters where the block of letters MATH appears together
 exactly in this order. Let's think of the block ``MATH'' as one object,
 and together with the other 22 letters, we have 23 objects. Therefore,
-the probability is \[\frac{23!}{26!}.\]
+the probability is \[\frac{23!}{26!}\]
 
 \hypertarget{worked-examples-1}{%
 \subsection{Worked Examples}\label{worked-examples-1}}
@@ -888,7 +927,7 @@ the probability is \[\frac{23!}{26!}.\]
   form a blackjack, the other card has to be a ten, a jack, a queen,
   or a king. There are 16 such cards in a deck. Therefore, the
   probability of forming a blackjack is
-  \[\frac{\binom{4}{1}\binom{16}{1}}{\binom{52}{2}}.\]
+  \[\frac{\binom{4}{1}\binom{16}{1}}{\binom{52}{2}}\]
 \item
   If a die is rolled four times, the total number of possible outcomes
   if \(6^4.\) This is a number of outcomes in the sample space.
@@ -904,7 +943,7 @@ the probability is \[\frac{23!}{26!}.\]
   numbers 1,2,3,4, or 5, but not a 6). Therefore,
 
   \[P(A^c)=\frac{5^4}{6^4}.\]It follows that
-  \[P(A)=1-P(A^c)=1-\left(\frac{5}{6}\right)^4.\]
+  \[P(A)=1-P(A^c)=1-\left(\frac{5}{6}\right)^4\]
 \item
   There are various ways to rephrase this question. Suppose each
   student randomly selects a number between 1 and 365. What is the
@@ -923,13 +962,13 @@ the probability is \[\frac{23!}{26!}.\]
   possible when each student gets to pick a number between 1-365.
   Therefore, \(|S|=365^{35}.\) Next, the number of outcomes possible
   where no student picks the same number is
-  \[365\times 364\times\cdots\times 331 = \frac{365!}{330!}.\]
+  \[365\times 364\times\cdots\times 331 = \frac{365!}{330!}\]
 
   Therefore,
   \[P(A^c)=\frac{\frac{365!}{330!}}{365^{35}}=\frac{365!}{330!365^{35}}.\]
-  Hence, \[P(A)=1-\frac{365!}{330!365^{35}}\approx 0.866.\]
+  Hence, \[P(A)=1-\frac{365!}{330!365^{35}}\approx 0.866\]
 \item
-  \(\frac{6\cdot 5\cdot 4}{6^3}= \frac{5}{9}.\)
+  \[\frac{6\cdot 5\cdot 4}{6^3}= \frac{5}{9}\]
 \end{enumerate}
 
 \hypertarget{conditional-probability-and-independence}{%
