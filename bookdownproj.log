@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  22 APR 2025 08:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  22 APR 2025 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2909,7 +2909,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  77i,8n,81p,1090b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro17.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on bookdownproj.pdf (37 pages, 2117511 bytes).
+Output written on bookdownproj.pdf (37 pages, 2117479 bytes).
 PDF statistics:
  725 PDF objects out of 1000 (max. 8388607)
  630 compressed objects within 7 object streams

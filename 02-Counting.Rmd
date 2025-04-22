@@ -322,7 +322,7 @@ number of ways the candy can be distributed is
 $$\frac{13!}{3!10!}=\binom{13}{3}$$
 
 b.  $$\underbrace{XX}_{A\text{ receives 2 
-     }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between B,C,D}}.$$
+     }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between B,C,D}}$$
     This problems simplifies to 8 pieces of candy and three students -
     B,C,D. To distribute between 3 students, we need 2 lines. Therefore,
     the total number of distributions is
