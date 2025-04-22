@@ -15,7 +15,7 @@ Understanding how to count the number of outcomes in the sample space, or within
 
 **Solution:**
 
-The sample space of this experiment can expressed as
+The sample space of this experiment can be expressed as
 $S=\{HH,HT,TH,TT\}$. Now, consider the event:
 $$A=\{\text{At least one outcome is a head}\}$$
 Since $A=\{HH,HT,TH\},$ 3 outcomes include at least one head. Notice that $A\subset S$. 
@@ -34,7 +34,13 @@ We will begin by stating the following crucial theorem.
 Consider $k$ experiments. Let $n_i$ denote the number of possible
 outcomes of the $i$th experiment where $i=1,2,\dots,k.$ Then the total
 of number of possible outcomes is
-$$n_1\times n_2\times\cdots\times n_k$$
+$$n_1\times n_2\times\cdots\times n_k.$$
+Note (With Repetition):
+
+Consider $k$ experiments. Suppose that each experiment has the same number of possible outcomes, say $n$, and that the outcome of one experiment does not affect the outcomes of the others (i.e., repetition is allowed). Then the total number of possible outcomes is
+$$
+n \times n \times \cdots \times n = n^k.
+$$
 
 **Example 1.2.** A 6-sided die is rolled twice. How many possible
 outcomes are there?
@@ -44,8 +50,6 @@ outcomes are there?
 First roll has 6 outcomes and the second roll has 6 outcomes. Therefore,
 there are $6\times 6 = 36$ possible outcomes when a dice rolled twice.
 
-In general, if a 6-die is rolled $n$ times, then there are $6^n$
-possible outcomes.
 
 **Example 1.3.** Suppose a password must contain exactly 4 symbols,
 where each symbol is either a letter (a-z) or a number (0-9). How many
