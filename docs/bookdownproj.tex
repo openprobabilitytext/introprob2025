@@ -146,7 +146,7 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={Introduction to Probability},
-  pdfauthor={Madhuka and Rajinda},
+  pdfauthor={Madhuka Gamage and Rajinda Wickrama},
   colorlinks=true,
   linkcolor={Maroon},
   filecolor={Maroon},
@@ -155,7 +155,7 @@
   pdfcreator={LaTeX via pandoc}}
 
 \title{Introduction to Probability}
-\author{Madhuka and Rajinda}
+\author{Madhuka Gamage and Rajinda Wickrama}
 \date{April 14, 2025}
 
 \begin{document}
@@ -178,37 +178,22 @@ Placeholder
 \hypertarget{combinations-and-permutations}{%
 \section{Combinations and Permutations}\label{combinations-and-permutations}}
 
-Counting plays a very important role in probability. In probability, we
-often deal with sets, and counting methods such as combinations and
-permutations help us find the number of elements in a set. Specifically,
-in probability, we deal with a set called the \textbf{sample space} which is
-the set of all possible outcomes of some random experiment and
-\textbf{events}, which are subsets of the sample space. Typically, the sample
-space is denoted by \(S\) or \(\Omega.\) Consider the following example:
+Counting plays a fundamental role in probability. Many probability problems involve determining how many outcomes belong to certain sets. To do this, we use counting techniques such as \textbf{combinations} and \textbf{permutations}.
 
-\textbf{Example 1.1.} Suppose a fair coin is flipped twice.What is the
-probability of flipping at least one head?
+In probability, we work with a special set called the \textbf{sample space}, usually denoted by \(S\) or \(\Omega\), which contains all possible outcomes of a random experiment. Each individual outcome is denoted by \(\omega \in \Omega\).
+
+An \textbf{event} is any \textbf{\emph{subset}} of the sample space. That is, if \(A\) is an event, then \(A \subseteq \Omega\). If \(A\) contains all the elements of \(\Omega\), it is called an \textbf{\emph{improper subset}}; if it contains only some of the elements, it is a \textbf{\emph{proper subset}}, denoted \(A \subset \Omega\) .
+
+Understanding how to count the number of outcomes in the sample space, or within specific events, is essential for calculating probabilities.
+
+\textbf{Example 1.1.} Suppose a fair coin is flipped twice.How many outcomes include at least one head?
 
 \textbf{Solution:}
 
 The sample space of this experiment can expressed as
 \(S=\{HH,HT,TH,TT\}\). Now, consider the event:
-\[A=\{\text{At least one outcome is a head}\}\] Notice that \(A\subset S\)
-(\(A\) is a subset of \(S\)). Since \(A=\{HH,HT,TH\},\) we can find the
-probability as follows:
-\[P(A)= \frac{\#\text{elements in A}}{\#\text{elements in S}}=\frac{3}{4}.\]
-
-The above method of computing the probability of an event, while very
-useful, is not always suitable for the following reasons:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Each outcome has to be equally likely.
-\item
-  The sets must be countable.
-\end{enumerate}
+\[A=\{\text{At least one outcome is a head}\}\]
+Since \(A=\{HH,HT,TH\},\) 3 outcomes include at least one head. Notice that \(A\subset S\).
 
 From the previous example, it is clear that counting the number of
 elements of sets is very important when dealing with discrete sets. We
@@ -225,7 +210,7 @@ We will begin by stating the following crucial theorem.
 Consider \(k\) experiments. Let \(n_i\) denote the number of possible
 outcomes of the \(i\)th experiment where \(i=1,2,\dots,k.\) Then the total
 of number of possible outcomes is
-\[n_1\times n_2\times\cdots\times n_k.\]
+\[n_1\times n_2\times\cdots\times n_k\]
 
 \textbf{Example 1.2.} A 6-sided die is rolled twice. How many possible
 outcomes are there?
@@ -789,6 +774,18 @@ outcomes are equally likely, then
 If \(A\) is any event in \(S,\) then \[P(A) = \frac{|A|}{|S|},\] where \(|A|\)
 denotes the number of outcomes in \(A.\)
 
+This method of computing the probability of an event, while very
+useful, is not always suitable for the following reasons:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Each outcome has to be equally likely.
+\item
+  The sets must be countable.
+\end{enumerate}
+
 \textbf{Example 1.10.} Suppose a fair die is rolled twice.
 
 \begin{enumerate}
@@ -935,21 +932,132 @@ the probability is \[\frac{23!}{26!}.\]
   \(\frac{6\cdot 5\cdot 4}{6^3}= \frac{5}{9}.\)
 \end{enumerate}
 
-\hypertarget{basic-probability}{%
-\chapter{Basic Probability}\label{basic-probability}}
+\hypertarget{conditional-probability-and-independence}{%
+\chapter{Conditional Probability and Independence}\label{conditional-probability-and-independence}}
 
-\hypertarget{book-description}{%
-\subsubsection*{Book Description}\label{book-description}}
+\hypertarget{conditional-probability}{%
+\section{Conditional Probability}\label{conditional-probability}}
+
+\hypertarget{the-multiplication-rule}{%
+\section{The Multiplication Rule}\label{the-multiplication-rule}}
+
+\hypertarget{independence-of-events}{%
+\section{Independence of Events}\label{independence-of-events}}
+
+\hypertarget{the-law-of-total-probability}{%
+\section{The Law of Total Probability}\label{the-law-of-total-probability}}
+
+\hypertarget{bayes-theorem}{%
+\section{Bayes' Theorem}\label{bayes-theorem}}
+
+\hypertarget{applications-and-common-misconceptions}{%
+\section{Applications and Common Misconceptions}\label{applications-and-common-misconceptions}}
+
+\hypertarget{discrete-random-variables-and-distributions}{%
+\chapter{Discrete Random Variables and Distributions}\label{discrete-random-variables-and-distributions}}
+
+\hypertarget{random-variables}{%
+\section{Random Variables}\label{random-variables}}
+
+\hypertarget{probability-mass-functions-pmfs}{%
+\section{Probability Mass Functions (PMFs)}\label{probability-mass-functions-pmfs}}
+
+\hypertarget{cumulative-distribution-functions-cdfs}{%
+\section{Cumulative Distribution Functions (CDFs)}\label{cumulative-distribution-functions-cdfs}}
+
+\hypertarget{expected-value-and-properties}{%
+\section{Expected Value and Properties}\label{expected-value-and-properties}}
+
+\hypertarget{variance-and-standard-deviation}{%
+\section{Variance and Standard Deviation}\label{variance-and-standard-deviation}}
+
+\hypertarget{common-discrete-distributions-binomial-geometric-poisson-negative-binomial-multinomial}{%
+\section{Common Discrete Distributions: Binomial, Geometric, Poisson, Negative Binomial, multinomial}\label{common-discrete-distributions-binomial-geometric-poisson-negative-binomial-multinomial}}
+
+\hypertarget{continuous-random-variables-and-distributions}{%
+\chapter{Continuous Random Variables and Distributions}\label{continuous-random-variables-and-distributions}}
+
+\hypertarget{continuous-random-variables}{%
+\section{Continuous Random Variables}\label{continuous-random-variables}}
+
+\hypertarget{probability-density-functions-pdfs}{%
+\section{Probability Density Functions (PDFs)}\label{probability-density-functions-pdfs}}
+
+\hypertarget{cumulative-distribution-functions-cdfs-1}{%
+\section{Cumulative Distribution Functions (CDFs)}\label{cumulative-distribution-functions-cdfs-1}}
+
+\hypertarget{expected-value-and-variance-continuous-case}{%
+\section{Expected Value and Variance (Continuous Case)}\label{expected-value-and-variance-continuous-case}}
+
+\hypertarget{uniform-exponential-and-normal-distributions}{%
+\section{Uniform, Exponential, and Normal Distributions}\label{uniform-exponential-and-normal-distributions}}
+
+\hypertarget{change-of-variables-and-applications}{%
+\section{Change of Variables and Applications}\label{change-of-variables-and-applications}}
+
+\hypertarget{joint-distributions-and-independence}{%
+\chapter{Joint Distributions and Independence}\label{joint-distributions-and-independence}}
+
+\hypertarget{joint-discrete-distributions}{%
+\section{Joint Discrete Distributions}\label{joint-discrete-distributions}}
+
+\hypertarget{joint-continuous-distributions}{%
+\section{Joint Continuous Distributions}\label{joint-continuous-distributions}}
+
+\hypertarget{marginal-and-conditional-distributions}{%
+\section{Marginal and Conditional Distributions}\label{marginal-and-conditional-distributions}}
+
+\hypertarget{independence-of-random-variables}{%
+\section{Independence of Random Variables}\label{independence-of-random-variables}}
+
+\hypertarget{covariance-and-correlation}{%
+\section{Covariance and Correlation}\label{covariance-and-correlation}}
+
+\hypertarget{sums-of-random-variables}{%
+\section{Sums of Random Variables}\label{sums-of-random-variables}}
+
+\hypertarget{limit-theorems}{%
+\chapter{Limit Theorems}\label{limit-theorems}}
+
+\hypertarget{sequences-of-random-variables}{%
+\section{Sequences of Random Variables}\label{sequences-of-random-variables}}
+
+\hypertarget{convergence-in-probability-and-distribution}{%
+\section{Convergence in Probability and Distribution}\label{convergence-in-probability-and-distribution}}
+
+\hypertarget{the-law-of-large-numbers-lln}{%
+\section{The Law of Large Numbers (LLN)}\label{the-law-of-large-numbers-lln}}
+
+\hypertarget{central-limit-theorem-clt}{%
+\section{Central Limit Theorem (CLT)}\label{central-limit-theorem-clt}}
+
+\hypertarget{applications-of-the-clt}{%
+\section{Applications of the CLT}\label{applications-of-the-clt}}
+
+\hypertarget{approximations-using-the-normal-distribution}{%
+\section{Approximations Using the Normal Distribution}\label{approximations-using-the-normal-distribution}}
+
+\hypertarget{appendix}{%
+\chapter*{Appendix}\label{appendix}}
 
 
-Introduction to Probability is a freely available textbook designed for MATH350 students.
+\hypertarget{algebra-review}{%
+\section*{Algebra Review}\label{algebra-review}}
+
+
+\hypertarget{calculus-review}{%
+\section*{Calculus Review}\label{calculus-review}}
+
+
+\hypertarget{bibliography}{%
+\chapter*{Bibliography}\label{bibliography}}
+
 
 \begin{itemize}
 \tightlist
 \item
-  This edition includes a variety of examples to help you learn probability concepts at your own pace.
+  Sheldon, Ross. \textbf{\emph{A First Course in Probability}}. Pearson, 2016.
 \item
-  The book is available for download as a PDF.
 \end{itemize}
 
 \end{document}

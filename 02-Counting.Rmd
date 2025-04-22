@@ -2,13 +2,14 @@
 
 ## Combinations and Permutations
 
-Counting plays a very important role in probability. In probability, we
-often deal with sets, and counting methods such as combinations and
-permutations help us find the number of elements in a set. Specifically,
-in probability, we deal with a set called the **sample space** which is
-the set of all possible outcomes of some random experiment and
-**events**, which are subsets of the sample space. Typically, the sample
-space is denoted by $S$ or $\Omega.$ Consider the following example:
+Counting plays a fundamental role in probability. Many probability problems involve determining how many outcomes belong to certain sets. To do this, we use counting techniques such as **combinations** and **permutations**.
+
+In probability, we work with a special set called the **sample space**, usually denoted by $S$ or $\Omega$, which contains all possible outcomes of a random experiment. Each individual outcome is denoted by $\omega \in \Omega$.
+
+An **event** is any ***subset*** of the sample space. That is, if $A$ is an event, then $A \subseteq \Omega$. If $A$ contains all the elements of $\Omega$, it is called an ***improper subset***; if it contains only some of the elements, it is a ***proper subset***, denoted $A \subset \Omega$ .
+
+Understanding how to count the number of outcomes in the sample space, or within specific events, is essential for calculating probabilities. 
+
 
 **Example 1.1.** Suppose a fair coin is flipped twice.How many outcomes include at least one head?
 
@@ -33,7 +34,7 @@ We will begin by stating the following crucial theorem.
 Consider $k$ experiments. Let $n_i$ denote the number of possible
 outcomes of the $i$th experiment where $i=1,2,\dots,k.$ Then the total
 of number of possible outcomes is
-$$n_1\times n_2\times\cdots\times n_k.$$
+$$n_1\times n_2\times\cdots\times n_k$$
 
 **Example 1.2.** A 6-sided die is rolled twice. How many possible
 outcomes are there?
@@ -76,14 +77,14 @@ passwords contain at least one letter?
 
 Total number of passwords = $36^4$. Total number of passwords not
 containing a letter = $10^4$. Therefore, the number of passwords
-containing at least one letter is $$36^4-10^4.$$
+containing at least one letter is $$36^4-10^4$$
 
 Imagine three objects labeled $A,B,$ and $C.$ The number of ways we can
 arrange these objects is called a *permutation.* These objects can be
 arranged in six different ways: $$ABC, ACB, BAC, BCA, CAB, CBA.$$ The
 formula to find the number of permutations of $n$ *distinct* objects is
 $$n!=n\times (n-1)\times\cdots\times 2\times 1.$$ For three distinct
-objects, the number of permutations is $3!=6.$
+objects, the number of permutations is $3!=6$
 
 **Example 1.5.** In a class, there are 4 sophomores, 7 juniors, and 3
 seniors.
@@ -175,7 +176,7 @@ irrelevant.
     $6\choose 2$\\
 
 Therefore, the total number of ways exactly two math books can be chosen
-is $${4\choose 2}{6\choose 2}.$$
+is $${4\choose 2}{6\choose 2}$$
 
 **Exercise 1.5.** How many ways can at least one math book be chosen?
 
@@ -210,7 +211,7 @@ In the Figure`@ref(fig:ExCardDeck)`, the columns represent the different
 2.  A deck of cards has 4 Queens. We first choose two Queens from the
     set of 4 Queens and 3 additional cards are chosen from the remaining
     48 cards (since 52-4 = 48). Therefore, the answer is
-    $$\binom{4}{2}\binom{48}{3}.$$
+    $$\binom{4}{2}\binom{48}{3}$$
 
 3.  $\binom{4}{2}\binom{4}{2}\binom{44}{1}$
 
@@ -224,7 +225,7 @@ In the Figure`@ref(fig:ExCardDeck)`, the columns represent the different
     card from another value. Out of the 12 values left, we first choose
     three values ($\binom{12}{3}$ways), and then from each value, we
     choose a card ($\binom{4}{1}^3=4^3$ ways). Therefore, the final
-    answer is $$13\cdot\binom{4}{2}\cdot \binom{12}{3}\cdot 4^3.$$
+    answer is $$13\cdot\binom{4}{2}\cdot \binom{12}{3}\cdot 4^3$$
 
 **Exercise 1.7.** How many ways can five cards be chosen such that all
 the values are unique?
@@ -278,12 +279,12 @@ QQAAA,22299,etc.).
     values and then choose a card from each value. This can be done on
     $\binom{12}{3}\binom{4}{1}\binom{4}{1}\binom{4}{1}$ ways. Therefore,
     the final answer is
-    $$\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}.$$
+    $$\binom{13}{1}\binom{4}{2}\binom{12}{3}\binom{4}{1}\binom{4}{1}    \binom{4}{1}$$
 
 2.  This is a little bit similar to the previous problem, but here we
     have to choose 5 distinct values. We first choose 5 values and then
     from each value, we pick a card. Therefore, the final answer is
-    $$\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5.$$
+    $$\binom{13}{5}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}{1}\binom{4}     {1}=\binom{13}{5}\cdot 4^5$$
 
 3.  a\. $\binom{40}{4}\binom{60}{6}$
 
@@ -301,10 +302,10 @@ QQAAA,22299,etc.).
     committees where the two students are together from the total number
     of committees (this gives us the number of committees where only one
     of them are together or none of them are in the committee):
-    $$\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}.$$
+    $$\binom{40}{4}\binom{60}{6}-\binom{38}{2}\binom{60}{6}$$
 
 c\.
-$$\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}.$$
+$$\binom{1}{1}\binom{39}{3}\binom{60}{6}=\binom{39}{3}\binom{60}{6}$$
 4. a. Let's use $X$ to represent a piece of candy. We can use three
 lines (dividers) to divide the candy between the three students. For
 example $$X|XX|XXX|XXXX$$ means A gets 1, B gets 2, C gets 3, and D gets
@@ -314,20 +315,20 @@ distributions by finding the total number of arrangements of the Xs and
 the lines. Since there are 10 Xs and three lines, but the 10 Xs are
 identical and the 3 lines are identical (total 13 objects), the total
 number of ways the candy can be distributed is
-$$\frac{13!}{3!10!}=\binom{13}{3}.$$
+$$\frac{13!}{3!10!}=\binom{13}{3}$$
 
 b.  $$\underbrace{XX}_{A\text{ receives 2 
      }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between B,C,D}}.$$
     This problems simplifies to 8 pieces of candy and three students -
     B,C,D. To distribute between 3 students, we need 2 lines. Therefore,
     the total number of distributions is
-    $$\frac{10!}{2!8!}=\binom{10}{2}.$$
+    $$\frac{10!}{2!8!}=\binom{10}{2}$$
 
 c.  This is similar to the previous part. Initially, we give A two
     pieces of candy. However, when we distribute the other 8 pieces of
     candy, we distribute between all the 4 students. This way, A gets at
     least 2. $$\underbrace{XX}_{A\text{ receives 2 
-     }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}.$$
+     }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}$$
     Therefore, we have 8 Xs and 3 lines (total 11). The answer is
     $$\frac{11!}{3!8!}=\binom{11}{3}.$$ 5.a. We can arrange the cards
     starting with a red card (RBRB...) or with a black card (BRBR...).
@@ -336,7 +337,7 @@ c.  This is similar to the previous part. Initially, we give A two
     restrictions is 4!. The number of ways we arrange the cards keeping
     \textit{all} the queens together is $4!49!$ (48 other cards + one
     block of 4 queens = 49 objects). Therefore, the number of
-    arrangements where at least one queen is separated is $$52!-49!4!.$$
+    arrangements where at least one queen is separated is $$52!-49!4!$$
 
 ## Review of Set Theory
 
@@ -426,12 +427,12 @@ that satisfies the following statements:
 
 1.Observe that $\emptyset \cap S = \emptyset$ and
 $\emptyset \cup S = S.$ Therefore,
-$$1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0.$$
+$$1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0$$
 2.Observe that $A^c\cup A = S$ and $A^c\cap A = \emptyset$. Therefore,
 $$1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A).$$ 3.Observe
 that $(A-B)\cup (A\cap B)=A$ and $(A-B)\cap (A\cap B)=\emptyset.$
 Therefore,
-$$P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B).$$
+$$P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B)$$
 **Example 1.9.** $P(A)=0.4, P(B)=0.5,P(A\cap B)=0.1.$ Find the following
 probabilities:
 
@@ -443,18 +444,18 @@ probabilities:
 
 **Solution:**
 
-1.  $P(A^c)=1-P(A) = 1-0.4 = 0.6.$
-2.  $P(A\cup B)=P(A)+P(B)-P(A\cap B)=0.4+0.5-0.1 = 0.8.$
+1.  $P(A^c)=1-P(A) = 1-0.4 = 0.6$
+2.  $P(A\cup B)=P(A)+P(B)-P(A\cap B)=0.4+0.5-0.1 = 0.8$
 3.  $P(A\cap B^c)=P(A-B)=P(A)-P(A\cap B)= 0.4-0.1=0.3$
-4.  $P(A\cup B^c)=P(A)+P(B^c)-P(A\cap B^c)=0.4+(1-0.5)-0.3 = 0.6.$
+4.  $P(A\cup B^c)=P(A)+P(B^c)-P(A\cap B^c)=0.4+(1-0.5)-0.3 = 0.6$
 5.  We use De Morgan's law for this:
-    $$P(A^c\cap B^c)=P((A\cup B)^c)=1-P(A\cup B )=1-0.8 = 0.2.$$
+    $$P(A^c\cap B^c)=P((A\cup B)^c)=1-P(A\cup B )=1-0.8 = 0.2$$
 
 ### Sample spaces with equally likely outcomes
 
 Consider the sample space $S=\{a_1,a_2,\dots,a_N\}.$ If all these
 outcomes are equally likely, then
-$$P(\{a_1\})=\cdots=P(\{a_N\})=\frac{1}{N}.$$
+$$P(\{a_1\})=\cdots=P(\{a_N\})=\frac{1}{N}$$
 
 If $A$ is any event in $S,$ then $$P(A) = \frac{|A|}{|S|},$$ where $|A|$
 denotes the number of outcomes in $A.$
@@ -472,10 +473,10 @@ useful, is not always suitable for the following reasons:
 
 **Solution:**
 
-1.  $A=\{\text{a double is rolled}\}=\{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}$.
-    Since $|S|=36$ and $|A|=6,$ $$P(A)=\frac{6}{36}=\frac{1}{6}.$$
+1.  $A=\{\text{a double is rolled}\}=\{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}$
+    Since $|S|=36$ and $|A|=6,$ $$P(A)=\frac{6}{36}=\frac{1}{6}$$
 
-2.  $A=\{(1,4), (2,3),(3,2),(4,1)\}$ $$P(A)=\frac{4}{36}=\frac{1}{9}.$$
+2.  $A=\{(1,4), (2,3),(3,2),(4,1)\}$ $$P(A)=\frac{4}{36}=\frac{1}{9}$$
 
 **Exercise 1.9.** Four cards are randomly picked from a deck of 52
 cards. Find the probability of the following events.
@@ -494,15 +495,15 @@ cards. Find the probability of the following events.
     $$|S|=\binom{52}{4}.$$ Now define
     $Q_1 = \{\text{exactly one card is a Queen}\}$. Then
     $$|Q_1|=\binom{4}{1}\binom{48}{3}.$$ Therefore,
-    $$P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}.$$
+    $$P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}$$
 2.  Let $Q=\{\text{at least one card is a Queen}\}.$ Then
     $Q^c=\{\text{no Queens are picked}\}.$ Notice that
-    $$P(Q^c)=\frac{\binom{48}{4}}{\binom{52}{4}}.$$
-    Therefore,$$P(Q)=1-P(Q^c)=1-\frac{\binom{48}{4}}{\binom{52}{4}}.$$
+    $$P(Q^c)=\frac{\binom{48}{4}}{\binom{52}{4}}$$
+    Therefore,$$P(Q)=1-P(Q^c)=1-\frac{\binom{48}{4}}{\binom{52}{4}}$$
 3.  Let $Q_1 = \{\text{exactly one card is a Queen}\}$ and
     $K_2 = \{\text{exactly two cards are Kings}\}.$ Then the probability
     that $Q_1$ occurs of $K_2$ occurs is
-    $$P(Q_1\cup K_2)=P(Q_1)+P(K_2)-P(Q_1\cap K_2)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}+\frac{\binom{4}{2}\binom{48}{2}}{\binom{52}{4}}-\frac{\binom{4}{1}\binom{4}{2}\binom{44}{1}}{\binom{52}{4}}.$$
+    $$P(Q_1\cup K_2)=P(Q_1)+P(K_2)-P(Q_1\cap K_2)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}+\frac{\binom{4}{2}\binom{48}{2}}{\binom{52}{4}}-\frac{\binom{4}{1}\binom{4}{2}\binom{44}{1}}{\binom{52}{4}}$$
 
 **Exercise 1.10.** The 26 letters of the alphabet are arranged in a
 line. What is the probability that the word MATH appears consecutively
@@ -513,7 +514,7 @@ We are arranging all 26 letters in a line. How many ways can we do this?
 arrange the 26 letters where the block of letters MATH appears together
 exactly in this order. Let's think of the block "MATH" as one object,
 and together with the other 22 letters, we have 23 objects. Therefore,
-the probability is $$\frac{23!}{26!}.$$
+the probability is $$\frac{23!}{26!}$$
 
 ### Worked Examples
 
@@ -534,7 +535,7 @@ the probability is $$\frac{23!}{26!}.$$
     form a blackjack, the other card has to be a ten, a jack, a queen,
     or a king. There are 16 such cards in a deck. Therefore, the
     probability of forming a blackjack is
-    $$\frac{\binom{4}{1}\binom{16}{1}}{\binom{52}{2}}.$$
+    $$\frac{\binom{4}{1}\binom{16}{1}}{\binom{52}{2}}$$
 
 2.  If a die is rolled four times, the total number of possible outcomes
     if $6^4.$ This is a number of outcomes in the sample space. 
@@ -550,7 +551,7 @@ the probability is $$\frac{23!}{26!}.$$
     numbers 1,2,3,4, or 5, but not a 6). Therefore,
 
     $$P(A^c)=\frac{5^4}{6^4}.$$It follows that
-    $$P(A)=1-P(A^c)=1-\left(\frac{5}{6}\right)^4.$$
+    $$P(A)=1-P(A^c)=1-\left(\frac{5}{6}\right)^4$$
 
 3.  There are various ways to rephrase this question. Suppose each
     student randomly selects a number between 1 and 365. What is the
@@ -569,10 +570,10 @@ the probability is $$\frac{23!}{26!}.$$
     possible when each student gets to pick a number between 1-365.
     Therefore, $|S|=365^{35}.$ Next, the number of outcomes possible
     where no student picks the same number is
-    $$365\times 364\times\cdots\times 331 = \frac{365!}{330!}.$$
+    $$365\times 364\times\cdots\times 331 = \frac{365!}{330!}$$
 
     Therefore,
     $$P(A^c)=\frac{\frac{365!}{330!}}{365^{35}}=\frac{365!}{330!365^{35}}.$$
-    Hence, $$P(A)=1-\frac{365!}{330!365^{35}}\approx 0.866.$$
+    Hence, $$P(A)=1-\frac{365!}{330!365^{35}}\approx 0.866$$
 
-4.  $\frac{6\cdot 5\cdot 4}{6^3}= \frac{5}{9}.$
+4.  $$\frac{6\cdot 5\cdot 4}{6^3}= \frac{5}{9}$$

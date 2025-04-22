@@ -1,8 +1,6 @@
 
 <!-- # Preface {-} -->
 
-#### Book Description{-}
-Introduction to Probability is a freely available textbook designed for MATH350 students.
+ - Sheldon, Ross. ***A First Course in Probability***. Pearson, 2016.
+ - 
 
-- This edition includes a variety of examples to help you learn probability    concepts at your own pace.
-- The book is available for download as a PDF.

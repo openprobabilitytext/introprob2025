@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  17 APR 2025 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.16)  22 APR 2025 00:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -946,59 +946,20 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 (c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[3])
 \tf@toc=\write5
 \openout5 = `bookdownproj.toc'.
 
 
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[3]
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (452.7179pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (452.7179pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (452.7179pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (452.7179pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- [][][][] 
- []
-
-[4
-
-]
+[4]
 Underfull \vbox (badness 10000) detected at line 170
  []
 
@@ -1050,6 +1011,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5
+
 
 ]
 
@@ -1130,26 +1092,6 @@ Overfull \hbox (452.7179pt too wide) detected at line 176
 
 Chapter 1.
 
-Underfull \hbox (badness 10000) detected at line 208
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 208
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 210
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 210
-[][][]
- []
-
-
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1158,18 +1100,43 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [7
 
-{c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}
-Non-PDF special ignored!
-<special> color cmyk 0 0 0 1.0
-Non-PDF special ignored!
-<special> color cmyk 0 0 0 1.0
-]
-Underfull \hbox (badness 10000) detected at line 249
+{c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Underfull \hbox (badness 10000) detected at line 234
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 249
+Underfull \hbox (badness 10000) detected at line 234
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 236
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 236
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 238
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 238
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 248
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 248
 [][][]
  []
 
@@ -1184,82 +1151,52 @@ Underfull \hbox (badness 10000) detected at line 251
  []
 
 
-Underfull \hbox (badness 10000) detected at line 253
+Underfull \hbox (badness 10000) detected at line 254
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 253
+Underfull \hbox (badness 10000) detected at line 254
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 263
+Underfull \hbox (badness 10000) detected at line 286
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 263
+Underfull \hbox (badness 10000) detected at line 286
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 266
+Underfull \hbox (badness 10000) detected at line 288
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 266
+Underfull \hbox (badness 10000) detected at line 288
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 269
+Underfull \hbox (badness 10000) detected at line 298
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 269
+Underfull \hbox (badness 10000) detected at line 298
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 301
+Underfull \hbox (badness 10000) detected at line 300
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 301
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 303
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 303
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 313
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 313
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 315
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 315
+Underfull \hbox (badness 10000) detected at line 300
 [][][]
  []
 
@@ -1282,20 +1219,60 @@ Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
+Non-PDF special ignored!
+<special> color cmyk 0 0 0 1.0
 ]
-<class_example_permutations.png, id=85, 311.36325pt x 150.5625pt>
+<class_example_permutations.png, id=158, 311.36325pt x 150.5625pt>
 File: class_example_permutations.png Graphic file (type png)
 <use class_example_permutations.png>
-Package pdftex.def Info: class_example_permutations.png  used on input line 322.
+Package pdftex.def Info: class_example_permutations.png  used on input line 307.
 (pdftex.def)             Requested size: 362.39313pt x 339.56885pt.
+
+Underfull \hbox (badness 10000) detected at line 338
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 338
+[][][]
+ []
+
 
 
 [9
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
-Non-PDF special ignored!
-<special> color cmyk 0 0 0 1.0
  <./class_example_permutations.png>]
+Underfull \hbox (badness 10000) detected at line 340
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 340
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 342
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 342
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 344
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 344
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 353
  [][]
  []
@@ -1316,107 +1293,67 @@ Underfull \hbox (badness 10000) detected at line 355
  []
 
 
-Underfull \hbox (badness 10000) detected at line 357
+Underfull \hbox (badness 10000) detected at line 358
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 357
+Underfull \hbox (badness 10000) detected at line 358
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 359
+Underfull \hbox (badness 10000) detected at line 361
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 359
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 368
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 368
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 370
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 370
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 373
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 373
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 376
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 376
+Underfull \hbox (badness 10000) detected at line 361
 [][][]
  []
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 390.
+(amsmath)                 on input line 375.
 
 
-Underfull \hbox (badness 10000) detected at line 400
+Underfull \hbox (badness 10000) detected at line 385
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 400
+Underfull \hbox (badness 10000) detected at line 385
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 402
+Underfull \hbox (badness 10000) detected at line 387
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 402
+Underfull \hbox (badness 10000) detected at line 387
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 411
+Underfull \hbox (badness 10000) detected at line 396
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 411
+Underfull \hbox (badness 10000) detected at line 396
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 413
+Underfull \hbox (badness 10000) detected at line 398
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 413
+Underfull \hbox (badness 10000) detected at line 398
 [][][]
  []
 
@@ -1447,51 +1384,51 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-<deckofcards.png, id=111, 923.45pt x 423.5825pt>
+<deckofcards.png, id=184, 923.45pt x 423.5825pt>
 File: deckofcards.png Graphic file (type png)
 <use deckofcards.png>
-Package pdftex.def Info: deckofcards.png  used on input line 429.
+Package pdftex.def Info: deckofcards.png  used on input line 414.
 (pdftex.def)             Requested size: 407.67195pt x 271.60248pt.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 432.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 417.
 (c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) detected at line 443
+Underfull \hbox (badness 10000) detected at line 428
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 443
+Underfull \hbox (badness 10000) detected at line 428
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 445
+Underfull \hbox (badness 10000) detected at line 430
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 445
+Underfull \hbox (badness 10000) detected at line 430
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 448
+Underfull \hbox (badness 10000) detected at line 433
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 448
+Underfull \hbox (badness 10000) detected at line 433
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 451
+Underfull \hbox (badness 10000) detected at line 436
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 451
+Underfull \hbox (badness 10000) detected at line 436
 [][][]
  []
 
@@ -1509,82 +1446,82 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
  <./deckofcards.png>]
-Underfull \hbox (badness 10000) detected at line 460
+Underfull \hbox (badness 10000) detected at line 445
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 460
+Underfull \hbox (badness 10000) detected at line 445
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 462
+Underfull \hbox (badness 10000) detected at line 447
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 462
+Underfull \hbox (badness 10000) detected at line 447
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 467
+Underfull \hbox (badness 10000) detected at line 452
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 467
+Underfull \hbox (badness 10000) detected at line 452
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 469
+Underfull \hbox (badness 10000) detected at line 454
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 469
+Underfull \hbox (badness 10000) detected at line 454
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 495
+Underfull \hbox (badness 10000) detected at line 480
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 495
+Underfull \hbox (badness 10000) detected at line 480
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 499
+Underfull \hbox (badness 10000) detected at line 484
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 499
+Underfull \hbox (badness 10000) detected at line 484
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 502
+Underfull \hbox (badness 10000) detected at line 487
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 502
+Underfull \hbox (badness 10000) detected at line 487
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 518
+Underfull \hbox (badness 10000) detected at line 503
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 518
+Underfull \hbox (badness 10000) detected at line 503
 [][][]
  []
 
@@ -1614,42 +1551,42 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-Underfull \hbox (badness 10000) detected at line 534
+Underfull \hbox (badness 10000) detected at line 519
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 534
+Underfull \hbox (badness 10000) detected at line 519
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 553
+Underfull \hbox (badness 10000) detected at line 538
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 553
+Underfull \hbox (badness 10000) detected at line 538
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 564
+Underfull \hbox (badness 10000) detected at line 549
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 564
+Underfull \hbox (badness 10000) detected at line 549
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 569
+Underfull \hbox (badness 10000) detected at line 554
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 569
+Underfull \hbox (badness 10000) detected at line 554
 [][][]
  []
 
@@ -1675,22 +1612,22 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-Underfull \hbox (badness 10000) detected at line 605
+Underfull \hbox (badness 10000) detected at line 590
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 605
+Underfull \hbox (badness 10000) detected at line 590
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 612
+Underfull \hbox (badness 10000) detected at line 597
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 612
+Underfull \hbox (badness 10000) detected at line 597
 [][][]
  []
 
@@ -1702,55 +1639,75 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-<Ven1.png, id=164, 417.56pt x 283.55937pt>
+<Ven1.png, id=236, 417.56pt x 283.55937pt>
 File: Ven1.png Graphic file (type png)
 <use Ven1.png>
-Package pdftex.def Info: Ven1.png  used on input line 638.
+Package pdftex.def Info: Ven1.png  used on input line 623.
 (pdftex.def)             Requested size: 226.48572pt x 271.62112pt.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 638.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 623.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 638.
+(Font)              <11> on input line 623.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 638.
+(Font)              <7.69997> on input line 623.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 638.
-<Ven2.png, id=165, 419.06563pt x 282.05376pt>
+(Font)              <5.5> on input line 623.
+<Ven2.png, id=237, 419.06563pt x 282.05376pt>
 File: Ven2.png Graphic file (type png)
 <use Ven2.png>
-Package pdftex.def Info: Ven2.png  used on input line 647.
+Package pdftex.def Info: Ven2.png  used on input line 632.
 (pdftex.def)             Requested size: 226.48389pt x 271.61636pt.
 
 
 [15 <./Ven1.png>]
-<Ven3.png, id=172, 405.515pt x 280.54813pt>
+<Ven3.png, id=244, 405.515pt x 280.54813pt>
 File: Ven3.png Graphic file (type png)
 <use Ven3.png>
-Package pdftex.def Info: Ven3.png  used on input line 657.
+Package pdftex.def Info: Ven3.png  used on input line 642.
 (pdftex.def)             Requested size: 226.48663pt x 271.60907pt.
-<Ven4.png, id=173, 399.74344pt x 268.75406pt>
+<Ven4.png, id=245, 399.74344pt x 268.75406pt>
 File: Ven4.png Graphic file (type png)
 <use Ven4.png>
-Package pdftex.def Info: Ven4.png  used on input line 667.
+Package pdftex.def Info: Ven4.png  used on input line 652.
 (pdftex.def)             Requested size: 226.4837pt x 271.59529pt.
 
 
 [16 <./Ven2.png> <./Ven3.png>]
-<Ven5.png, id=182, 419.06563pt x 286.57062pt>
+<Ven5.png, id=254, 419.06563pt x 286.57062pt>
 File: Ven5.png Graphic file (type png)
 <use Ven5.png>
-Package pdftex.def Info: Ven5.png  used on input line 676.
+Package pdftex.def Info: Ven5.png  used on input line 661.
 (pdftex.def)             Requested size: 226.48389pt x 271.60213pt.
 
 
 [17 <./Ven4.png>]
-<Ven6.png, id=190, 417.05812pt x 283.55937pt>
+<Ven6.png, id=262, 417.05812pt x 283.55937pt>
 File: Ven6.png Graphic file (type png)
 <use Ven6.png>
-Package pdftex.def Info: Ven6.png  used on input line 685.
+Package pdftex.def Info: Ven6.png  used on input line 670.
 (pdftex.def)             Requested size: 226.48715pt x 271.62112pt.
 
 
 [18 <./Ven5.png> <./Ven6.png>]
+Underfull \hbox (badness 10000) detected at line 681
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 681
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 683
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 683
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 696
  [][]
  []
@@ -1771,97 +1728,117 @@ Underfull \hbox (badness 10000) detected at line 698
  []
 
 
-Underfull \hbox (badness 10000) detected at line 711
+Underfull \hbox (badness 10000) detected at line 700
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 711
+Underfull \hbox (badness 10000) detected at line 700
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 713
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 713
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 715
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 715
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 700--701
 []$[]\OML/lmm/m/it/12 A[]; A[]; :::[]A[] \OMS/lmsy/m/n/12 \ \OML/lmm/m/it/12 A[] \OT1/lmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) detected at line 725
+Underfull \hbox (badness 10000) detected at line 710
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 725
+Underfull \hbox (badness 10000) detected at line 710
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 727
+Underfull \hbox (badness 10000) detected at line 712
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 727
+Underfull \hbox (badness 10000) detected at line 712
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 729
+Underfull \hbox (badness 10000) detected at line 714
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 729
+Underfull \hbox (badness 10000) detected at line 714
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 731
+Underfull \hbox (badness 10000) detected at line 716
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 731
+Underfull \hbox (badness 10000) detected at line 716
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 733
+Underfull \hbox (badness 10000) detected at line 718
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 733
+Underfull \hbox (badness 10000) detected at line 718
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 753
+Underfull \hbox (badness 10000) detected at line 738
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 753
+Underfull \hbox (badness 10000) detected at line 738
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 740
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 740
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 742
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 742
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 744
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 744
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 746
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 746
 [][][]
  []
 
@@ -1882,46 +1859,6 @@ Underfull \hbox (badness 10000) detected at line 757
 
 
 Underfull \hbox (badness 10000) detected at line 757
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 759
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 759
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 761
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 761
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 770
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 770
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 772
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 772
 [][][]
  []
 
@@ -1959,52 +1896,82 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 ]
-Underfull \hbox (badness 10000) detected at line 774
+Underfull \hbox (badness 10000) detected at line 759
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 774
+Underfull \hbox (badness 10000) detected at line 759
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 776
+Underfull \hbox (badness 10000) detected at line 761
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 776
+Underfull \hbox (badness 10000) detected at line 761
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 778
+Underfull \hbox (badness 10000) detected at line 763
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 778
+Underfull \hbox (badness 10000) detected at line 763
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 798
+Underfull \hbox (badness 10000) detected at line 784
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 798
+Underfull \hbox (badness 10000) detected at line 784
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 800
+Underfull \hbox (badness 10000) detected at line 786
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 800
+Underfull \hbox (badness 10000) detected at line 786
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 795
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 795
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 797
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 797
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 805
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 805
 [][][]
  []
 
@@ -2019,52 +1986,42 @@ Underfull \hbox (badness 10000) detected at line 808
  []
 
 
-Underfull \hbox (badness 10000) detected at line 811
+Underfull \hbox (badness 10000) detected at line 817
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 811
+Underfull \hbox (badness 10000) detected at line 817
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 820
+Underfull \hbox (badness 10000) detected at line 819
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 820
+Underfull \hbox (badness 10000) detected at line 819
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 822
+Underfull \hbox (badness 10000) detected at line 821
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 822
+Underfull \hbox (badness 10000) detected at line 821
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 824
+Underfull \hbox (badness 10000) detected at line 830
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 824
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 833
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 833
+Underfull \hbox (badness 10000) detected at line 830
 [][][]
  []
 
@@ -2097,78 +2054,50 @@ Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
+Non-PDF special ignored!
+<special> color cmyk 0 0 0 1.0
 ]
-Underfull \hbox (badness 10000) detected at line 841
+Underfull \hbox (badness 10000) detected at line 838
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 841
+Underfull \hbox (badness 10000) detected at line 838
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 846
+Underfull \hbox (badness 10000) detected at line 843
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 846
+Underfull \hbox (badness 10000) detected at line 843
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--849
+Underfull \hbox (badness 10000) in paragraph at lines 843--846
 []\T1/lmr/m/n/12 Let $\OML/lmm/m/it/12 Q[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f[]g$ \T1/lmr/m/n/12 and $\OML/lmm/m/it/12 K[] \OT1/lmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) detected at line 870
+Underfull \hbox (badness 10000) detected at line 867
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 870
+Underfull \hbox (badness 10000) detected at line 867
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 875
+Underfull \hbox (badness 10000) detected at line 872
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 875
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 878
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 878
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 881
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 881
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 890
- [][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 890
+Underfull \hbox (badness 10000) detected at line 872
 [][][]
  []
 
@@ -2181,39 +2110,53 @@ Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
-Non-PDF special ignored!
-<special> color cmyk 0 0 0 1.0
-Non-PDF special ignored!
-<special> color cmyk 0 0 0 1.0
-Non-PDF special ignored!
-<special> color cmyk 0 0 0 1.0
 ]
-Underfull \hbox (badness 10000) detected at line 896
+Underfull \hbox (badness 10000) detected at line 875
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 896
+Underfull \hbox (badness 10000) detected at line 875
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 912
+Underfull \hbox (badness 10000) detected at line 878
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 912
+Underfull \hbox (badness 10000) detected at line 878
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 935
+Underfull \hbox (badness 10000) detected at line 887
  [][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 935
+Underfull \hbox (badness 10000) detected at line 887
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 893
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 893
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 909
+ [][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 909
 [][][]
  []
 
@@ -2228,39 +2171,101 @@ Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
 Non-PDF special ignored!
 <special> color cmyk 0 0 0 1.0
+Non-PDF special ignored!
+<special> color cmyk 0 0 0 1.0
+Non-PDF special ignored!
+<special> color cmyk 0 0 0 1.0
+Non-PDF special ignored!
+<special> color cmyk 0 0 0 1.0
 ]
-Underfull \vbox (badness 10000) detected at line 939
+Underfull \hbox (badness 10000) detected at line 932
+ [][]
  []
 
 
-Overfull \hbox (452.7179pt too wide) detected at line 939
+Underfull \hbox (badness 10000) detected at line 932
+[][][]
+ []
+
+
+
+[23
+Non-PDF special ignored!
+<special> color cmyk 0 0 0 1.0
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 939
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (452.7179pt too wide) detected at line 939
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 939
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (452.7179pt too wide) detected at line 939
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
 []
  []
 
 
-Underfull \vbox (badness 10000) detected at line 939
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
  []
 
 
-Overfull \hbox (452.7179pt too wide) detected at line 939
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[24
+
+]
+Underfull \vbox (badness 10000) detected at line 936
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 936
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 936
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 936
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 936
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 936
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 936
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 936
 []
  []
 
@@ -2272,8 +2277,537 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][] 
  []
 
-[23
+[25
 
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[26
+
+]
+Underfull \vbox (badness 10000) detected at line 957
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 957
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 957
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 957
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 957
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 957
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 957
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 957
+[]
+ []
+
+Chapter 3.
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[27
+
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[28
+
+]
+Underfull \vbox (badness 10000) detected at line 978
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 978
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 978
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 978
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 978
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 978
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 978
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 978
+[]
+ []
+
+Chapter 4.
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[29
+
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[30
+
+]
+Underfull \vbox (badness 10000) detected at line 999
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 999
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 999
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 999
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 999
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 999
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 999
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 999
+[]
+ []
+
+Chapter 5.
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[31
+
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[32
+
+]
+Underfull \vbox (badness 10000) detected at line 1020
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1020
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1020
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1020
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1020
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1020
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1020
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1020
+[]
+ []
+
+Chapter 6.
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[33
+
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[34
+
+]
+Underfull \vbox (badness 10000) detected at line 1041
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1041
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1041
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1041
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1041
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1041
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1041
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1041
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1041
+[]
+ []
+
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[35
+
+]
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (452.7179pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[36
+
+]
+Underfull \vbox (badness 10000) detected at line 1053
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1053
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1053
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1053
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1053
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1053
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1053
+ []
+
+
+Overfull \hbox (452.7179pt too wide) detected at line 1053
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1053
+[]
+ []
+
+
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[37
 
 {c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./bookdownproj.aux)
  ***********
@@ -2282,18 +2816,18 @@ L3 programming layer <2025-03-26>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17809 strings out of 471607
- 293332 string characters out of 5519438
- 733349 words of memory out of 5000000
- 43909 multiletter control sequences out of 15000+600000
- 703886 words of font info for 92 fonts, out of 8000000 for 9000
+ 17970 strings out of 471607
+ 296453 string characters out of 5519438
+ 733483 words of memory out of 5000000
+ 43982 multiletter control sequences out of 15000+600000
+ 705162 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 77i,8n,81p,590b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro17.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on bookdownproj.pdf (23 pages, 2124266 bytes).
+ 77i,8n,81p,1089b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro17.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/Users/msgamage/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on bookdownproj.pdf (37 pages, 2135155 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
- 143 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 717 PDF objects out of 1000 (max. 8388607)
+ 620 compressed objects within 7 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

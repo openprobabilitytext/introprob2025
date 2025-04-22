@@ -27,10 +27,17 @@ github-repo: https://github.com/openprobabilitytext/introprob2025/
 
 # Preface{-}
 
-Introduction to Probability is a freely available textbook designed for MATH350 students.
+This online text was developed specifically for students enrolled in MATH350- Probability Theory and Simulation Methods at the University of Delaware. It is designed to accompany our lectures, assignments, and discussions, providing a structured and focused introduction to key concepts in probability.
 
-- This edition includes a variety of examples to help you learn probability    concepts at your own pace.
-- The book is available for download as a PDF.
+The book covers topics including fundamentals of probability counting techniques, conditional probability, independence, random variables, expectations, common distributions, and limit theorems. It is not intended as a comprehensive reference, but rather as a concise, course‑aligned guide to help you develop intuition and problem‑solving skills in probability.
+
+In addition to serving our course, this text is also an excellent resource for MATH367-Actuarial Seminar: Exam P Preparation course. Key concepts and problem types map directly to the Exam P syllabus, and you will find targeted examples and practice questions throughout to reinforce your understanding.
+
+You are encouraged to read actively; work through examples, pause to answer questions, and revisit tricky sections. Probability takes time to absorb, and deeper understanding often comes through repeated engagement with core ideas.
+
+This resource is freely available online and can also be downloaded as a PDF for offline use. The online format allows for updates, so check periodically for revised versions, new examples, or additional exam‑style questions.
+
+We welcome feedback from students. Your input can help improve the book for future readers. We hope you find this a helpful and accessible resource as you build your understanding of probability and prepare for Exam P.
 
 
 ```{r setup, include=FALSE}
