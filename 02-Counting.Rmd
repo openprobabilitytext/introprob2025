@@ -404,7 +404,7 @@ knitr::include_graphics("Ven6.png")
 
 As shown in Figure`@ref(fig:BminA)`, $B-A=B \cap A^c.$
 
-## Laws of Set Theory
+### Laws of Set Theory
 
 **Commutative Laws**
 
