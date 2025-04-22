@@ -88,7 +88,7 @@ arrange these objects is called a *permutation.* These objects can be
 arranged in six different ways: $$ABC, ACB, BAC, BCA, CAB, CBA.$$ The
 formula to find the number of permutations of $n$ *distinct* objects is
 $$n!=n\times (n-1)\times\cdots\times 2\times 1.$$ For three distinct
-objects, the number of permutations is $3!=6$
+objects, the number of permutations is $3!=6.$
 
 **Example 1.5.** In a class, there are 4 sophomores, 7 juniors, and 3
 seniors.
@@ -142,7 +142,7 @@ permuted:
 
 **Solution:**
 
-1.  4 different letters. Therefore, number of permutations: $$4!.$$
+1.  4 different letters. Therefore, number of permutations: $$4!$$
 2.  4 letters word, 2 letters are alike. Therefore, number of
     permutations: $$\frac{4!}{2!}$$
 3.  4 letters word, 2 letters are alike and another 2 letters are alike.
