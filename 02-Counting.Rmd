@@ -118,7 +118,7 @@ two seniors should be together?
 Now let's learn how to find the permutations of objects that are
 non-distinct (some are identical). Consider the permutations of AAB.
 Since we have two identical objects, the number of permutations has to
-be less than $3!$ (since permuting the two \`\`A"s gives us the same
+be less than $3!$ (since permuting the two A's gives us the same
 arrangement).
 
 **Theorem 1.1: Permutations of non-identical objects**
@@ -140,11 +140,11 @@ permuted:
 
 1.  4 different letters. Therefore, number of permutations: $$4!.$$
 2.  4 letters word, 2 letters are alike. Therefore, number of
-    permutations: $$\frac{4!}{2!}.$$
+    permutations: $$\frac{4!}{2!}$$
 3.  4 letters word, 2 letters are alike and another 2 letters are alike.
-    Therefore, number of permutations: $$\frac{4!}{2!2!}.$$
+    Therefore, number of permutations: $$\frac{4!}{2!2!}$$
 4.  7 letters word, 3 letters are alike and another 2 letters are alike.
-    Therefore, number of permutations: $$\frac{7!}{3!2!}.$$
+    Therefore, number of permutations: $$\frac{7!}{3!2!}$$
 
 In each of the above questions, we make an adjustment for over-counting
 by diving by the permutations of identical objects.
@@ -155,7 +155,7 @@ Combinations are the number of ways a subset can be chosen from a larger
 set where the order of the selection does not matter. Consider a set of
 $n$ distinct objects. The number of ways a subset of $r\leq n$ objects
 can be chosen can be computed using the formula
-$${n\choose r} = \frac{n!}{r!(n-r)!}.$$ The key point here is that,
+$${n\choose r} = \frac{n!}{r!(n-r)!}$$ The key point here is that,
 unlike in permutations, the order of the $r$ objects selected is
 irrelevant.
 
@@ -171,9 +171,9 @@ irrelevant.
 
 1.  $10\choose 3$
 
-2.  The number of ways two math books can be chosen = $4\choose 2$\\ The
+2.  The number of ways two math books can be chosen = $4\choose 2$ The
     number of ways two other books (non-math) can be chosen =
-    $6\choose 2$\\
+    $6\choose 2$
 
 Therefore, the total number of ways exactly two math books can be chosen
 is $${4\choose 2}{6\choose 2}$$
@@ -270,7 +270,7 @@ QQAAA,22299,etc.).
 
 **Solution:**
 
-1.  A standard deck of cards has 13 different valueS. We need to first
+1.  A standard deck of cards has 13 different values. We need to first
     choose a value and then pick two cards from that value. Since each
     value has 4 cards, we can do this in $\binom{13}{1}\binom{4}{2}$
     ways. Thereafter, the other three cards must be picked from three
@@ -330,10 +330,10 @@ c.  This is similar to the previous part. Initially, we give A two
     least 2. $$\underbrace{XX}_{A\text{ receives 2 
      }}\underbrace{XXXXXXXX}_{\text{Distribute the rest between A,B,C,D}}$$
     Therefore, we have 8 Xs and 3 lines (total 11). The answer is
-    $$\frac{11!}{3!8!}=\binom{11}{3}.$$ 5.a. We can arrange the cards
+    $$\frac{11!}{3!8!}=\binom{11}{3}$$ 5.a. We can arrange the cards
     starting with a red card (RBRB...) or with a black card (BRBR...).
     Since there are 26 red cards and 26 black cards, the answer is
-    $$ 26!26!\cdot2.$$ b. The total number of arrangements without any
+    $$ 26!26!\cdot2$$ b. The total number of arrangements without any
     restrictions is 4!. The number of ways we arrange the cards keeping
     \textit{all} the queens together is $4!49!$ (48 other cards + one
     block of 4 queens = 49 objects). Therefore, the number of
@@ -429,7 +429,7 @@ that satisfies the following statements:
 $\emptyset \cup S = S.$ Therefore,
 $$1=P(S)=P(\emptyset \cup S)=P(\emptyset)+P(S)=P(\emptyset)+1\implies P(\emptyset)=0$$
 2.Observe that $A^c\cup A = S$ and $A^c\cap A = \emptyset$. Therefore,
-$$1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A).$$ 3.Observe
+$$1=P(S)=P(A^c\cup A)=P(A)+P(A^c)\implies P(A^c)=1-P(A)$$ 3.Observe
 that $(A-B)\cup (A\cap B)=A$ and $(A-B)\cap (A\cap B)=\emptyset.$
 Therefore,
 $$P(A)=P((A-B)\cup (A\cap B))=P(A-B)+P(A\cap B)\\ \implies P(A-B) = P(A)-P(A\cap B)$$
@@ -492,9 +492,9 @@ cards. Find the probability of the following events.
 1.  Let's first find out what $|S|$ is. To figure out the size of the
     sample space, it's vital to understand what the "experiment" is. We
     are drawing four cards from the deck. How many ways can we do that?
-    $$|S|=\binom{52}{4}.$$ Now define
+    $$|S|=\binom{52}{4}$$ Now define
     $Q_1 = \{\text{exactly one card is a Queen}\}$. Then
-    $$|Q_1|=\binom{4}{1}\binom{48}{3}.$$ Therefore,
+    $$|Q_1|=\binom{4}{1}\binom{48}{3}$$ Therefore,
     $$P(Q_1)=\frac{\binom{4}{1}\binom{48}{3}}{\binom{52}{4}}$$
 2.  Let $Q=\{\text{at least one card is a Queen}\}.$ Then
     $Q^c=\{\text{no Queens are picked}\}.$ Notice that
