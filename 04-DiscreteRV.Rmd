@@ -10,4 +10,4 @@
 
 ## Variance and Standard Deviation
 
-## Common Discrete Distributions: Binomial, Geometric, Poisson, Negative Binomial, multinomial
+## Common Discrete Distributions: Binomial, Geometric, Poisson, Negative Binomial, Multinomial
