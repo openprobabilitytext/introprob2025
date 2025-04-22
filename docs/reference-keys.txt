@@ -11,6 +11,7 @@ permutations
 combinations
 worked-examples
 review-of-set-theory
+laws-of-set-theory
 axioms-of-probability
 sample-spaces-with-equally-likely-outcomes
 worked-examples-1
@@ -20,7 +21,7 @@ the-multiplication-rule
 independence-of-events
 the-law-of-total-probability
 bayes-theorem
-applications-and-common-misconceptions
+applications
 discrete-random-variables-and-distributions
 random-variables
 probability-mass-functions-pmfs
