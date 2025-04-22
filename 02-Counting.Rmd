@@ -236,7 +236,7 @@ the values are unique?
 
 **Exercise 1.8.** How many ways can five cards be chosen such that two
 cards are of one value and three cards of another value? (For example,
-QQAAA,22299,etc.).
+QQAAA, 22299, etc.).
 
 ### Worked Examples
 
