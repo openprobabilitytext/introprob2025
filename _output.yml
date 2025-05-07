@@ -29,8 +29,8 @@ bookdown::gitbook:
       collapse: subsection
       before: |
         <li><a href="./">Probability </a></li>
-  edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
-  #edit: null
+  #edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+  edit: null
   download: null
   sharing:
     facebook: no

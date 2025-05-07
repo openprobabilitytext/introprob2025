@@ -3,6 +3,10 @@
   text-align: left;
 }
 
+.book-edit-link {
+  display: none !important;
+}
+
 #header .title {
   margin-bottom: 0EM;
 }
